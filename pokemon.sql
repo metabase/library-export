@@ -1,13 +1,13 @@
 -- METABASE_BEGIN
 -- entity: model/Transform:v1
--- name: Pokemon Data
+-- name: Sweeper Census
 -- identifier: pokemon-data-transform
 -- description: does the thing
 -- tags: ["weekly"]
 -- database: "Postgres 13"
 -- target:
 --   type: table
---   name: super_cool_pokemon_data
+--   name: sweeper_census
 -- METABASE_END
 
 with cleaned as (

@@ -1,12 +1,12 @@
 entity: model/Transform:v1
-name: A YAML transform
+name: Archetype Outliers
 identifier: another-pokemon-data-transform
 description: does the thing DAILY
 tags: ["daily"]
 database: "Postgres 13"
 target:
   type: table
-  name: super_cool_pokemon_data
+  name: archetype_outliers
 source: |
   with cleaned as (
     select
