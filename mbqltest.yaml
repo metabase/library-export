@@ -6,7 +6,7 @@ tags: [weekly]
 database: "Postgres 13"
 target:
   type: table
-  name: PUBLIC.flippity
+  name: flippity
 source:
   database: Postgres 13
   type: query
