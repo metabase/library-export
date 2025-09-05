@@ -1,0 +1,25 @@
+entity: model/Transform:v1
+name: An MBQL Example
+identifier: mbql-example
+description: Does the thing
+tags: [weekly]
+database: "Postgres 13"
+target:
+  type: table
+  name: PUBLIC.flippity
+source:
+  source-table:
+    - AppDB
+    - public
+    - pokemon_global_sightings_20250829153336
+  aggregation:
+    - - count
+  breakout:
+    - - field
+      - - AppDB
+        - public
+        - pokemon_global_sightings_20250829153336
+        - longitude
+      - base-type: type/Float
+        binning:
+          strategy: default
