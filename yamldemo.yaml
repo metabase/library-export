@@ -1,0 +1,98 @@
+entity: model/Transform:v1
+name: A YAML transform
+identifier: another-pokemon-data-transform
+description: does the thing DAILY
+tags: ["daily"]
+database: "Postgres 13"
+target:
+  type: table
+  name: super_cool_pokemon_data
+source: |
+  with cleaned as (
+    select
+      id, no, name, generation,
+      lower(type1) as type1,
+      nullif(lower(type2),'') as type2,
+      coalesce(ability_hidden, ability2, ability1) as signature_ability,
+      category,
+      coalesce(
+        (mega_evolution_flag ilike 'mega%')
+        or (mega_evolution_flag ilike 'true')
+        or (mega_evolution_flag ilike 'yes')
+        or (mega_evolution_flag = '1'),
+        false
+      ) as is_mega,
+      coalesce(nullif(region_form,'') is not null, false) as is_regional,
+      hp::int, attack::int, defense::int, sp_attack::int, sp_defense::int, speed::int, total::int
+    from pokedex_with_images_20250829153436
+  ),
+  eligible as (
+    select *
+    from cleaned
+    where is_mega = false
+      and is_regional = false
+  ),
+  metrics as (
+    select
+      *,
+      -- crude but serviceable formulas
+      (attack + sp_attack)                         as offense,
+      (hp * (defense + sp_defense) / 2.0)         as bulk,
+      (attack + sp_attack + 1.25 * speed)         as sweeper_score,
+      (hp + defense + sp_defense)                 as wall_score
+    from eligible
+  ),
+  thresholds as (
+    select
+      percentile_cont(0.75) within group (order by offense) as off_q75,
+      percentile_cont(0.25) within group (order by offense) as off_q25,
+      percentile_cont(0.75) within group (order by bulk)    as bulk_q75,
+      percentile_cont(0.25) within group (order by bulk)    as bulk_q25
+    from metrics
+  ),
+  glass_ranked as (
+    select
+      m.*,
+      row_number() over (
+        partition by m.generation
+        order by m.sweeper_score desc, m.total desc, m.no asc
+      ) as rk
+    from metrics m, thresholds t
+    where m.offense >= t.off_q75
+      and m.bulk    <= t.bulk_q25
+  ),
+  wall_ranked as (
+    select
+      m.*,
+      row_number() over (
+        partition by m.generation
+        order by m.wall_score desc, m.total desc, m.no asc
+      ) as rk
+    from metrics m, thresholds t
+    where m.offense <= t.off_q25
+      and m.bulk    >= t.bulk_q75
+  )
+  select
+    g.generation,
+    jsonb_build_object(
+      'glass_cannon', jsonb_build_object(
+        'name', g.name,
+        'dex_no', g.no,
+        'types', array_remove(array[g.type1, g.type2], null),
+        'ability', g.signature_ability,
+        'stats', jsonb_build_object('hp', g.hp, 'atk', g.attack, 'def', g.defense, 'spa', g.sp_attack, 'spd', g.sp_defense, 'spe', g.speed, 'bst', g.total),
+        'offense', g.offense, 'bulk', g.bulk, 'sweeper_score', g.sweeper_score
+      ),
+      'iron_wall', jsonb_build_object(
+        'name', w.name,
+        'dex_no', w.no,
+        'types', array_remove(array[w.type1, w.type2], null),
+        'ability', w.signature_ability,
+        'stats', jsonb_build_object('hp', w.hp, 'atk', w.attack, 'def', w.defense, 'spa', w.sp_attack, 'spd', w.sp_defense, 'spe', w.speed, 'bst', w.total),
+        'offense', w.offense, 'bulk', w.bulk, 'wall_score', w.wall_score
+      )
+    ) as per_gen_outliers
+  from glass_ranked g
+  join wall_ranked  w using (generation)
+  where g.rk = 1 and w.rk = 1
+  order by g.generation;
