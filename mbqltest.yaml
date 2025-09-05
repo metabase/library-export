@@ -1,28 +1,34 @@
-entity: model/Transform:v1
-name: An MBQL Example
-identifier: mbql-example
-description: Does the thing
-tags: [weekly]
-database: "Postgres 13"
-target:
-  type: table
-  name: flippity
-source:
-  database: Postgres 13
-  type: query
-  query:
-    source-table:
-      - Postgres 13
-      - public
-      - pokemon_global_sightings_20250829153336
-    aggregation:
-      - - count
-    breakout:
-      - - field
-        - - Postgres 13
-          - public
-          - pokemon_global_sightings_20250829153336
-          - longitude
-        - base-type: type/Float
-          binning:
-            strategy: default
+entity
+  type: model/Transform:v1
+  name: An MBQL Example
+  identifier: mbql-example
+  description: Does the thing
+  tags: [weekly]
+  database: "Postgres 13"
+  target:
+    type: table
+    name: flippity
+  source:
+    database: Postgres 13
+    type: query
+    query:
+      source-table:
+        - Postgres 13
+        - public
+        - pokemon_global_sightings_20250829153336
+      aggregation:
+        - - count
+      breakout:
+        - - field
+          - - Postgres 13
+            - public
+            - pokemon_global_sightings_20250829153336
+            - longitude
+          - base-type: type/Float
+            binning:
+              strategy: default
+  reference
+    type: database
+    name: Postgres 13
+    conn-string: jdbc://blah..
+    other-params: blah
