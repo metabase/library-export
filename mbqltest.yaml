@@ -8,18 +8,21 @@ target:
   type: table
   name: PUBLIC.flippity
 source:
-  source-table:
-    - AppDB
-    - public
-    - pokemon_global_sightings_20250829153336
-  aggregation:
-    - - count
-  breakout:
-    - - field
-      - - AppDB
-        - public
-        - pokemon_global_sightings_20250829153336
-        - longitude
-      - base-type: type/Float
-        binning:
-          strategy: default
+  database: Postgres 13
+  type: query
+  query:
+    source-table:
+      - Postgres 13
+      - public
+      - pokemon_global_sightings_20250829153336
+    aggregation:
+      - - count
+    breakout:
+      - - field
+        - - Postgres 13
+          - public
+          - pokemon_global_sightings_20250829153336
+          - longitude
+        - base-type: type/Float
+          binning:
+            strategy: default
