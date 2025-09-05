@@ -7,7 +7,7 @@
 -- database: "Postgres 13"
 -- target:
 --   type: table
---   name: PUBLIC.super_cool_pokemon_data
+--   name: super_cool_pokemon_data
 -- METABASE_END
 
 with cleaned as (
