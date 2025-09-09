@@ -27,7 +27,7 @@ entity
           - base-type: type/Float
             binning:
               strategy: default
-  reference
+  reference:
     type: database
     name: Postgres 13
     conn-string: jdbc://blah..
