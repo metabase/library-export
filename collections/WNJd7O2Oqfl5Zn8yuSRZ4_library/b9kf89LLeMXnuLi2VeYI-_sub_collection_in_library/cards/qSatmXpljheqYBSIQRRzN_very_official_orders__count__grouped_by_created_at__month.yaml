@@ -79,13 +79,13 @@ dataset_query:
   database: Sample Database
   type: query
   query:
-    aggregation:
-    - - count
     breakout:
     - - field
       - CREATED_AT
       - base-type: type/DateTime
         temporal-unit: month
+    aggregation:
+    - - count
     source-table: qbvNirSTjJBvMRWayY_zt
 parameter_mappings: []
 serdes/meta:
