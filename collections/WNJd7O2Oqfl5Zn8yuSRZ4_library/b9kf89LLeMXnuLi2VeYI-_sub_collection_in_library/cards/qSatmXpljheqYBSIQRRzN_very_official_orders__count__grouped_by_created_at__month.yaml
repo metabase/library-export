@@ -1,0 +1,110 @@
+description: null
+archived: false
+collection_position: null
+source_card_id: qbvNirSTjJBvMRWayY_zt
+table_id:
+- Sample Database
+- PUBLIC
+- ORDERS
+result_metadata:
+- description: The date and time an order was submitted.
+  database_type: TIMESTAMP
+  semantic_type: type/CreationTimestamp
+  table_id:
+  - Sample Database
+  - PUBLIC
+  - ORDERS
+  qp/implicit-field?: true
+  lib/deduplicated-name: CREATED_AT
+  lib/original-name: CREATED_AT
+  lib/breakout?: true
+  unit: month
+  name: CREATED_AT
+  lib/card-id: 130
+  lib/source: source/previous-stage
+  lib/source-column-alias: CREATED_AT
+  lib/original-display-name: Created At
+  settings:
+    time_enabled: milliseconds
+  lib/model-display-name: Created At
+  source: breakout
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - ORDERS
+    - CREATED_AT
+  - temporal-unit: month
+  effective_type: type/DateTime
+  active: true
+  id:
+  - Sample Database
+  - PUBLIC
+  - ORDERS
+  - CREATED_AT
+  lib/desired-column-alias: CREATED_AT
+  metabase.lib.field/temporal-unit: month
+  position: 7
+  visibility_type: normal
+  inherited_temporal_unit: month
+  display_name: 'Created At: Month'
+  base_type: type/DateTime
+- database_type: BIGINT
+  semantic_type: type/Quantity
+  lib/deduplicated-name: count
+  lib/original-name: count
+  name: count
+  lib/source: source/aggregations
+  lib/source-column-alias: count
+  source: aggregation
+  field_ref:
+  - aggregation
+  - 0
+  effective_type: type/BigInteger
+  lib/desired-column-alias: count
+  display_name: Count
+  base_type: type/BigInteger
+card_schema: 22
+database_id: Sample Database
+enable_embedding: false
+collection_id: b9kf89LLeMXnuLi2VeYI-
+query_type: query
+name: 'Very Official Orders, Count, Grouped by Created At: Month'
+document_id: null
+type: question
+creator_id: a@a.com
+made_public_by_id: null
+embedding_params: null
+dataset_query:
+  database: Sample Database
+  type: query
+  query:
+    aggregation:
+    - - count
+    breakout:
+    - - field
+      - CREATED_AT
+      - base-type: type/DateTime
+        temporal-unit: month
+    source-table: qbvNirSTjJBvMRWayY_zt
+parameter_mappings: []
+serdes/meta:
+- model: Card
+  id: qSatmXpljheqYBSIQRRzN
+  label: very_official_orders__count__grouped_by_created_at__month
+display: line
+archived_directly: false
+entity_id: qSatmXpljheqYBSIQRRzN
+collection_preview: true
+visualization_settings:
+  graph.x_axis.scale: timeseries
+  graph.dimensions:
+  - CREATED_AT
+  graph.metrics:
+  - count
+  column_settings: null
+metabase_version: vLOCAL_DEV (06d1ba2ae111e66253209c01c244d6379acfc6dcb1911fa9ab6012cec9ce52e5)
+parameters: []
+dashboard_id: null
+created_at: '2025-10-30T18:39:44.013125Z'
+public_uuid: null

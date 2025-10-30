@@ -1,7 +1,7 @@
 description: null
 archived: false
-collection_position: 2
-source_card_id: null
+collection_position: null
+source_card_id: qbvNirSTjJBvMRWayY_zt
 table_id:
 - Sample Database
 - PUBLIC
@@ -17,10 +17,13 @@ result_metadata:
   qp/implicit-field?: true
   lib/deduplicated-name: ID
   lib/original-name: ID
+  lib/breakout?: false
   name: ID
-  lib/source: source/table-defaults
+  lib/card-id: 130
+  lib/source: source/previous-stage
   lib/source-column-alias: ID
   lib/original-display-name: ID
+  lib/model-display-name: ID
   source: fields
   field_ref:
   - field
@@ -51,10 +54,13 @@ result_metadata:
   qp/implicit-field?: true
   lib/deduplicated-name: USER_ID
   lib/original-name: USER_ID
+  lib/breakout?: false
   name: USER_ID
-  lib/source: source/table-defaults
+  lib/card-id: 130
+  lib/source: source/previous-stage
   lib/source-column-alias: USER_ID
   lib/original-display-name: User ID
+  lib/model-display-name: User ID
   lib/external-remap:
     lib/type: metadata.column.remapping/external
     id: 1
@@ -98,12 +104,15 @@ result_metadata:
   qp/implicit-field?: true
   lib/deduplicated-name: PRODUCT_ID
   lib/original-name: PRODUCT_ID
+  lib/breakout?: false
   name: PRODUCT_ID
-  lib/source: source/table-defaults
+  lib/card-id: 130
+  lib/source: source/previous-stage
   lib/source-column-alias: PRODUCT_ID
   lib/original-display-name: Product ID
   settings:
     view_as: null
+  lib/model-display-name: Product ID
   lib/external-remap:
     lib/type: metadata.column.remapping/external
     id: 2
@@ -147,12 +156,15 @@ result_metadata:
   qp/implicit-field?: true
   lib/deduplicated-name: SUBTOTAL
   lib/original-name: SUBTOTAL
+  lib/breakout?: false
   name: SUBTOTAL
-  lib/source: source/table-defaults
+  lib/card-id: 130
+  lib/source: source/previous-stage
   lib/source-column-alias: SUBTOTAL
   lib/original-display-name: Subtotal
   settings:
     view_as: null
+  lib/model-display-name: Subtotal
   source: fields
   field_ref:
   - field
@@ -183,12 +195,15 @@ result_metadata:
   qp/implicit-field?: true
   lib/deduplicated-name: TAX
   lib/original-name: TAX
+  lib/breakout?: false
   name: TAX
-  lib/source: source/table-defaults
+  lib/card-id: 130
+  lib/source: source/previous-stage
   lib/source-column-alias: TAX
   lib/original-display-name: Tax
   settings:
     currency_in_header: true
+  lib/model-display-name: Tax
   source: fields
   field_ref:
   - field
@@ -219,14 +234,17 @@ result_metadata:
   qp/implicit-field?: true
   lib/deduplicated-name: TOTAL
   lib/original-name: TOTAL
+  lib/breakout?: false
   name: TOTAL
-  lib/source: source/table-defaults
+  lib/card-id: 130
+  lib/source: source/previous-stage
   lib/source-column-alias: TOTAL
   lib/original-display-name: Total
   settings:
     currency: USD
     currency_style: code
     currency_in_header: false
+  lib/model-display-name: Total
   source: fields
   field_ref:
   - field
@@ -257,10 +275,13 @@ result_metadata:
   qp/implicit-field?: true
   lib/deduplicated-name: DISCOUNT
   lib/original-name: DISCOUNT
+  lib/breakout?: false
   name: DISCOUNT
-  lib/source: source/table-defaults
+  lib/card-id: 130
+  lib/source: source/previous-stage
   lib/source-column-alias: DISCOUNT
   lib/original-display-name: Discount
+  lib/model-display-name: Discount
   source: fields
   field_ref:
   - field
@@ -281,40 +302,6 @@ result_metadata:
   visibility_type: normal
   display_name: Discount
   base_type: type/Float
-- description: The date and time an order was submitted.
-  database_type: TIMESTAMP
-  semantic_type: type/CreationTimestamp
-  table_id:
-  - Sample Database
-  - PUBLIC
-  - ORDERS
-  qp/implicit-field?: true
-  lib/deduplicated-name: CREATED_AT
-  lib/original-name: CREATED_AT
-  name: CREATED_AT
-  lib/source: source/table-defaults
-  lib/source-column-alias: CREATED_AT
-  lib/original-display-name: Created At
-  source: fields
-  field_ref:
-  - field
-  - - Sample Database
-    - PUBLIC
-    - ORDERS
-    - CREATED_AT
-  - null
-  effective_type: type/DateTime
-  active: true
-  id:
-  - Sample Database
-  - PUBLIC
-  - ORDERS
-  - CREATED_AT
-  lib/desired-column-alias: CREATED_AT
-  position: 7
-  visibility_type: normal
-  display_name: Created At
-  base_type: type/DateTime
 - description: Number of products bought.
   database_type: INTEGER
   semantic_type: type/Quantity
@@ -325,14 +312,17 @@ result_metadata:
   qp/implicit-field?: true
   lib/deduplicated-name: QUANTITY
   lib/original-name: QUANTITY
+  lib/breakout?: false
   name: QUANTITY
-  lib/source: source/table-defaults
+  lib/card-id: 130
+  lib/source: source/previous-stage
   lib/source-column-alias: QUANTITY
   lib/original-display-name: Quantity
   settings:
     show_mini_bar: false
     view_as: null
     link_text: ''
+  lib/model-display-name: Quantity
   source: fields
   field_ref:
   - field
@@ -365,23 +355,18 @@ result_metadata:
   lib/original-name: NAME
   lib/breakout?: false
   name: NAME
-  lib/source: source/implicitly-joinable
-  lib/source-column-alias: NAME
+  lib/card-id: 130
+  lib/source: source/previous-stage
+  lib/source-column-alias: PEOPLE__via__USER_ID__NAME
   lib/original-display-name: Name
+  lib/original-fk-field-id: 5
+  lib/model-display-name: User → Name
   source: fields
   remapped_from: USER_ID
-  fk_field_id: 11
   field_ref:
   - field
-  - - Sample Database
-    - PUBLIC
-    - PEOPLE
-    - NAME
-  - source-field:
-    - Sample Database
-    - PUBLIC
-    - ORDERS
-    - USER_ID
+  - NAME
+  - base-type: type/Text
   effective_type: type/Text
   active: true
   id:
@@ -390,6 +375,42 @@ result_metadata:
   - PEOPLE
   - NAME
   lib/desired-column-alias: PEOPLE__via__USER_ID__NAME
+  position: 4
+  visibility_type: normal
+  options:
+    metabase.query-processor.middleware.add-remaps/new-field-dimension-id: 1
+  display_name: User ID
+  base_type: type/Text
+- description: The name of the user who owns an account
+  database_type: CHARACTER VARYING
+  semantic_type: type/Name
+  table_id:
+  - Sample Database
+  - PUBLIC
+  - PEOPLE
+  qp/implicit-field?: true
+  lib/deduplicated-name: NAME_2
+  lib/original-name: NAME
+  lib/breakout?: false
+  name: NAME_2
+  lib/source: source/previous-stage
+  lib/source-column-alias: PEOPLE__via__USER_ID__NAME
+  lib/original-display-name: Name
+  lib/original-fk-field-id: 11
+  source: fields
+  remapped_from: USER_ID
+  field_ref:
+  - field
+  - NAME_2
+  - base-type: type/Text
+  effective_type: type/Text
+  active: true
+  id:
+  - Sample Database
+  - PUBLIC
+  - PEOPLE
+  - NAME
+  lib/desired-column-alias: PEOPLE__via__USER_ID__NAME_2
   position: 4
   visibility_type: normal
   options:
@@ -408,23 +429,19 @@ result_metadata:
   lib/original-name: TITLE
   lib/breakout?: false
   name: TITLE
-  lib/source: source/implicitly-joinable
-  lib/source-column-alias: TITLE
+  lib/source: source/previous-stage
+  lib/source-column-alias: PRODUCTS__via__PRODUCT_ID__TITLE
   lib/original-display-name: Title
+  lib/original-fk-field-id: 14
   source: fields
   remapped_from: PRODUCT_ID
-  fk_field_id: 14
   field_ref:
   - field
   - - Sample Database
     - PUBLIC
     - PRODUCTS
     - TITLE
-  - source-field:
-    - Sample Database
-    - PUBLIC
-    - ORDERS
-    - PRODUCT_ID
+  - null
   effective_type: type/Text
   active: true
   id:
@@ -442,36 +459,61 @@ result_metadata:
 card_schema: 22
 database_id: Sample Database
 enable_embedding: false
-collection_id: WNJd7O2Oqfl5Zn8yuSRZ4
+collection_id: b9kf89LLeMXnuLi2VeYI-
 query_type: query
-name: Very Official Orders
+name: Very Official Orders - Modified
 document_id: null
-type: model
-creator_id: eliot@metabase.com
+type: question
+creator_id: a@a.com
 made_public_by_id: null
 embedding_params: null
 dataset_query:
   database: Sample Database
   type: query
   query:
-    source-table:
-    - Sample Database
-    - PUBLIC
-    - ORDERS
+    fields:
+    - - field
+      - ID
+      - base-type: type/BigInteger
+    - - field
+      - USER_ID
+      - base-type: type/Integer
+    - - field
+      - PRODUCT_ID
+      - base-type: type/Integer
+    - - field
+      - SUBTOTAL
+      - base-type: type/Float
+    - - field
+      - TAX
+      - base-type: type/Float
+    - - field
+      - TOTAL
+      - base-type: type/Float
+    - - field
+      - DISCOUNT
+      - base-type: type/Float
+    - - field
+      - QUANTITY
+      - base-type: type/Integer
+    - - field
+      - PEOPLE__via__USER_ID__NAME
+      - base-type: type/Text
+    source-table: qbvNirSTjJBvMRWayY_zt
 parameter_mappings: []
 serdes/meta:
 - model: Card
-  id: qbvNirSTjJBvMRWayY_zt
-  label: very_official_orders
+  id: tmZmq-CL8uB69dshMe7am
+  label: very_official_orders___modified
 display: table
 archived_directly: false
-entity_id: qbvNirSTjJBvMRWayY_zt
+entity_id: tmZmq-CL8uB69dshMe7am
 collection_preview: true
 visualization_settings:
   table.cell_column: SUBTOTAL
   column_settings: null
-metabase_version: vUNKNOWN (57afac7)
+metabase_version: vLOCAL_DEV (06d1ba2ae111e66253209c01c244d6379acfc6dcb1911fa9ab6012cec9ce52e5)
 parameters: []
 dashboard_id: null
-created_at: '2025-10-27T19:52:29.856585Z'
+created_at: '2025-10-30T18:40:44.731687Z'
 public_uuid: null

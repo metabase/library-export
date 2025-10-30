@@ -1,0 +1,18 @@
+authority_level: null
+description: null
+archived: false
+slug: sub_collection_in_library
+archive_operation_id: null
+name: Sub-collection in Library
+personal_owner_id: null
+type: remote-synced
+is_sample: false
+parent_id: WNJd7O2Oqfl5Zn8yuSRZ4
+serdes/meta:
+- model: Collection
+  id: b9kf89LLeMXnuLi2VeYI-
+  label: sub_collection_in_library
+archived_directly: null
+entity_id: b9kf89LLeMXnuLi2VeYI-
+namespace: null
+created_at: '2025-10-30T21:37:22.333466Z'
