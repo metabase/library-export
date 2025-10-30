@@ -1,0 +1,567 @@
+description: null
+archived: false
+collection_position: 1
+source_card_id: null
+table_id:
+- Sample Database
+- PUBLIC
+- ACCOUNTS
+result_metadata:
+- database_type: BIGINT
+  semantic_type: type/PK
+  table_id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  qp/implicit-field?: true
+  lib/deduplicated-name: ID
+  lib/original-name: ID
+  name: ID
+  lib/source: source/table-defaults
+  lib/source-column-alias: ID
+  lib/original-display-name: ID
+  source: fields
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - ACCOUNTS
+    - ID
+  - null
+  effective_type: type/BigInteger
+  active: true
+  id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  - ID
+  lib/desired-column-alias: ID
+  position: 0
+  visibility_type: normal
+  display_name: ID
+  base_type: type/BigInteger
+- database_type: CHARACTER VARYING
+  semantic_type: type/Email
+  table_id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  qp/implicit-field?: true
+  lib/deduplicated-name: EMAIL
+  lib/original-name: EMAIL
+  name: EMAIL
+  lib/source: source/table-defaults
+  lib/source-column-alias: EMAIL
+  lib/original-display-name: Email
+  source: fields
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - ACCOUNTS
+    - EMAIL
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  - EMAIL
+  lib/desired-column-alias: EMAIL
+  position: 1
+  visibility_type: normal
+  display_name: Email
+  base_type: type/Text
+- database_type: CHARACTER VARYING
+  semantic_type: type/Name
+  table_id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  qp/implicit-field?: true
+  lib/deduplicated-name: FIRST_NAME
+  lib/original-name: FIRST_NAME
+  name: FIRST_NAME
+  lib/source: source/table-defaults
+  lib/source-column-alias: FIRST_NAME
+  lib/original-display-name: First Name
+  source: fields
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - ACCOUNTS
+    - FIRST_NAME
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  - FIRST_NAME
+  lib/desired-column-alias: FIRST_NAME
+  position: 2
+  visibility_type: normal
+  display_name: First Name
+  base_type: type/Text
+- database_type: CHARACTER VARYING
+  semantic_type: type/Name
+  table_id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  qp/implicit-field?: true
+  lib/deduplicated-name: LAST_NAME
+  lib/original-name: LAST_NAME
+  name: LAST_NAME
+  lib/source: source/table-defaults
+  lib/source-column-alias: LAST_NAME
+  lib/original-display-name: Last Name
+  source: fields
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - ACCOUNTS
+    - LAST_NAME
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  - LAST_NAME
+  lib/desired-column-alias: LAST_NAME
+  position: 3
+  visibility_type: normal
+  display_name: Last Name
+  base_type: type/Text
+- database_type: CHARACTER VARYING
+  semantic_type: type/Category
+  table_id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  qp/implicit-field?: true
+  lib/deduplicated-name: PLAN
+  lib/original-name: PLAN
+  name: PLAN
+  lib/source: source/table-defaults
+  lib/source-column-alias: PLAN
+  lib/original-display-name: Plan
+  source: fields
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - ACCOUNTS
+    - PLAN
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  - PLAN
+  lib/desired-column-alias: PLAN
+  position: 4
+  visibility_type: normal
+  display_name: Plan
+  base_type: type/Text
+- database_type: CHARACTER VARYING
+  semantic_type: type/Source
+  table_id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  qp/implicit-field?: true
+  lib/deduplicated-name: SOURCE
+  lib/original-name: SOURCE
+  name: SOURCE
+  lib/source: source/table-defaults
+  lib/source-column-alias: SOURCE
+  lib/original-display-name: Source
+  source: fields
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - ACCOUNTS
+    - SOURCE
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  - SOURCE
+  lib/desired-column-alias: SOURCE
+  position: 5
+  visibility_type: normal
+  display_name: Source
+  base_type: type/Text
+- database_type: INTEGER
+  table_id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  qp/implicit-field?: true
+  lib/deduplicated-name: SEATS
+  lib/original-name: SEATS
+  name: SEATS
+  lib/source: source/table-defaults
+  lib/source-column-alias: SEATS
+  lib/original-display-name: Seats
+  source: fields
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - ACCOUNTS
+    - SEATS
+  - null
+  effective_type: type/Integer
+  active: true
+  id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  - SEATS
+  lib/desired-column-alias: SEATS
+  position: 6
+  visibility_type: normal
+  display_name: Seats
+  base_type: type/Integer
+- database_type: TIMESTAMP
+  semantic_type: type/CreationTimestamp
+  table_id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  qp/implicit-field?: true
+  lib/deduplicated-name: CREATED_AT
+  lib/original-name: CREATED_AT
+  name: CREATED_AT
+  lib/source: source/table-defaults
+  lib/source-column-alias: CREATED_AT
+  lib/original-display-name: Created At
+  source: fields
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - ACCOUNTS
+    - CREATED_AT
+  - null
+  effective_type: type/DateTime
+  active: true
+  id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  - CREATED_AT
+  lib/desired-column-alias: CREATED_AT
+  position: 7
+  visibility_type: normal
+  display_name: Created At
+  base_type: type/DateTime
+- database_type: TIMESTAMP
+  table_id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  qp/implicit-field?: true
+  lib/deduplicated-name: TRIAL_ENDS_AT
+  lib/original-name: TRIAL_ENDS_AT
+  name: TRIAL_ENDS_AT
+  lib/source: source/table-defaults
+  lib/source-column-alias: TRIAL_ENDS_AT
+  lib/original-display-name: Trial Ends At
+  source: fields
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - ACCOUNTS
+    - TRIAL_ENDS_AT
+  - null
+  effective_type: type/DateTime
+  active: true
+  id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  - TRIAL_ENDS_AT
+  lib/desired-column-alias: TRIAL_ENDS_AT
+  position: 8
+  visibility_type: normal
+  display_name: Trial Ends At
+  base_type: type/DateTime
+- database_type: TIMESTAMP
+  semantic_type: type/CancelationTimestamp
+  table_id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  qp/implicit-field?: true
+  lib/deduplicated-name: CANCELED_AT
+  lib/original-name: CANCELED_AT
+  name: CANCELED_AT
+  lib/source: source/table-defaults
+  lib/source-column-alias: CANCELED_AT
+  lib/original-display-name: Canceled At
+  source: fields
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - ACCOUNTS
+    - CANCELED_AT
+  - null
+  effective_type: type/DateTime
+  active: true
+  id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  - CANCELED_AT
+  lib/desired-column-alias: CANCELED_AT
+  position: 9
+  visibility_type: normal
+  display_name: Canceled At
+  base_type: type/DateTime
+- database_type: BOOLEAN
+  table_id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  qp/implicit-field?: true
+  lib/deduplicated-name: TRIAL_CONVERTED
+  lib/original-name: TRIAL_CONVERTED
+  name: TRIAL_CONVERTED
+  lib/source: source/table-defaults
+  lib/source-column-alias: TRIAL_CONVERTED
+  lib/original-display-name: Trial Converted
+  source: fields
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - ACCOUNTS
+    - TRIAL_CONVERTED
+  - null
+  effective_type: type/Boolean
+  active: true
+  id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  - TRIAL_CONVERTED
+  lib/desired-column-alias: TRIAL_CONVERTED
+  position: 10
+  visibility_type: normal
+  display_name: Trial Converted
+  base_type: type/Boolean
+- database_type: BOOLEAN
+  table_id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  qp/implicit-field?: true
+  lib/deduplicated-name: ACTIVE_SUBSCRIPTION
+  lib/original-name: ACTIVE_SUBSCRIPTION
+  name: ACTIVE_SUBSCRIPTION
+  lib/source: source/table-defaults
+  lib/source-column-alias: ACTIVE_SUBSCRIPTION
+  lib/original-display-name: Active Subscription
+  source: fields
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - ACCOUNTS
+    - ACTIVE_SUBSCRIPTION
+  - null
+  effective_type: type/Boolean
+  active: true
+  id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  - ACTIVE_SUBSCRIPTION
+  lib/desired-column-alias: ACTIVE_SUBSCRIPTION
+  position: 11
+  visibility_type: normal
+  display_name: Active Subscription
+  base_type: type/Boolean
+- database_type: BOOLEAN
+  table_id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  qp/implicit-field?: true
+  lib/deduplicated-name: LEGACY_PLAN
+  lib/original-name: LEGACY_PLAN
+  name: LEGACY_PLAN
+  lib/source: source/table-defaults
+  lib/source-column-alias: LEGACY_PLAN
+  lib/original-display-name: Legacy Plan
+  source: fields
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - ACCOUNTS
+    - LEGACY_PLAN
+  - null
+  effective_type: type/Boolean
+  active: true
+  id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  - LEGACY_PLAN
+  lib/desired-column-alias: LEGACY_PLAN
+  position: 12
+  visibility_type: normal
+  display_name: Legacy Plan
+  base_type: type/Boolean
+- database_type: DOUBLE PRECISION
+  semantic_type: type/Latitude
+  table_id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  qp/implicit-field?: true
+  lib/deduplicated-name: LATITUDE
+  lib/original-name: LATITUDE
+  name: LATITUDE
+  lib/source: source/table-defaults
+  lib/source-column-alias: LATITUDE
+  lib/original-display-name: Latitude
+  source: fields
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - ACCOUNTS
+    - LATITUDE
+  - null
+  effective_type: type/Float
+  active: true
+  id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  - LATITUDE
+  lib/desired-column-alias: LATITUDE
+  position: 13
+  visibility_type: normal
+  display_name: Latitude
+  base_type: type/Float
+- database_type: DOUBLE PRECISION
+  semantic_type: type/Longitude
+  table_id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  qp/implicit-field?: true
+  lib/deduplicated-name: LONGITUDE
+  lib/original-name: LONGITUDE
+  name: LONGITUDE
+  lib/source: source/table-defaults
+  lib/source-column-alias: LONGITUDE
+  lib/original-display-name: Longitude
+  source: fields
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - ACCOUNTS
+    - LONGITUDE
+  - null
+  effective_type: type/Float
+  active: true
+  id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  - LONGITUDE
+  lib/desired-column-alias: LONGITUDE
+  position: 14
+  visibility_type: normal
+  display_name: Longitude
+  base_type: type/Float
+- database_type: CHARACTER
+  semantic_type: type/Country
+  table_id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  qp/implicit-field?: true
+  lib/deduplicated-name: COUNTRY
+  lib/original-name: COUNTRY
+  name: COUNTRY
+  lib/source: source/table-defaults
+  lib/source-column-alias: COUNTRY
+  lib/original-display-name: Country
+  source: fields
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - ACCOUNTS
+    - COUNTRY
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  - COUNTRY
+  lib/desired-column-alias: COUNTRY
+  position: 15
+  visibility_type: normal
+  display_name: Country
+  base_type: type/Text
+card_schema: 22
+database_id: Sample Database
+enable_embedding: false
+collection_id: WNJd7O2Oqfl5Zn8yuSRZ4
+query_type: query
+name: Very Official Accounts
+document_id: null
+type: model
+creator_id: a@a.com
+made_public_by_id: null
+embedding_params: null
+dataset_query:
+  database: Sample Database
+  type: query
+  query:
+    source-table:
+    - Sample Database
+    - PUBLIC
+    - ACCOUNTS
+parameter_mappings: []
+serdes/meta:
+- model: Card
+  id: IJZMEp5LYXomfs8W6XJjt
+  label: very_official_accounts
+display: table
+archived_directly: false
+entity_id: IJZMEp5LYXomfs8W6XJjt
+collection_preview: true
+visualization_settings:
+  column_settings: null
+metabase_version: vLOCAL_DEV (06d1ba2ae111e66253209c01c244d6379acfc6dcb1911fa9ab6012cec9ce52e5)
+parameters: []
+dashboard_id: null
+created_at: '2025-10-30T15:40:24.911475Z'
+public_uuid: null
