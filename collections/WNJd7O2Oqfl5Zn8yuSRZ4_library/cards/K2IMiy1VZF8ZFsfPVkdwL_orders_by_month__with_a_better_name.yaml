@@ -24,8 +24,6 @@ result_metadata:
   lib/source: source/previous-stage
   lib/source-column-alias: CREATED_AT
   lib/original-display-name: Created At
-  settings:
-    time_enabled: milliseconds
   lib/model-display-name: Created At
   source: breakout
   field_ref:
@@ -49,8 +47,7 @@ result_metadata:
   inherited_temporal_unit: month
   display_name: 'Created At: Month'
   base_type: type/DateTime
-- database_type: BIGINT
-  semantic_type: type/Quantity
+- semantic_type: type/Quantity
   lib/deduplicated-name: count
   lib/original-name: count
   name: count
@@ -60,17 +57,17 @@ result_metadata:
   field_ref:
   - aggregation
   - 0
-  effective_type: type/BigInteger
+  effective_type: type/Integer
   lib/desired-column-alias: count
   display_name: Count
-  base_type: type/BigInteger
+  base_type: type/Integer
 embedding_type: null
 card_schema: 22
 database_id: Sample Database
 enable_embedding: false
 collection_id: WNJd7O2Oqfl5Zn8yuSRZ4
 query_type: query
-name: Orders by Month
+name: Orders by Month, with a better name
 document_id: null
 type: question
 creator_id: a@a.com
@@ -92,7 +89,7 @@ parameter_mappings: []
 serdes/meta:
 - model: Card
   id: K2IMiy1VZF8ZFsfPVkdwL
-  label: orders_by_month
+  label: orders_by_month__with_a_better_name
 display: line
 archived_directly: false
 entity_id: K2IMiy1VZF8ZFsfPVkdwL
