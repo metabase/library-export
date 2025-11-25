@@ -1,9 +1,9 @@
 authority_level: null
 description: null
 archived: false
-slug: library
+slug: test_again
 archive_operation_id: null
-name: Library
+name: test again
 is_remote_synced: true
 personal_owner_id: null
 type: null
@@ -11,9 +11,9 @@ is_sample: false
 parent_id: null
 serdes/meta:
 - model: Collection
-  id: WNJd7O2Oqfl5Zn8yuSRZ4
-  label: library
+  id: WHJMba8-13MKkB1znW63O
+  label: test_again
 archived_directly: null
-entity_id: WNJd7O2Oqfl5Zn8yuSRZ4
-namespace: null
-created_at: '2025-10-27T19:51:12.873227Z'
+entity_id: WHJMba8-13MKkB1znW63O
+namespace: shared-tenant-collection
+created_at: '2025-11-25T16:03:39.490653Z'

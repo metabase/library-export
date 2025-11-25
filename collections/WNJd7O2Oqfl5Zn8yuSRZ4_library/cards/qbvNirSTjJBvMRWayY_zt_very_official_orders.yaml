@@ -388,6 +388,7 @@ result_metadata:
     metabase.query-processor.middleware.add-remaps/new-field-dimension-id: 340
   display_name: User → Name
   base_type: type/Text
+embedding_type: null
 card_schema: 22
 database_id: Sample Database
 enable_embedding: false
@@ -418,7 +419,7 @@ entity_id: qbvNirSTjJBvMRWayY_zt
 collection_preview: true
 visualization_settings:
   column_settings: null
-metabase_version: vUNKNOWN (57afac7)
+metabase_version: v1.57.1-SNAPSHOT (29c4144)
 parameters: []
 dashboard_id: null
 created_at: '2025-10-27T19:52:29.856585Z'
