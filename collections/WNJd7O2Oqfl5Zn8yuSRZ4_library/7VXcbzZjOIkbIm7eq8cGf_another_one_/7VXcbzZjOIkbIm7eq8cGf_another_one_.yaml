@@ -1,0 +1,19 @@
+authority_level: null
+description: null
+archived: false
+slug: another_one_
+archive_operation_id: null
+name: Another one?
+is_remote_synced: true
+personal_owner_id: null
+type: null
+is_sample: false
+parent_id: WNJd7O2Oqfl5Zn8yuSRZ4
+serdes/meta:
+- model: Collection
+  id: 7VXcbzZjOIkbIm7eq8cGf
+  label: another_one_
+archived_directly: null
+entity_id: 7VXcbzZjOIkbIm7eq8cGf
+namespace: null
+created_at: '2025-11-25T18:35:53.873816Z'
