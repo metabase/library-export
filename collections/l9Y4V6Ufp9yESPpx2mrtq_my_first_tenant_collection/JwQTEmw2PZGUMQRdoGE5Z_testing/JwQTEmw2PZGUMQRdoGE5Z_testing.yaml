@@ -1,0 +1,19 @@
+authority_level: null
+description: null
+archived: false
+slug: testing
+archive_operation_id: null
+name: Testing
+is_remote_synced: true
+personal_owner_id: null
+type: null
+is_sample: false
+parent_id: l9Y4V6Ufp9yESPpx2mrtq
+serdes/meta:
+- model: Collection
+  id: JwQTEmw2PZGUMQRdoGE5Z
+  label: testing
+archived_directly: null
+entity_id: JwQTEmw2PZGUMQRdoGE5Z
+namespace: shared-tenant-collection
+created_at: '2025-11-26T21:01:50.378207Z'

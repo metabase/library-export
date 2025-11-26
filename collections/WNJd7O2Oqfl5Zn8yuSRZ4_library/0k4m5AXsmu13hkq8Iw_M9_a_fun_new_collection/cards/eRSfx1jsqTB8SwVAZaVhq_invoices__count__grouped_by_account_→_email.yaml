@@ -76,12 +76,12 @@ dataset_query:
   database: Sample Database
   type: query
   query:
+    aggregation:
+    - - count
     source-table:
     - Sample Database
     - PUBLIC
     - INVOICES
-    aggregation:
-    - - count
     breakout:
     - - field
       - - Sample Database
