@@ -1,0 +1,249 @@
+description: null
+archived: false
+collection_position: null
+source_card_id: null
+table_id: null
+result_metadata:
+- database_type: BIGINT
+  semantic_type: type/PK
+  lib/deduplicated-name: ID
+  lib/original-name: ID
+  name: ID
+  lib/source: source/native
+  lib/source-column-alias: ID
+  source: native
+  field_ref:
+  - field
+  - ID
+  - base-type: type/BigInteger
+  effective_type: type/BigInteger
+  lib/desired-column-alias: ID
+  display_name: ID
+  base_type: type/BigInteger
+- database_type: CHARACTER VARYING
+  semantic_type: null
+  lib/deduplicated-name: ADDRESS
+  lib/original-name: ADDRESS
+  name: ADDRESS
+  lib/source: source/native
+  lib/source-column-alias: ADDRESS
+  source: native
+  field_ref:
+  - field
+  - ADDRESS
+  - base-type: type/Text
+  effective_type: type/Text
+  lib/desired-column-alias: ADDRESS
+  display_name: ADDRESS
+  base_type: type/Text
+- database_type: CHARACTER VARYING
+  semantic_type: null
+  lib/deduplicated-name: EMAIL
+  lib/original-name: EMAIL
+  name: EMAIL
+  lib/source: source/native
+  lib/source-column-alias: EMAIL
+  source: native
+  field_ref:
+  - field
+  - EMAIL
+  - base-type: type/Text
+  effective_type: type/Text
+  lib/desired-column-alias: EMAIL
+  display_name: EMAIL
+  base_type: type/Text
+- database_type: CHARACTER VARYING
+  semantic_type: null
+  lib/deduplicated-name: PASSWORD
+  lib/original-name: PASSWORD
+  name: PASSWORD
+  lib/source: source/native
+  lib/source-column-alias: PASSWORD
+  source: native
+  field_ref:
+  - field
+  - PASSWORD
+  - base-type: type/Text
+  effective_type: type/Text
+  lib/desired-column-alias: PASSWORD
+  display_name: PASSWORD
+  base_type: type/Text
+- database_type: CHARACTER VARYING
+  semantic_type: type/Name
+  lib/deduplicated-name: NAME
+  lib/original-name: NAME
+  name: NAME
+  lib/source: source/native
+  lib/source-column-alias: NAME
+  source: native
+  field_ref:
+  - field
+  - NAME
+  - base-type: type/Text
+  effective_type: type/Text
+  lib/desired-column-alias: NAME
+  display_name: NAME
+  base_type: type/Text
+- database_type: CHARACTER VARYING
+  semantic_type: type/City
+  lib/deduplicated-name: CITY
+  lib/original-name: CITY
+  name: CITY
+  lib/source: source/native
+  lib/source-column-alias: CITY
+  source: native
+  field_ref:
+  - field
+  - CITY
+  - base-type: type/Text
+  effective_type: type/Text
+  lib/desired-column-alias: CITY
+  display_name: CITY
+  base_type: type/Text
+- database_type: DOUBLE PRECISION
+  semantic_type: type/Longitude
+  lib/deduplicated-name: LONGITUDE
+  lib/original-name: LONGITUDE
+  name: LONGITUDE
+  lib/source: source/native
+  lib/source-column-alias: LONGITUDE
+  source: native
+  field_ref:
+  - field
+  - LONGITUDE
+  - base-type: type/Float
+  effective_type: type/Float
+  lib/desired-column-alias: LONGITUDE
+  display_name: LONGITUDE
+  base_type: type/Float
+- database_type: CHARACTER
+  semantic_type: null
+  lib/deduplicated-name: STATE
+  lib/original-name: STATE
+  name: STATE
+  lib/source: source/native
+  lib/source-column-alias: STATE
+  source: native
+  field_ref:
+  - field
+  - STATE
+  - base-type: type/Text
+  effective_type: type/Text
+  lib/desired-column-alias: STATE
+  display_name: STATE
+  base_type: type/Text
+- database_type: CHARACTER VARYING
+  semantic_type: type/Source
+  lib/deduplicated-name: SOURCE
+  lib/original-name: SOURCE
+  name: SOURCE
+  lib/source: source/native
+  lib/source-column-alias: SOURCE
+  source: native
+  field_ref:
+  - field
+  - SOURCE
+  - base-type: type/Text
+  effective_type: type/Text
+  lib/desired-column-alias: SOURCE
+  display_name: SOURCE
+  base_type: type/Text
+- database_type: DATE
+  semantic_type: null
+  lib/deduplicated-name: BIRTH_DATE
+  lib/original-name: BIRTH_DATE
+  name: BIRTH_DATE
+  lib/source: source/native
+  lib/source-column-alias: BIRTH_DATE
+  source: native
+  field_ref:
+  - field
+  - BIRTH_DATE
+  - base-type: type/Date
+  effective_type: type/Date
+  lib/desired-column-alias: BIRTH_DATE
+  display_name: BIRTH_DATE
+  base_type: type/Date
+- database_type: CHARACTER
+  semantic_type: null
+  lib/deduplicated-name: ZIP
+  lib/original-name: ZIP
+  name: ZIP
+  lib/source: source/native
+  lib/source-column-alias: ZIP
+  source: native
+  field_ref:
+  - field
+  - ZIP
+  - base-type: type/Text
+  effective_type: type/Text
+  lib/desired-column-alias: ZIP
+  display_name: ZIP
+  base_type: type/Text
+- database_type: DOUBLE PRECISION
+  semantic_type: type/Latitude
+  lib/deduplicated-name: LATITUDE
+  lib/original-name: LATITUDE
+  name: LATITUDE
+  lib/source: source/native
+  lib/source-column-alias: LATITUDE
+  source: native
+  field_ref:
+  - field
+  - LATITUDE
+  - base-type: type/Float
+  effective_type: type/Float
+  lib/desired-column-alias: LATITUDE
+  display_name: LATITUDE
+  base_type: type/Float
+- database_type: TIMESTAMP
+  semantic_type: type/CreationTimestamp
+  lib/deduplicated-name: CREATED_AT
+  lib/original-name: CREATED_AT
+  name: CREATED_AT
+  lib/source: source/native
+  lib/source-column-alias: CREATED_AT
+  source: native
+  field_ref:
+  - field
+  - CREATED_AT
+  - base-type: type/DateTime
+  effective_type: type/DateTime
+  lib/desired-column-alias: CREATED_AT
+  display_name: CREATED_AT
+  base_type: type/DateTime
+embedding_type: null
+card_schema: 22
+database_id: Sample Database
+enable_embedding: false
+collection_id: 7VXcbzZjOIkbIm7eq8cGf
+query_type: native
+name: EZ
+document_id: null
+type: question
+creator_id: crowberto@metabase.com
+made_public_by_id: null
+embedding_params: null
+dataset_query:
+  database: Sample Database
+  type: native
+  native:
+    query: SELECT * from PEOPLE WHERE name like 'E%'
+parameter_mappings: []
+serdes/meta:
+- model: Card
+  id: MhNK-_Tc8s9fHyzyjU6L_
+  label: ez
+display: table
+archived_directly: false
+entity_id: MhNK-_Tc8s9fHyzyjU6L_
+collection_preview: true
+visualization_settings:
+  table.pivot_column: SOURCE
+  table.cell_column: LONGITUDE
+  column_settings: null
+metabase_version: vUNKNOWN (0c6a1f9)
+parameters: []
+dashboard_id: null
+created_at: '2025-11-25T18:36:36.582273Z'
+public_uuid: null

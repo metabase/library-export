@@ -1,0 +1,19 @@
+authority_level: null
+description: null
+archived: false
+slug: does_this_do_it__
+archive_operation_id: null
+name: 'Does this do it? '
+is_remote_synced: true
+personal_owner_id: null
+type: null
+is_sample: false
+parent_id: 0k4m5AXsmu13hkq8Iw_M9
+serdes/meta:
+- model: Collection
+  id: RWy_f_brsF63eou_kBV-q
+  label: does_this_do_it__
+archived_directly: null
+entity_id: RWy_f_brsF63eou_kBV-q
+namespace: null
+created_at: '2025-11-25T18:37:24.840144Z'
