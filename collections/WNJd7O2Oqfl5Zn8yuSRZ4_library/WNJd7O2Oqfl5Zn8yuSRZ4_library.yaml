@@ -4,8 +4,9 @@ archived: false
 slug: library
 archive_operation_id: null
 name: Library
+is_remote_synced: true
 personal_owner_id: null
-type: remote-synced
+type: null
 is_sample: false
 parent_id: null
 serdes/meta:
