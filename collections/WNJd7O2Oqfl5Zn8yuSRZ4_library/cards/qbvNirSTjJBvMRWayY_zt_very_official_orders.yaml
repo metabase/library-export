@@ -2,6 +2,7 @@ description: null
 archived: false
 collection_position: 1
 source_card_id: null
+published_table_id: null
 table_id:
 - Sample Database
 - PUBLIC

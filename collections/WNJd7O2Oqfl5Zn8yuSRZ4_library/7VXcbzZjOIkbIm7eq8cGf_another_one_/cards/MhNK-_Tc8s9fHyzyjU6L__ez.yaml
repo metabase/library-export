@@ -2,6 +2,7 @@ description: null
 archived: false
 collection_position: null
 source_card_id: null
+published_table_id: null
 table_id: null
 result_metadata:
 - database_type: BIGINT
