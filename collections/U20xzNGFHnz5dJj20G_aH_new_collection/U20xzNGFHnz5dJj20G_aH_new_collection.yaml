@@ -1,0 +1,19 @@
+authority_level: null
+description: null
+archived: false
+slug: new_collection
+archive_operation_id: null
+name: New Collection
+is_remote_synced: true
+personal_owner_id: null
+type: null
+is_sample: false
+parent_id: null
+serdes/meta:
+- model: Collection
+  id: U20xzNGFHnz5dJj20G_aH
+  label: new_collection
+archived_directly: null
+entity_id: U20xzNGFHnz5dJj20G_aH
+namespace: shared-tenant-collection
+created_at: '2025-12-01T17:11:58.848444Z'
