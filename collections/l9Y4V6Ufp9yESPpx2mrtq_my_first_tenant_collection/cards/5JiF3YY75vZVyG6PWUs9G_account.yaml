@@ -1,0 +1,2436 @@
+description: null
+archived: false
+collection_position: null
+source_card_id: null
+published_table_id: null
+table_id:
+- Analytics Data Warehouse
+- dbt_models
+- account
+result_metadata:
+- description: Primary keys
+  database_type: text
+  semantic_type: type/PK
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: id
+  lib/original-name: id
+  name: id
+  lib/source: source/table-defaults
+  lib/source-column-alias: id
+  lib/original-display-name: ID
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - id
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - id
+  lib/desired-column-alias: id
+  position: 0
+  visibility_type: normal
+  display_name: ID
+  base_type: type/Text
+- description: Name of the customer
+  database_type: varchar
+  semantic_type: type/Name
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: customer_name
+  lib/original-name: customer_name
+  name: customer_name
+  lib/source: source/table-defaults
+  lib/source-column-alias: customer_name
+  lib/original-display-name: Customer Name
+  settings:
+    view_as: link
+    link_url: https://stats.metabase.com/dashboard/1880-customer-360?tab=347-overview&account_id={{id}}&customer_id={{customer_id}}&customer_name=&domain_name=
+    link_text: ''
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - customer_name
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - customer_name
+  lib/desired-column-alias: customer_name
+  position: 1
+  visibility_type: normal
+  display_name: Customer Name
+  base_type: type/Text
+- description: Date when the account was created
+  database_type: timestamptz
+  semantic_type: type/CreationTimestamp
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: created_at
+  lib/original-name: created_at
+  name: created_at
+  lib/source: source/table-defaults
+  lib/source-column-alias: created_at
+  lib/original-display-name: Created At
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - created_at
+  - null
+  effective_type: type/DateTimeWithLocalTZ
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - created_at
+  lib/desired-column-alias: created_at
+  position: 2
+  visibility_type: normal
+  display_name: Created At
+  base_type: type/DateTimeWithLocalTZ
+- description: Date when the account ended its trial
+  database_type: timestamptz
+  semantic_type: null
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: trial_ended_at
+  lib/original-name: trial_ended_at
+  name: trial_ended_at
+  lib/source: source/table-defaults
+  lib/source-column-alias: trial_ended_at
+  lib/original-display-name: Trial End At
+  settings:
+    time_enabled: minutes
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - trial_ended_at
+  - null
+  effective_type: type/DateTimeWithLocalTZ
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - trial_ended_at
+  lib/desired-column-alias: trial_ended_at
+  position: 3
+  visibility_type: normal
+  display_name: Trial End At
+  base_type: type/DateTimeWithLocalTZ
+- description: Date when the account's subscription ended
+  database_type: timestamptz
+  semantic_type: type/CancelationTimestamp
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: canceled_at
+  lib/original-name: canceled_at
+  name: canceled_at
+  lib/source: source/table-defaults
+  lib/source-column-alias: canceled_at
+  lib/original-display-name: Cancel At
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - canceled_at
+  - null
+  effective_type: type/DateTimeWithLocalTZ
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - canceled_at
+  lib/desired-column-alias: canceled_at
+  position: 4
+  visibility_type: normal
+  display_name: Cancel At
+  base_type: type/DateTimeWithLocalTZ
+- description: Date when the user initiated the subscription cancellation
+  database_type: timestamptz
+  semantic_type: type/CancelationTimestamp
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: cancel_initiated_at
+  lib/original-name: cancel_initiated_at
+  name: cancel_initiated_at
+  lib/source: source/table-defaults
+  lib/source-column-alias: cancel_initiated_at
+  lib/original-display-name: Cancel Initiated At
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - cancel_initiated_at
+  - null
+  effective_type: type/DateTimeWithLocalTZ
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - cancel_initiated_at
+  lib/desired-column-alias: cancel_initiated_at
+  position: 5
+  visibility_type: normal
+  display_name: Cancel Initiated At
+  base_type: type/DateTimeWithLocalTZ
+- description: Date when the subscription will be suspended
+  database_type: timestamptz
+  semantic_type: null
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: suspend_at
+  lib/original-name: suspend_at
+  name: suspend_at
+  lib/source: source/table-defaults
+  lib/source-column-alias: suspend_at
+  lib/original-display-name: Suspend At
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - suspend_at
+  - null
+  effective_type: type/DateTimeWithLocalTZ
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - suspend_at
+  lib/desired-column-alias: suspend_at
+  position: 6
+  visibility_type: normal
+  display_name: Suspend At
+  base_type: type/DateTimeWithLocalTZ
+- description: Date when the account was last changed
+  database_type: timestamptz
+  semantic_type: type/UpdatedTimestamp
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: plan_updated_at
+  lib/original-name: plan_updated_at
+  name: plan_updated_at
+  lib/source: source/table-defaults
+  lib/source-column-alias: plan_updated_at
+  lib/original-display-name: Plan Updated At
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - plan_updated_at
+  - null
+  effective_type: type/DateTimeWithLocalTZ
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - plan_updated_at
+  lib/desired-column-alias: plan_updated_at
+  position: 7
+  visibility_type: normal
+  display_name: Plan Updated At
+  base_type: type/DateTimeWithLocalTZ
+- description: Indicates if the account is active
+  database_type: bool
+  semantic_type: null
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: is_active
+  lib/original-name: is_active
+  name: is_active
+  lib/source: source/table-defaults
+  lib/source-column-alias: is_active
+  lib/original-display-name: Is Active
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - is_active
+  - null
+  effective_type: type/Boolean
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - is_active
+  lib/desired-column-alias: is_active
+  position: 8
+  visibility_type: normal
+  display_name: Is Active
+  base_type: type/Boolean
+- description: 'Indicates if the account has completed all activation signals during the first 3 days of the trial. The current signals are: - Pro: >3 users in the first 3 days OR >200 queries (without sample db) in the first 3 days - Starter: >1 user in the first 3 days OR >100 queries (without sample db) in the first 3 daysCaveats: - Right now this is only applicable for pro and starter CLOUD instances for others the value will be null. - Based on the current signals, it needs at least 3 days after account creation to calculate this value.'
+  database_type: bool
+  semantic_type: null
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: is_trial_activation_signals_complete
+  lib/original-name: is_trial_activation_signals_complete
+  name: is_trial_activation_signals_complete
+  lib/source: source/table-defaults
+  lib/source-column-alias: is_trial_activation_signals_complete
+  lib/original-display-name: Is Trial Activation Signals Complete
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - is_trial_activation_signals_complete
+  - null
+  effective_type: type/Boolean
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - is_trial_activation_signals_complete
+  lib/desired-column-alias: is_trial_activation_signals_complete
+  position: 9
+  visibility_type: normal
+  display_name: Is Trial Activation Signals Complete
+  base_type: type/Boolean
+- description: Indicates if the customer is retained for at least 48 days.
+  database_type: bool
+  semantic_type: null
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: is_activated
+  lib/original-name: is_activated
+  name: is_activated
+  lib/source: source/table-defaults
+  lib/source-column-alias: is_activated
+  lib/original-display-name: Is Activated
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - is_activated
+  - null
+  effective_type: type/Boolean
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - is_activated
+  lib/desired-column-alias: is_activated
+  position: 10
+  visibility_type: normal
+  display_name: Is Activated
+  base_type: type/Boolean
+- description: Indicates if the customer converted from a trial and successfully paid.
+  database_type: bool
+  semantic_type: null
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: is_converted
+  lib/original-name: is_converted
+  name: is_converted
+  lib/source: source/table-defaults
+  lib/source-column-alias: is_converted
+  lib/original-display-name: Is Converted
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - is_converted
+  - null
+  effective_type: type/Boolean
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - is_converted
+  lib/desired-column-alias: is_converted
+  position: 11
+  visibility_type: normal
+  display_name: Is Converted
+  base_type: type/Boolean
+- description: Indicates if the subscription will auto-renew
+  database_type: bool
+  semantic_type: null
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: is_auto_renewal
+  lib/original-name: is_auto_renewal
+  name: is_auto_renewal
+  lib/source: source/table-defaults
+  lib/source-column-alias: is_auto_renewal
+  lib/original-display-name: Is Auto Renewal
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - is_auto_renewal
+  - null
+  effective_type: type/Boolean
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - is_auto_renewal
+  lib/desired-column-alias: is_auto_renewal
+  position: 12
+  visibility_type: normal
+  display_name: Is Auto Renewal
+  base_type: type/Boolean
+- description: Indicates if the account is trying an upgraded plan, such as Pro. To see details, join to Trial Up model in Metabase Store collection.
+  database_type: bool
+  semantic_type: null
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: is_trialing_up
+  lib/original-name: is_trialing_up
+  name: is_trialing_up
+  lib/source: source/table-defaults
+  lib/source-column-alias: is_trialing_up
+  lib/original-display-name: Is Trialing Up
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - is_trialing_up
+  - null
+  effective_type: type/Boolean
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - is_trialing_up
+  lib/desired-column-alias: is_trialing_up
+  position: 13
+  visibility_type: normal
+  display_name: Is Trialing Up
+  base_type: type/Boolean
+- description: Indicates if the account is air-gapped and not connected to the internet, which means they are using a special air-gapped token that includes expiration, usage limits, and feature flags.
+  database_type: bool
+  semantic_type: null
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: is_air_gapped
+  lib/original-name: is_air_gapped
+  name: is_air_gapped
+  lib/source: source/table-defaults
+  lib/source-column-alias: is_air_gapped
+  lib/original-display-name: Is Air Gapped
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - is_air_gapped
+  - null
+  effective_type: type/Boolean
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - is_air_gapped
+  lib/desired-column-alias: is_air_gapped
+  position: 14
+  visibility_type: normal
+  display_name: Is Air Gapped
+  base_type: type/Boolean
+- description: Status of the Metabase subscription
+  database_type: varchar
+  semantic_type: type/Category
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: subscription_status
+  lib/original-name: subscription_status
+  name: subscription_status
+  lib/source: source/table-defaults
+  lib/source-column-alias: subscription_status
+  lib/original-display-name: Subscription Status
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - subscription_status
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - subscription_status
+  lib/desired-column-alias: subscription_status
+  position: 15
+  visibility_type: normal
+  display_name: Subscription Status
+  base_type: type/Text
+- description: Alias for Metabase subscription plan
+  database_type: varchar
+  semantic_type: type/Category
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: plan_alias
+  lib/original-name: plan_alias
+  name: plan_alias
+  lib/source: source/table-defaults
+  lib/source-column-alias: plan_alias
+  lib/original-display-name: Plan Alias
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - plan_alias
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - plan_alias
+  lib/desired-column-alias: plan_alias
+  position: 16
+  visibility_type: normal
+  display_name: Plan Alias
+  base_type: type/Text
+- description: Name for Metabase subscription plan
+  database_type: varchar
+  semantic_type: type/Category
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: plan_name
+  lib/original-name: plan_name
+  name: plan_name
+  lib/source: source/table-defaults
+  lib/source-column-alias: plan_name
+  lib/original-display-name: Plan Name
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - plan_name
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - plan_name
+  lib/desired-column-alias: plan_name
+  position: 17
+  visibility_type: normal
+  display_name: Plan Name
+  base_type: type/Text
+- description: Name for the last Metabase plan it was updated from
+  database_type: varchar
+  semantic_type: type/Category
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: plan_updated_from
+  lib/original-name: plan_updated_from
+  name: plan_updated_from
+  lib/source: source/table-defaults
+  lib/source-column-alias: plan_updated_from
+  lib/original-display-name: Plan Updated From
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - plan_updated_from
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - plan_updated_from
+  lib/desired-column-alias: plan_updated_from
+  position: 18
+  visibility_type: normal
+  display_name: Plan Updated From
+  base_type: type/Text
+- description: Indicates if the change was an upgrade or a downgrade
+  database_type: varchar
+  semantic_type: type/Category
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: plan_updated_type
+  lib/original-name: plan_updated_type
+  name: plan_updated_type
+  lib/source: source/table-defaults
+  lib/source-column-alias: plan_updated_type
+  lib/original-display-name: Plan Updated Type
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - plan_updated_type
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - plan_updated_type
+  lib/desired-column-alias: plan_updated_type
+  position: 19
+  visibility_type: normal
+  display_name: Plan Updated Type
+  base_type: type/Text
+- description: Indicates how the subscription was purchased. Either sold or self-service.
+  database_type: varchar
+  semantic_type: type/Category
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: purchase_type
+  lib/original-name: purchase_type
+  name: purchase_type
+  lib/source: source/table-defaults
+  lib/source-column-alias: purchase_type
+  lib/original-display-name: Purchase Type
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - purchase_type
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - purchase_type
+  lib/desired-column-alias: purchase_type
+  position: 20
+  visibility_type: normal
+  display_name: Purchase Type
+  base_type: type/Text
+- description: Indicates how the Metabase instance is run. Either on Cloud or self-hosted.
+  database_type: varchar
+  semantic_type: type/Category
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: deployment
+  lib/original-name: deployment
+  name: deployment
+  lib/source: source/table-defaults
+  lib/source-column-alias: deployment
+  lib/original-display-name: Deployment
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - deployment
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - deployment
+  lib/desired-column-alias: deployment
+  position: 21
+  visibility_type: normal
+  display_name: Deployment
+  base_type: type/Text
+- description: Metabase features purchased on the subscription
+  database_type: varchar
+  semantic_type: type/Category
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: feature_set
+  lib/original-name: feature_set
+  name: feature_set
+  lib/source: source/table-defaults
+  lib/source-column-alias: feature_set
+  lib/original-display-name: Feature Set
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - feature_set
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - feature_set
+  lib/desired-column-alias: feature_set
+  position: 22
+  visibility_type: normal
+  display_name: Feature Set
+  base_type: type/Text
+- description: Either internal, external, or both. Internal means Metabase is used internally for analytics. External means Metabase is used for embedding in other apps or websites -- external analytics.
+  database_type: varchar
+  semantic_type: type/Category
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: use_case
+  lib/original-name: use_case
+  name: use_case
+  lib/source: source/table-defaults
+  lib/source-column-alias: use_case
+  lib/original-display-name: Use Case
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - use_case
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - use_case
+  lib/desired-column-alias: use_case
+  position: 23
+  visibility_type: normal
+  display_name: Use Case
+  base_type: type/Text
+- description: Support tier purchased for support from Success Engineering
+  database_type: varchar
+  semantic_type: type/Category
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: support_tier
+  lib/original-name: support_tier
+  name: support_tier
+  lib/source: source/table-defaults
+  lib/source-column-alias: support_tier
+  lib/original-display-name: Support Tier
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - support_tier
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - support_tier
+  lib/desired-column-alias: support_tier
+  position: 24
+  visibility_type: normal
+  display_name: Support Tier
+  base_type: type/Text
+- description: The database engine with the most questions created in the customer's Metabase instance.
+  database_type: varchar
+  semantic_type: type/Category
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: primary_database
+  lib/original-name: primary_database
+  name: primary_database
+  lib/source: source/table-defaults
+  lib/source-column-alias: primary_database
+  lib/original-display-name: Primary Database
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - primary_database
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - primary_database
+  lib/desired-column-alias: primary_database
+  position: 25
+  visibility_type: normal
+  display_name: Primary Database
+  base_type: type/Text
+- description: Indicates how often to bill the customer.
+  database_type: varchar
+  semantic_type: type/Category
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: billing_cycle
+  lib/original-name: billing_cycle
+  name: billing_cycle
+  lib/source: source/table-defaults
+  lib/source-column-alias: billing_cycle
+  lib/original-display-name: Billing Cycle
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - billing_cycle
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - billing_cycle
+  lib/desired-column-alias: billing_cycle
+  position: 26
+  visibility_type: normal
+  display_name: Billing Cycle
+  base_type: type/Text
+- description: The country where the customer is located
+  database_type: varchar
+  semantic_type: type/Country
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: country
+  lib/original-name: country
+  name: country
+  lib/source: source/table-defaults
+  lib/source-column-alias: country
+  lib/original-display-name: Country
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - country
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - country
+  lib/desired-column-alias: country
+  position: 27
+  visibility_type: normal
+  display_name: Country
+  base_type: type/Text
+- description: Alias to customer's instance DNS
+  database_type: varchar
+  semantic_type: null
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: dns_alias
+  lib/original-name: dns_alias
+  name: dns_alias
+  lib/source: source/table-defaults
+  lib/source-column-alias: dns_alias
+  lib/original-display-name: DNS Alias
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - dns_alias
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - dns_alias
+  lib/desired-column-alias: dns_alias
+  position: 28
+  visibility_type: normal
+  display_name: DNS Alias
+  base_type: type/Text
+- description: Region of customer's instance
+  database_type: varchar
+  semantic_type: type/Category
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: instance_region
+  lib/original-name: instance_region
+  name: instance_region
+  lib/source: source/table-defaults
+  lib/source-column-alias: instance_region
+  lib/original-display-name: Instance Region
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - instance_region
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - instance_region
+  lib/desired-column-alias: instance_region
+  position: 29
+  visibility_type: normal
+  display_name: Instance Region
+  base_type: type/Text
+- description: Cloud provider where the instance is hosted (inferrred from the IP address). We currently extract the cloud providers using the data from this repo https://github.com/tobilg/public-cloud-provider-ip-ranges. Note that this is not reliable for inactive instances since the IP address might have switched to a different cloud provider in the meanwhile.
+  database_type: varchar
+  semantic_type: type/Category
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: cloud_provider
+  lib/original-name: cloud_provider
+  name: cloud_provider
+  lib/source: source/table-defaults
+  lib/source-column-alias: cloud_provider
+  lib/original-display-name: Cloud Provider
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - cloud_provider
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - cloud_provider
+  lib/desired-column-alias: cloud_provider
+  position: 30
+  visibility_type: normal
+  display_name: Cloud Provider
+  base_type: type/Text
+- description: Country where the instance is hosted (inferred from the IP address). Note that this is not reliable for inactive instances since the IP address might have switched to a different cloud provider in the meanwhile.
+  database_type: varchar
+  semantic_type: type/Country
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: hosted_country
+  lib/original-name: hosted_country
+  name: hosted_country
+  lib/source: source/table-defaults
+  lib/source-column-alias: hosted_country
+  lib/original-display-name: Hosted Country
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - hosted_country
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - hosted_country
+  lib/desired-column-alias: hosted_country
+  position: 31
+  visibility_type: normal
+  display_name: Hosted Country
+  base_type: type/Text
+- description: Continent where the instance is hosted (inferred from the IP address). Note that this is not reliable for inactive instances since the IP address might have switched to a different cloud provider in the meanwhile.
+  database_type: varchar
+  semantic_type: type/Category
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: hosted_continent
+  lib/original-name: hosted_continent
+  name: hosted_continent
+  lib/source: source/table-defaults
+  lib/source-column-alias: hosted_continent
+  lib/original-display-name: Hosted Continent
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - hosted_continent
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - hosted_continent
+  lib/desired-column-alias: hosted_continent
+  position: 32
+  visibility_type: normal
+  display_name: Hosted Continent
+  base_type: type/Text
+- description: City where the instance is hosted (inferred from the IP address). Note that this is not reliable for inactive instances since the IP address might have switched to a different cloud provider in the meanwhile.
+  database_type: varchar
+  semantic_type: type/City
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: hosted_city
+  lib/original-name: hosted_city
+  name: hosted_city
+  lib/source: source/table-defaults
+  lib/source-column-alias: hosted_city
+  lib/original-display-name: Hosted City
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - hosted_city
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - hosted_city
+  lib/desired-column-alias: hosted_city
+  position: 33
+  visibility_type: normal
+  display_name: Hosted City
+  base_type: type/Text
+- description: Domain of customer's email
+  database_type: varchar
+  semantic_type: null
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: email_domain
+  lib/original-name: email_domain
+  name: email_domain
+  lib/source: source/table-defaults
+  lib/source-column-alias: email_domain
+  lib/original-display-name: Email Domain
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - email_domain
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - email_domain
+  lib/desired-column-alias: email_domain
+  position: 34
+  visibility_type: normal
+  display_name: Email Domain
+  base_type: type/Text
+- description: Email of the primary contact for the account
+  database_type: varchar
+  semantic_type: type/Email
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: contact_email
+  lib/original-name: contact_email
+  name: contact_email
+  lib/source: source/table-defaults
+  lib/source-column-alias: contact_email
+  lib/original-display-name: Contact Email
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - contact_email
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - contact_email
+  lib/desired-column-alias: contact_email
+  position: 35
+  visibility_type: normal
+  display_name: Contact Email
+  base_type: type/Text
+- description: Name of the primary contact for the account
+  database_type: varchar
+  semantic_type: null
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: contact_name
+  lib/original-name: contact_name
+  name: contact_name
+  lib/source: source/table-defaults
+  lib/source-column-alias: contact_name
+  lib/original-display-name: Contact Name
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - contact_name
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - contact_name
+  lib/desired-column-alias: contact_name
+  position: 36
+  visibility_type: normal
+  display_name: Contact Name
+  base_type: type/Text
+- description: Success Engineer that is designated to support the customer
+  database_type: varchar
+  semantic_type: type/Category
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: named_success_engineer
+  lib/original-name: named_success_engineer
+  name: named_success_engineer
+  lib/source: source/table-defaults
+  lib/source-column-alias: named_success_engineer
+  lib/original-display-name: Named Success Engineer
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - named_success_engineer
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - named_success_engineer
+  lib/desired-column-alias: named_success_engineer
+  position: 37
+  visibility_type: normal
+  display_name: Named Success Engineer
+  base_type: type/Text
+- description: Health state categorization (Green, Yellow, Red)
+  database_type: varchar
+  semantic_type: type/Category
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: customer_health_state
+  lib/original-name: customer_health_state
+  name: customer_health_state
+  lib/source: source/table-defaults
+  lib/source-column-alias: customer_health_state
+  lib/original-display-name: Customer Health State
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - customer_health_state
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - customer_health_state
+  lib/desired-column-alias: customer_health_state
+  position: 38
+  visibility_type: normal
+  display_name: Customer Health State
+  base_type: type/Text
+- description: Link to customer activity
+  database_type: text
+  semantic_type: null
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: customer_activity_link
+  lib/original-name: customer_activity_link
+  name: customer_activity_link
+  lib/source: source/table-defaults
+  lib/source-column-alias: customer_activity_link
+  lib/original-display-name: Customer Activity Link
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - customer_activity_link
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - customer_activity_link
+  lib/desired-column-alias: customer_activity_link
+  position: 39
+  visibility_type: normal
+  display_name: Customer Activity Link
+  base_type: type/Text
+- description: Base fee for the subscription. Charged per billing cycle.
+  database_type: float8
+  semantic_type: type/Currency
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: base_fee
+  lib/original-name: base_fee
+  name: base_fee
+  lib/source: source/table-defaults
+  lib/source-column-alias: base_fee
+  lib/original-display-name: Base Fee
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - base_fee
+  - null
+  effective_type: type/Float
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - base_fee
+  lib/desired-column-alias: base_fee
+  position: 40
+  visibility_type: normal
+  display_name: Base Fee
+  base_type: type/Float
+- description: Computed annual value based on various fees indicated on contract
+  database_type: float8
+  semantic_type: type/Currency
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: annual_value
+  lib/original-name: annual_value
+  name: annual_value
+  lib/source: source/table-defaults
+  lib/source-column-alias: annual_value
+  lib/original-display-name: Annual Value
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - annual_value
+  - null
+  effective_type: type/Float
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - annual_value
+  lib/desired-column-alias: annual_value
+  position: 41
+  visibility_type: normal
+  display_name: Annual Value
+  base_type: type/Float
+- description: Numerical score (1-10) indicating customer health based on their activity
+  database_type: int4
+  semantic_type: type/Score
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: customer_health_score
+  lib/original-name: customer_health_score
+  name: customer_health_score
+  lib/source: source/table-defaults
+  lib/source-column-alias: customer_health_score
+  lib/original-display-name: Customer Health Score
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - customer_health_score
+  - null
+  effective_type: type/Integer
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - customer_health_score
+  lib/desired-column-alias: customer_health_score
+  position: 42
+  visibility_type: normal
+  display_name: Customer Health Score
+  base_type: type/Integer
+- description: Computed lifetime value based on all paid invoices
+  database_type: numeric
+  semantic_type: type/Currency
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: lifetime_value
+  lib/original-name: lifetime_value
+  name: lifetime_value
+  lib/source: source/table-defaults
+  lib/source-column-alias: lifetime_value
+  lib/original-display-name: Lifetime Value
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - lifetime_value
+  - null
+  effective_type: type/Decimal
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - lifetime_value
+  lib/desired-column-alias: lifetime_value
+  position: 43
+  visibility_type: normal
+  display_name: Lifetime Value
+  base_type: type/Decimal
+- description: Amount on the last invoice
+  database_type: float8
+  semantic_type: type/Currency
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: last_month_invoice
+  lib/original-name: last_month_invoice
+  name: last_month_invoice
+  lib/source: source/table-defaults
+  lib/source-column-alias: last_month_invoice
+  lib/original-display-name: Last Month Invoice
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - last_month_invoice
+  - null
+  effective_type: type/Float
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - last_month_invoice
+  lib/desired-column-alias: last_month_invoice
+  position: 44
+  visibility_type: normal
+  display_name: Last Month Invoice
+  base_type: type/Float
+- description: Number of days since the account opened
+  database_type: int4
+  semantic_type: type/Quantity
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: account_age
+  lib/original-name: account_age
+  name: account_age
+  lib/source: source/table-defaults
+  lib/source-column-alias: account_age
+  lib/original-display-name: Account Age
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - account_age
+  - null
+  effective_type: type/Integer
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - account_age
+  lib/desired-column-alias: account_age
+  position: 45
+  visibility_type: normal
+  display_name: Account Age
+  base_type: type/Integer
+- description: Version of Metabase the customer is running -- coalesce of version from Metabase Store Hosted Instance (Cloud only), Metabase Store Token (highest user count since past day or latest token check), and Zendesk Organization (manual entry).For air-gapped customers, this is the version from Pylon Organization.
+  database_type: text
+  semantic_type: type/Category
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: metabase_version
+  lib/original-name: metabase_version
+  name: metabase_version
+  lib/source: source/table-defaults
+  lib/source-column-alias: metabase_version
+  lib/original-display-name: Metabase Version
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - metabase_version
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - metabase_version
+  lib/desired-column-alias: metabase_version
+  position: 46
+  visibility_type: normal
+  display_name: Metabase Version
+  base_type: type/Text
+- description: Last user count
+  database_type: int8
+  semantic_type: type/Quantity
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: users
+  lib/original-name: users
+  name: users
+  lib/source: source/table-defaults
+  lib/source-column-alias: users
+  lib/original-display-name: Users
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - users
+  - null
+  effective_type: type/BigInteger
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - users
+  lib/desired-column-alias: users
+  position: 47
+  visibility_type: normal
+  display_name: Users
+  base_type: type/BigInteger
+- description: Number of questions in the customer's Metabase instance
+  database_type: int8
+  semantic_type: type/Quantity
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: questions
+  lib/original-name: questions
+  name: questions
+  lib/source: source/table-defaults
+  lib/source-column-alias: questions
+  lib/original-display-name: Questions
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - questions
+  - null
+  effective_type: type/BigInteger
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - questions
+  lib/desired-column-alias: questions
+  position: 48
+  visibility_type: normal
+  display_name: Questions
+  base_type: type/BigInteger
+- description: Number of dashboards in the customer's Metabase instance
+  database_type: int8
+  semantic_type: type/Quantity
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: dashboards
+  lib/original-name: dashboards
+  name: dashboards
+  lib/source: source/table-defaults
+  lib/source-column-alias: dashboards
+  lib/original-display-name: Dashboards
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - dashboards
+  - null
+  effective_type: type/BigInteger
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - dashboards
+  lib/desired-column-alias: dashboards
+  position: 49
+  visibility_type: normal
+  display_name: Dashboards
+  base_type: type/BigInteger
+- description: Number of databases in the customer's Metabase instance
+  database_type: int8
+  semantic_type: type/Quantity
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: databases
+  lib/original-name: databases
+  name: databases
+  lib/source: source/table-defaults
+  lib/source-column-alias: databases
+  lib/original-display-name: Databases
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - databases
+  - null
+  effective_type: type/BigInteger
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - databases
+  lib/desired-column-alias: databases
+  position: 50
+  visibility_type: normal
+  display_name: Databases
+  base_type: type/BigInteger
+- description: Lifetime count of Pylon tickets opened
+  database_type: int8
+  semantic_type: type/Quantity
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: pylon_tickets
+  lib/original-name: pylon_tickets
+  name: pylon_tickets
+  lib/source: source/table-defaults
+  lib/source-column-alias: pylon_tickets
+  lib/original-display-name: Pylon Tickets
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - pylon_tickets
+  - null
+  effective_type: type/BigInteger
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - pylon_tickets
+  lib/desired-column-alias: pylon_tickets
+  position: 51
+  visibility_type: normal
+  display_name: Pylon Tickets
+  base_type: type/BigInteger
+- description: Foreign key to Metabase Store Token.
+  database_type: varchar
+  semantic_type: type/FK
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: token
+  lib/original-name: token
+  name: token
+  lib/source: source/table-defaults
+  lib/source-column-alias: token
+  lib/original-display-name: Token
+  source: fields
+  fk_target_field_id:
+  - Analytics Data Warehouse
+  - dbt_models_metabase_store
+  - ms_token
+  - token
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - token
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - token
+  lib/desired-column-alias: token
+  position: 52
+  visibility_type: normal
+  display_name: Token
+  base_type: type/Text
+- description: Link to the instance in harbormaster
+  database_type: varchar
+  semantic_type: type/URL
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: harbormaster_link
+  lib/original-name: harbormaster_link
+  name: harbormaster_link
+  lib/source: source/table-defaults
+  lib/source-column-alias: harbormaster_link
+  lib/original-display-name: Harbormaster Link
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - harbormaster_link
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - harbormaster_link
+  lib/desired-column-alias: harbormaster_link
+  position: 53
+  visibility_type: normal
+  display_name: Harbormaster Link
+  base_type: type/Text
+- description: Link to the instance logs in Grafana
+  database_type: varchar
+  semantic_type: type/URL
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: instance_log_link
+  lib/original-name: instance_log_link
+  name: instance_log_link
+  lib/source: source/table-defaults
+  lib/source-column-alias: instance_log_link
+  lib/original-display-name: Instance Log Link
+  source: fields
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - instance_log_link
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - instance_log_link
+  lib/desired-column-alias: instance_log_link
+  position: 54
+  visibility_type: normal
+  display_name: Instance Log Link
+  base_type: type/Text
+- description: Foreign key to Metabase Store Organization with additional fabricated IDs for Enterpise accounts (IDs with value greater than 900k)
+  database_type: int4
+  semantic_type: type/FK
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: organization_id
+  lib/original-name: organization_id
+  name: organization_id
+  lib/source: source/table-defaults
+  lib/source-column-alias: organization_id
+  lib/original-display-name: Organization ID
+  source: fields
+  fk_target_field_id:
+  - Analytics Data Warehouse
+  - dbt_models_metabase_store
+  - ms_organization
+  - id
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - organization_id
+  - null
+  effective_type: type/Integer
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - organization_id
+  lib/desired-column-alias: organization_id
+  position: 55
+  visibility_type: normal
+  display_name: Organization ID
+  base_type: type/Integer
+- description: Foreign key to Stripe Customer model
+  database_type: varchar
+  semantic_type: type/FK
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: stripe_customer_id
+  lib/original-name: stripe_customer_id
+  name: stripe_customer_id
+  lib/source: source/table-defaults
+  lib/source-column-alias: stripe_customer_id
+  lib/original-display-name: Stripe Customer ID
+  source: fields
+  fk_target_field_id:
+  - Analytics Data Warehouse
+  - dbt_models_stripe
+  - stripe_customer
+  - id
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - stripe_customer_id
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - stripe_customer_id
+  lib/desired-column-alias: stripe_customer_id
+  position: 56
+  visibility_type: normal
+  display_name: Stripe Customer ID
+  base_type: type/Text
+- description: Foreign key to Stripe Subscription model
+  database_type: varchar
+  semantic_type: type/FK
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: stripe_subscription_id
+  lib/original-name: stripe_subscription_id
+  name: stripe_subscription_id
+  lib/source: source/table-defaults
+  lib/source-column-alias: stripe_subscription_id
+  lib/original-display-name: Stripe Subscription ID
+  source: fields
+  fk_target_field_id:
+  - Analytics Data Warehouse
+  - dbt_models_stripe
+  - stripe_subscription
+  - id
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - stripe_subscription_id
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - stripe_subscription_id
+  lib/desired-column-alias: stripe_subscription_id
+  position: 57
+  visibility_type: normal
+  display_name: Stripe Subscription ID
+  base_type: type/Text
+- description: Foreign key to Metabase Store Subscription model
+  database_type: int4
+  semantic_type: type/FK
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: store_subscription_id
+  lib/original-name: store_subscription_id
+  name: store_subscription_id
+  lib/source: source/table-defaults
+  lib/source-column-alias: store_subscription_id
+  lib/original-display-name: Store Subscription ID
+  source: fields
+  fk_target_field_id:
+  - Analytics Data Warehouse
+  - dbt_models_metabase_store
+  - ms_subscription
+  - id
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - store_subscription_id
+  - null
+  effective_type: type/Integer
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - store_subscription_id
+  lib/desired-column-alias: store_subscription_id
+  position: 58
+  visibility_type: normal
+  display_name: Store Subscription ID
+  base_type: type/Integer
+- description: Foreign key to Pylon Organization model
+  database_type: text
+  semantic_type: type/FK
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: pylon_organization_id
+  lib/original-name: pylon_organization_id
+  name: pylon_organization_id
+  lib/source: source/table-defaults
+  lib/source-column-alias: pylon_organization_id
+  lib/original-display-name: Pylon Organization ID
+  source: fields
+  fk_target_field_id:
+  - Analytics Data Warehouse
+  - dbt_models_pylon
+  - pylon_organization
+  - id
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - pylon_organization_id
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - pylon_organization_id
+  lib/desired-column-alias: pylon_organization_id
+  position: 59
+  visibility_type: normal
+  display_name: Pylon Organization ID
+  base_type: type/Text
+- description: Foreign key to Pipedrive Organization model
+  database_type: int8
+  semantic_type: type/FK
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: pipedrive_organization_id
+  lib/original-name: pipedrive_organization_id
+  name: pipedrive_organization_id
+  lib/source: source/table-defaults
+  lib/source-column-alias: pipedrive_organization_id
+  lib/original-display-name: Pipedrive Organization ID
+  source: fields
+  fk_target_field_id:
+  - Analytics Data Warehouse
+  - dbt_models_pipedrive
+  - pipedrive_organization
+  - id
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - pipedrive_organization_id
+  - null
+  effective_type: type/BigInteger
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - pipedrive_organization_id
+  lib/desired-column-alias: pipedrive_organization_id
+  position: 60
+  visibility_type: normal
+  display_name: Pipedrive Organization ID
+  base_type: type/BigInteger
+- description: Foreign key to Salesforce Account object
+  database_type: varchar
+  semantic_type: type/FK
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: salesforce_account_id
+  lib/original-name: salesforce_account_id
+  name: salesforce_account_id
+  lib/source: source/table-defaults
+  lib/source-column-alias: salesforce_account_id
+  lib/original-display-name: Salesforce Account ID
+  source: fields
+  fk_target_field_id:
+  - Analytics Data Warehouse
+  - dbt_models_intermediate
+  - int_salesforce_account
+  - id
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - salesforce_account_id
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - salesforce_account_id
+  lib/desired-column-alias: salesforce_account_id
+  position: 61
+  visibility_type: normal
+  display_name: Salesforce Account ID
+  base_type: type/Text
+- description: Foreign key to Salesforce Contact object
+  database_type: varchar
+  semantic_type: type/FK
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: salesforce_contact_id
+  lib/original-name: salesforce_contact_id
+  name: salesforce_contact_id
+  lib/source: source/table-defaults
+  lib/source-column-alias: salesforce_contact_id
+  lib/original-display-name: Salesforce Contact ID
+  source: fields
+  fk_target_field_id:
+  - Analytics Data Warehouse
+  - dbt_models_intermediate
+  - int_salesforce_contact
+  - id
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - salesforce_contact_id
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - salesforce_contact_id
+  lib/desired-column-alias: salesforce_contact_id
+  position: 62
+  visibility_type: normal
+  display_name: Salesforce Contact ID
+  base_type: type/Text
+- description: Foreign key to Salesforce Token object
+  database_type: varchar
+  semantic_type: type/FK
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: salesforce_token_id
+  lib/original-name: salesforce_token_id
+  name: salesforce_token_id
+  lib/source: source/table-defaults
+  lib/source-column-alias: salesforce_token_id
+  lib/original-display-name: Salesforce Token ID
+  source: fields
+  fk_target_field_id:
+  - Analytics Data Warehouse
+  - dbt_models_intermediate
+  - int_salesforce_token
+  - id
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - salesforce_token_id
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - salesforce_token_id
+  lib/desired-column-alias: salesforce_token_id
+  position: 63
+  visibility_type: normal
+  display_name: Salesforce Token ID
+  base_type: type/Text
+- description: Foreign key to Metabase Store Hosted Instance
+  database_type: uuid
+  semantic_type: type/FK
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: instance_id
+  lib/original-name: instance_id
+  name: instance_id
+  lib/source: source/table-defaults
+  lib/source-column-alias: instance_id
+  lib/original-display-name: Instance ID
+  source: fields
+  fk_target_field_id:
+  - Analytics Data Warehouse
+  - dbt_models_metabase_store
+  - ms_hosted_instance
+  - id
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - instance_id
+  - null
+  effective_type: type/UUID
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - instance_id
+  lib/desired-column-alias: instance_id
+  position: 64
+  visibility_type: normal
+  display_name: Instance ID
+  base_type: type/UUID
+- description: Foreign key to Customer model
+  database_type: int4
+  semantic_type: type/FK
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: customer_id
+  lib/original-name: customer_id
+  name: customer_id
+  lib/source: source/table-defaults
+  lib/source-column-alias: customer_id
+  lib/original-display-name: Customer ID
+  source: fields
+  fk_target_field_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - customer
+  - id
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - customer_id
+  - null
+  effective_type: type/Integer
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - customer_id
+  lib/desired-column-alias: customer_id
+  position: 65
+  visibility_type: normal
+  display_name: Customer ID
+  base_type: type/Integer
+- description: Foreign key to Metabase Version model
+  database_type: text
+  semantic_type: type/FK
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: metabase_version_id
+  lib/original-name: metabase_version_id
+  name: metabase_version_id
+  lib/source: source/table-defaults
+  lib/source-column-alias: metabase_version_id
+  lib/original-display-name: Metabase Version ID
+  source: fields
+  fk_target_field_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - metabase_version
+  - id
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - metabase_version_id
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - metabase_version_id
+  lib/desired-column-alias: metabase_version_id
+  position: 66
+  visibility_type: normal
+  display_name: Metabase Version ID
+  base_type: type/Text
+- description: Foreign key to Contact model
+  database_type: text
+  semantic_type: type/FK
+  table_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  qp/implicit-field?: true
+  lib/deduplicated-name: contact_id
+  lib/original-name: contact_id
+  name: contact_id
+  lib/source: source/table-defaults
+  lib/source-column-alias: contact_id
+  lib/original-display-name: Contact ID
+  source: fields
+  fk_target_field_id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - contact
+  - id
+  field_ref:
+  - field
+  - - Analytics Data Warehouse
+    - dbt_models
+    - account
+    - contact_id
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - Analytics Data Warehouse
+  - dbt_models
+  - account
+  - contact_id
+  lib/desired-column-alias: contact_id
+  position: 67
+  visibility_type: normal
+  display_name: Contact ID
+  base_type: type/Text
+embedding_type: null
+card_schema: 22
+database_id: Analytics Data Warehouse
+enable_embedding: false
+collection_id: l9Y4V6Ufp9yESPpx2mrtq
+query_type: query
+name: Account
+document_id: null
+type: question
+creator_id: eliot@metabase.com
+made_public_by_id: null
+embedding_params: null
+dataset_query:
+  database: Analytics Data Warehouse
+  type: query
+  query:
+    source-table:
+    - Analytics Data Warehouse
+    - dbt_models
+    - account
+parameter_mappings: []
+serdes/meta:
+- model: Card
+  id: 5JiF3YY75vZVyG6PWUs9G
+  label: account
+display: table
+archived_directly: false
+entity_id: 5JiF3YY75vZVyG6PWUs9G
+collection_preview: true
+visualization_settings:
+  table.pivot_column: suspend_at
+  table.cell_column: base_fee
+  column_settings: null
+metabase_version: vUNKNOWN (ca3be56)
+parameters: []
+dashboard_id: null
+created_at: '2025-12-01T22:51:07.384718Z'
+public_uuid: null
