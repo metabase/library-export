@@ -53,7 +53,7 @@ entity_id: ikxOZpSL3_VhydnA0RsAF
 collection_preview: true
 visualization_settings:
   column_settings: null
-metabase_version: v1.57.1-SNAPSHOT (29c4144)
+metabase_version: vLOCAL_DEV (06d1ba2ae111e66253209c01c244d6379acfc6dcb1911fa9ab6012cec9ce52e5)
 parameters: []
 dashboard_id: null
 created_at: '2025-12-02T22:17:35.178827Z'

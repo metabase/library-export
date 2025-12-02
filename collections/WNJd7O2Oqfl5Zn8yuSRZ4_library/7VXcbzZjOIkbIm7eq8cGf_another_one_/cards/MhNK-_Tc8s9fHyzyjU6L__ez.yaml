@@ -243,7 +243,7 @@ visualization_settings:
   table.pivot_column: SOURCE
   table.cell_column: LONGITUDE
   column_settings: null
-metabase_version: v1.57.1-SNAPSHOT (29c4144)
+metabase_version: vLOCAL_DEV (06d1ba2ae111e66253209c01c244d6379acfc6dcb1911fa9ab6012cec9ce52e5)
 parameters: []
 dashboard_id: null
 created_at: '2025-11-25T18:36:36.582273Z'
