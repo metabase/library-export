@@ -26,7 +26,7 @@ database_id: Sample Database
 enable_embedding: false
 collection_id: ZOKzpD0QLpcVsU582zJ0I
 query_type: query
-name: Seats in the Benz
+name: Seats in the Benzo
 document_id: null
 type: question
 creator_id: crowberto@metabase.com
@@ -46,7 +46,7 @@ parameter_mappings: []
 serdes/meta:
 - model: Card
   id: ikxOZpSL3_VhydnA0RsAF
-  label: seats_in_the_benz
+  label: seats_in_the_benzo
 display: scalar
 archived_directly: false
 entity_id: ikxOZpSL3_VhydnA0RsAF
