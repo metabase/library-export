@@ -65,7 +65,7 @@ embedding_type: null
 card_schema: 22
 database_id: Sample Database
 enable_embedding: false
-collection_id: 0k4m5AXsmu13hkq8Iw_M9
+collection_id: ZOKzpD0QLpcVsU582zJ0I
 query_type: query
 name: Invoices, Count, Grouped by Account → Email
 document_id: null
