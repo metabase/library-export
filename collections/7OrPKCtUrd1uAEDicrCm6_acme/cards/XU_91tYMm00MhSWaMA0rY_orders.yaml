@@ -75,6 +75,7 @@ result_metadata:
     - USER_ID
   - null
   effective_type: type/Integer
+  remapped_to: NAME
   active: true
   id:
   - Sample Database
@@ -363,6 +364,7 @@ result_metadata:
   lib/source-column-alias: NAME
   lib/original-display-name: Name
   source: fields
+  remapped_from: USER_ID
   fk_field_id: 5
   field_ref:
   - field
@@ -387,7 +389,7 @@ result_metadata:
   visibility_type: normal
   options:
     metabase.query-processor.middleware.add-remaps/new-field-dimension-id: 340
-  display_name: User → Name
+  display_name: User ID
   base_type: type/Text
 embedding_type: null
 card_schema: 22
