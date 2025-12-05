@@ -1,0 +1,19 @@
+authority_level: null
+description: null
+archived: false
+slug: test
+archive_operation_id: null
+name: Test
+is_remote_synced: true
+personal_owner_id: null
+type: null
+is_sample: false
+parent_id: null
+serdes/meta:
+- model: Collection
+  id: ZGoMemoboMelEy5upx-tJ
+  label: test
+archived_directly: null
+entity_id: ZGoMemoboMelEy5upx-tJ
+namespace: shared-tenant-collection
+created_at: '2025-12-05T16:25:27.601893Z'
