@@ -1,0 +1,19 @@
+authority_level: null
+description: testy
+archived: false
+slug: i_am_a_tenant
+archive_operation_id: null
+name: I am a tenant
+is_remote_synced: true
+personal_owner_id: null
+type: null
+is_sample: false
+parent_id: null
+serdes/meta:
+- model: Collection
+  id: 7OrPKCtUrd1uAEDicrCm6
+  label: i_am_a_tenant
+archived_directly: null
+entity_id: 7OrPKCtUrd1uAEDicrCm6
+namespace: shared-tenant-collection
+created_at: '2025-12-05T15:27:56.42831Z'
