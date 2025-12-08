@@ -291,7 +291,7 @@ visualization_settings:
   table.pivot_column: TRIAL_CONVERTED
   table.cell_column: SEATS
   column_settings: null
-metabase_version: vLOCAL_DEV (06d1ba2ae111e66253209c01c244d6379acfc6dcb1911fa9ab6012cec9ce52e5)
+metabase_version: v1.57.1-SNAPSHOT (29c4144)
 parameters: []
 dashboard_id: null
 created_at: '2025-11-25T15:17:43.996364Z'
