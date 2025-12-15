@@ -1,40 +1,24 @@
-description: null
-archived: false
-collection_position: null
-source_card_id: NXx-a05KpMJ7CwHSJfJis
-published_table_id: null
-table_id: null
-result_metadata:
-- database_type: BIGINT
-  semantic_type: null
-  lib/deduplicated-name: sum
-  lib/original-name: sum
-  name: sum
-  lib/source: source/aggregations
-  lib/source-column-alias: sum
-  source: aggregation
-  field_ref:
-  - aggregation
-  - 0
-  effective_type: type/BigInteger
-  lib/desired-column-alias: sum
-  display_name: Sum of SEATS
-  base_type: type/BigInteger
-embedding_type: null
-card_schema: 22
-database_id: Sample Database
-enable_embedding: false
-collection_id: ZOKzpD0QLpcVsU582zJ0I
-query_type: query
 name: Seats in the Benzo
-document_id: null
-type: question
+description: null
+entity_id: ikxOZpSL3_VhydnA0RsAF
+created_at: '2025-12-02T22:17:35.178827Z'
 creator_id: crowberto@metabase.com
-made_public_by_id: null
+display: scalar
+archived: false
+collection_id: ZOKzpD0QLpcVsU582zJ0I
+collection_preview: true
+collection_position: null
+query_type: query
+database_id: Sample Database
+table_id: null
+enable_embedding: false
 embedding_params: null
+made_public_by_id: null
+public_uuid: null
+parameters: []
+parameter_mappings: []
 dataset_query:
   database: Sample Database
-  type: query
   query:
     aggregation:
     - - sum
@@ -42,19 +26,34 @@ dataset_query:
         - SEATS
         - base-type: type/Integer
     source-table: NXx-a05KpMJ7CwHSJfJis
-parameter_mappings: []
-serdes/meta:
-- model: Card
-  id: ikxOZpSL3_VhydnA0RsAF
-  label: seats_in_the_benzo
-display: scalar
-archived_directly: false
-entity_id: ikxOZpSL3_VhydnA0RsAF
-collection_preview: true
+  type: query
+result_metadata:
+- base_type: type/BigInteger
+  database_type: BIGINT
+  display_name: Sum of SEATS
+  effective_type: type/BigInteger
+  field_ref:
+  - aggregation
+  - 0
+  name: sum
+  semantic_type: null
+  source: aggregation
+  lib/deduplicated-name: sum
+  lib/desired-column-alias: sum
+  lib/original-name: sum
+  lib/source: source/aggregations
+  lib/source-column-alias: sum
 visualization_settings:
   column_settings: null
-metabase_version: v1.57.1-SNAPSHOT (29c4144)
-parameters: []
+card_schema: 23
+serdes/meta:
+- id: ikxOZpSL3_VhydnA0RsAF
+  label: seats_in_the_benzo
+  model: Card
+archived_directly: false
 dashboard_id: null
-created_at: '2025-12-02T22:17:35.178827Z'
-public_uuid: null
+document_id: null
+embedding_type: null
+metabase_version: v1.57.1-SNAPSHOT (b050245)
+source_card_id: NXx-a05KpMJ7CwHSJfJis
+type: question

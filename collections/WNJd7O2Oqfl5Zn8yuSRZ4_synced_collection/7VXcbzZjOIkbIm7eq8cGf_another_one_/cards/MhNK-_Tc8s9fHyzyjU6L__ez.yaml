@@ -1,250 +1,249 @@
+name: EZ
 description: null
+entity_id: MhNK-_Tc8s9fHyzyjU6L_
+created_at: '2025-11-25T18:36:36.582273Z'
+creator_id: crowberto@metabase.com
+display: table
 archived: false
+collection_id: 7VXcbzZjOIkbIm7eq8cGf
+collection_preview: true
 collection_position: null
-source_card_id: null
-published_table_id: null
+query_type: native
+database_id: Sample Database
 table_id: null
+enable_embedding: false
+embedding_params: null
+made_public_by_id: null
+public_uuid: null
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Sample Database
+  native:
+    query: SELECT * from PEOPLE WHERE name like 'E%'
+  type: native
 result_metadata:
-- database_type: BIGINT
-  semantic_type: type/PK
-  lib/deduplicated-name: ID
-  lib/original-name: ID
-  name: ID
-  lib/source: source/native
-  lib/source-column-alias: ID
-  source: native
+- base_type: type/BigInteger
+  database_type: BIGINT
+  display_name: ID
+  effective_type: type/BigInteger
   field_ref:
   - field
   - ID
   - base-type: type/BigInteger
-  effective_type: type/BigInteger
-  lib/desired-column-alias: ID
-  display_name: ID
-  base_type: type/BigInteger
-- database_type: CHARACTER VARYING
-  semantic_type: null
-  lib/deduplicated-name: ADDRESS
-  lib/original-name: ADDRESS
-  name: ADDRESS
-  lib/source: source/native
-  lib/source-column-alias: ADDRESS
+  name: ID
+  semantic_type: type/PK
   source: native
+  lib/deduplicated-name: ID
+  lib/desired-column-alias: ID
+  lib/original-name: ID
+  lib/source: source/native
+  lib/source-column-alias: ID
+- base_type: type/Text
+  database_type: CHARACTER VARYING
+  display_name: ADDRESS
+  effective_type: type/Text
   field_ref:
   - field
   - ADDRESS
   - base-type: type/Text
-  effective_type: type/Text
-  lib/desired-column-alias: ADDRESS
-  display_name: ADDRESS
-  base_type: type/Text
-- database_type: CHARACTER VARYING
+  name: ADDRESS
   semantic_type: null
-  lib/deduplicated-name: EMAIL
-  lib/original-name: EMAIL
-  name: EMAIL
-  lib/source: source/native
-  lib/source-column-alias: EMAIL
   source: native
+  lib/deduplicated-name: ADDRESS
+  lib/desired-column-alias: ADDRESS
+  lib/original-name: ADDRESS
+  lib/source: source/native
+  lib/source-column-alias: ADDRESS
+- base_type: type/Text
+  database_type: CHARACTER VARYING
+  display_name: EMAIL
+  effective_type: type/Text
   field_ref:
   - field
   - EMAIL
   - base-type: type/Text
-  effective_type: type/Text
-  lib/desired-column-alias: EMAIL
-  display_name: EMAIL
-  base_type: type/Text
-- database_type: CHARACTER VARYING
+  name: EMAIL
   semantic_type: null
-  lib/deduplicated-name: PASSWORD
-  lib/original-name: PASSWORD
-  name: PASSWORD
-  lib/source: source/native
-  lib/source-column-alias: PASSWORD
   source: native
+  lib/deduplicated-name: EMAIL
+  lib/desired-column-alias: EMAIL
+  lib/original-name: EMAIL
+  lib/source: source/native
+  lib/source-column-alias: EMAIL
+- base_type: type/Text
+  database_type: CHARACTER VARYING
+  display_name: PASSWORD
+  effective_type: type/Text
   field_ref:
   - field
   - PASSWORD
   - base-type: type/Text
-  effective_type: type/Text
-  lib/desired-column-alias: PASSWORD
-  display_name: PASSWORD
-  base_type: type/Text
-- database_type: CHARACTER VARYING
-  semantic_type: type/Name
-  lib/deduplicated-name: NAME
-  lib/original-name: NAME
-  name: NAME
-  lib/source: source/native
-  lib/source-column-alias: NAME
+  name: PASSWORD
+  semantic_type: null
   source: native
+  lib/deduplicated-name: PASSWORD
+  lib/desired-column-alias: PASSWORD
+  lib/original-name: PASSWORD
+  lib/source: source/native
+  lib/source-column-alias: PASSWORD
+- base_type: type/Text
+  database_type: CHARACTER VARYING
+  display_name: NAME
+  effective_type: type/Text
   field_ref:
   - field
   - NAME
   - base-type: type/Text
-  effective_type: type/Text
-  lib/desired-column-alias: NAME
-  display_name: NAME
-  base_type: type/Text
-- database_type: CHARACTER VARYING
-  semantic_type: type/City
-  lib/deduplicated-name: CITY
-  lib/original-name: CITY
-  name: CITY
-  lib/source: source/native
-  lib/source-column-alias: CITY
+  name: NAME
+  semantic_type: type/Name
   source: native
+  lib/deduplicated-name: NAME
+  lib/desired-column-alias: NAME
+  lib/original-name: NAME
+  lib/source: source/native
+  lib/source-column-alias: NAME
+- base_type: type/Text
+  database_type: CHARACTER VARYING
+  display_name: CITY
+  effective_type: type/Text
   field_ref:
   - field
   - CITY
   - base-type: type/Text
-  effective_type: type/Text
-  lib/desired-column-alias: CITY
-  display_name: CITY
-  base_type: type/Text
-- database_type: DOUBLE PRECISION
-  semantic_type: type/Longitude
-  lib/deduplicated-name: LONGITUDE
-  lib/original-name: LONGITUDE
-  name: LONGITUDE
-  lib/source: source/native
-  lib/source-column-alias: LONGITUDE
+  name: CITY
+  semantic_type: type/City
   source: native
+  lib/deduplicated-name: CITY
+  lib/desired-column-alias: CITY
+  lib/original-name: CITY
+  lib/source: source/native
+  lib/source-column-alias: CITY
+- base_type: type/Float
+  database_type: DOUBLE PRECISION
+  display_name: LONGITUDE
+  effective_type: type/Float
   field_ref:
   - field
   - LONGITUDE
   - base-type: type/Float
-  effective_type: type/Float
-  lib/desired-column-alias: LONGITUDE
-  display_name: LONGITUDE
-  base_type: type/Float
-- database_type: CHARACTER
-  semantic_type: null
-  lib/deduplicated-name: STATE
-  lib/original-name: STATE
-  name: STATE
-  lib/source: source/native
-  lib/source-column-alias: STATE
+  name: LONGITUDE
+  semantic_type: type/Longitude
   source: native
+  lib/deduplicated-name: LONGITUDE
+  lib/desired-column-alias: LONGITUDE
+  lib/original-name: LONGITUDE
+  lib/source: source/native
+  lib/source-column-alias: LONGITUDE
+- base_type: type/Text
+  database_type: CHARACTER
+  display_name: STATE
+  effective_type: type/Text
   field_ref:
   - field
   - STATE
   - base-type: type/Text
-  effective_type: type/Text
-  lib/desired-column-alias: STATE
-  display_name: STATE
-  base_type: type/Text
-- database_type: CHARACTER VARYING
-  semantic_type: type/Source
-  lib/deduplicated-name: SOURCE
-  lib/original-name: SOURCE
-  name: SOURCE
-  lib/source: source/native
-  lib/source-column-alias: SOURCE
+  name: STATE
+  semantic_type: null
   source: native
+  lib/deduplicated-name: STATE
+  lib/desired-column-alias: STATE
+  lib/original-name: STATE
+  lib/source: source/native
+  lib/source-column-alias: STATE
+- base_type: type/Text
+  database_type: CHARACTER VARYING
+  display_name: SOURCE
+  effective_type: type/Text
   field_ref:
   - field
   - SOURCE
   - base-type: type/Text
-  effective_type: type/Text
-  lib/desired-column-alias: SOURCE
-  display_name: SOURCE
-  base_type: type/Text
-- database_type: DATE
-  semantic_type: null
-  lib/deduplicated-name: BIRTH_DATE
-  lib/original-name: BIRTH_DATE
-  name: BIRTH_DATE
-  lib/source: source/native
-  lib/source-column-alias: BIRTH_DATE
+  name: SOURCE
+  semantic_type: type/Source
   source: native
+  lib/deduplicated-name: SOURCE
+  lib/desired-column-alias: SOURCE
+  lib/original-name: SOURCE
+  lib/source: source/native
+  lib/source-column-alias: SOURCE
+- base_type: type/Date
+  database_type: DATE
+  display_name: BIRTH_DATE
+  effective_type: type/Date
   field_ref:
   - field
   - BIRTH_DATE
   - base-type: type/Date
-  effective_type: type/Date
-  lib/desired-column-alias: BIRTH_DATE
-  display_name: BIRTH_DATE
-  base_type: type/Date
-- database_type: CHARACTER
+  name: BIRTH_DATE
   semantic_type: null
-  lib/deduplicated-name: ZIP
-  lib/original-name: ZIP
-  name: ZIP
-  lib/source: source/native
-  lib/source-column-alias: ZIP
   source: native
+  lib/deduplicated-name: BIRTH_DATE
+  lib/desired-column-alias: BIRTH_DATE
+  lib/original-name: BIRTH_DATE
+  lib/source: source/native
+  lib/source-column-alias: BIRTH_DATE
+- base_type: type/Text
+  database_type: CHARACTER
+  display_name: ZIP
+  effective_type: type/Text
   field_ref:
   - field
   - ZIP
   - base-type: type/Text
-  effective_type: type/Text
-  lib/desired-column-alias: ZIP
-  display_name: ZIP
-  base_type: type/Text
-- database_type: DOUBLE PRECISION
-  semantic_type: type/Latitude
-  lib/deduplicated-name: LATITUDE
-  lib/original-name: LATITUDE
-  name: LATITUDE
-  lib/source: source/native
-  lib/source-column-alias: LATITUDE
+  name: ZIP
+  semantic_type: null
   source: native
+  lib/deduplicated-name: ZIP
+  lib/desired-column-alias: ZIP
+  lib/original-name: ZIP
+  lib/source: source/native
+  lib/source-column-alias: ZIP
+- base_type: type/Float
+  database_type: DOUBLE PRECISION
+  display_name: LATITUDE
+  effective_type: type/Float
   field_ref:
   - field
   - LATITUDE
   - base-type: type/Float
-  effective_type: type/Float
-  lib/desired-column-alias: LATITUDE
-  display_name: LATITUDE
-  base_type: type/Float
-- database_type: TIMESTAMP
-  semantic_type: type/CreationTimestamp
-  lib/deduplicated-name: CREATED_AT
-  lib/original-name: CREATED_AT
-  name: CREATED_AT
-  lib/source: source/native
-  lib/source-column-alias: CREATED_AT
+  name: LATITUDE
+  semantic_type: type/Latitude
   source: native
+  lib/deduplicated-name: LATITUDE
+  lib/desired-column-alias: LATITUDE
+  lib/original-name: LATITUDE
+  lib/source: source/native
+  lib/source-column-alias: LATITUDE
+- base_type: type/DateTime
+  database_type: TIMESTAMP
+  display_name: CREATED_AT
+  effective_type: type/DateTime
   field_ref:
   - field
   - CREATED_AT
   - base-type: type/DateTime
-  effective_type: type/DateTime
+  name: CREATED_AT
+  semantic_type: type/CreationTimestamp
+  source: native
+  lib/deduplicated-name: CREATED_AT
   lib/desired-column-alias: CREATED_AT
-  display_name: CREATED_AT
-  base_type: type/DateTime
-embedding_type: null
-card_schema: 22
-database_id: Sample Database
-enable_embedding: false
-collection_id: 7VXcbzZjOIkbIm7eq8cGf
-query_type: native
-name: EZ
-document_id: null
-type: question
-creator_id: crowberto@metabase.com
-made_public_by_id: null
-embedding_params: null
-dataset_query:
-  database: Sample Database
-  type: native
-  native:
-    query: SELECT * from PEOPLE WHERE name like 'E%'
-parameter_mappings: []
-serdes/meta:
-- model: Card
-  id: MhNK-_Tc8s9fHyzyjU6L_
-  label: ez
-display: table
-archived_directly: false
-entity_id: MhNK-_Tc8s9fHyzyjU6L_
-collection_preview: true
+  lib/original-name: CREATED_AT
+  lib/source: source/native
+  lib/source-column-alias: CREATED_AT
 visualization_settings:
-  table.pivot_column: SOURCE
-  table.cell_column: LONGITUDE
   column_settings: null
-metabase_version: v1.57.1-SNAPSHOT (29c4144)
-parameters: []
+  table.cell_column: LONGITUDE
+  table.pivot_column: SOURCE
+card_schema: 23
+serdes/meta:
+- id: MhNK-_Tc8s9fHyzyjU6L_
+  label: ez
+  model: Card
+archived_directly: false
 dashboard_id: null
-created_at: '2025-11-25T18:36:36.582273Z'
-public_uuid: null
+document_id: null
+embedding_type: null
+metabase_version: v1.57.1-SNAPSHOT (b050245)
+source_card_id: null
+type: question

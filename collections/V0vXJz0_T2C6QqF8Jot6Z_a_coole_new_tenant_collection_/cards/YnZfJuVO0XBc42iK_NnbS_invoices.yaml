@@ -1,27 +1,39 @@
+name: Invoices
 description: null
+entity_id: YnZfJuVO0XBc42iK_NnbS
+created_at: '2025-11-25T16:40:44.502753Z'
+creator_id: crowberto@metabase.com
+display: table
 archived: false
+collection_id: V0vXJz0_T2C6QqF8Jot6Z
+collection_preview: true
 collection_position: null
-source_card_id: null
-published_table_id: null
+query_type: query
+database_id: Sample Database
 table_id:
 - Sample Database
 - PUBLIC
 - INVOICES
+enable_embedding: false
+embedding_params: null
+made_public_by_id: null
+public_uuid: null
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Sample Database
+  query:
+    source-table:
+    - Sample Database
+    - PUBLIC
+    - INVOICES
+  type: query
 result_metadata:
-- database_type: BIGINT
-  semantic_type: type/PK
-  table_id:
-  - Sample Database
-  - PUBLIC
-  - INVOICES
-  qp/implicit-field?: true
-  lib/deduplicated-name: ID
-  lib/original-name: ID
-  name: ID
-  lib/source: source/table-defaults
-  lib/source-column-alias: ID
-  lib/original-display-name: ID
-  source: fields
+- active: true
+  base_type: type/BigInteger
+  database_type: BIGINT
+  display_name: ID
+  effective_type: type/BigInteger
   field_ref:
   - field
   - - Sample Database
@@ -29,42 +41,32 @@ result_metadata:
     - INVOICES
     - ID
   - null
-  effective_type: type/BigInteger
-  active: true
   id:
   - Sample Database
   - PUBLIC
   - INVOICES
   - ID
-  lib/desired-column-alias: ID
+  name: ID
   position: 0
-  visibility_type: normal
-  display_name: ID
-  base_type: type/BigInteger
-- database_type: BIGINT
-  semantic_type: type/FK
+  semantic_type: type/PK
+  source: fields
   table_id:
   - Sample Database
   - PUBLIC
   - INVOICES
-  qp/implicit-field?: true
-  lib/deduplicated-name: ACCOUNT_ID
-  lib/original-name: ACCOUNT_ID
-  name: ACCOUNT_ID
+  visibility_type: normal
+  lib/deduplicated-name: ID
+  lib/desired-column-alias: ID
+  lib/original-display-name: ID
+  lib/original-name: ID
   lib/source: source/table-defaults
-  lib/source-column-alias: ACCOUNT_ID
-  lib/original-display-name: Account ID
-  lib/external-remap:
-    lib/type: metadata.column.remapping/external
-    id: 5
-    name: Account ID
-    field-id: 62
-  source: fields
-  fk_target_field_id:
-  - Sample Database
-  - PUBLIC
-  - ACCOUNTS
-  - ID
+  lib/source-column-alias: ID
+  qp/implicit-field?: true
+- active: true
+  base_type: type/BigInteger
+  database_type: BIGINT
+  display_name: Account ID
+  effective_type: type/BigInteger
   field_ref:
   - field
   - - Sample Database
@@ -72,35 +74,45 @@ result_metadata:
     - INVOICES
     - ACCOUNT_ID
   - null
-  effective_type: type/BigInteger
-  remapped_to: EMAIL
-  active: true
+  fk_target_field_id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  - ID
   id:
   - Sample Database
   - PUBLIC
   - INVOICES
   - ACCOUNT_ID
-  lib/desired-column-alias: ACCOUNT_ID
-  position: 1
-  visibility_type: normal
+  name: ACCOUNT_ID
   options:
     metabase.query-processor.middleware.add-remaps/original-field-dimension-id: 5
-  display_name: Account ID
-  base_type: type/BigInteger
-- database_type: DOUBLE PRECISION
-  semantic_type: null
+  position: 1
+  remapped_to: EMAIL
+  semantic_type: type/FK
+  source: fields
   table_id:
   - Sample Database
   - PUBLIC
   - INVOICES
-  qp/implicit-field?: true
-  lib/deduplicated-name: PAYMENT
-  lib/original-name: PAYMENT
-  name: PAYMENT
+  visibility_type: normal
+  lib/deduplicated-name: ACCOUNT_ID
+  lib/desired-column-alias: ACCOUNT_ID
+  lib/external-remap:
+    field-id: 62
+    id: 5
+    name: Account ID
+    lib/type: metadata.column.remapping/external
+  lib/original-display-name: Account ID
+  lib/original-name: ACCOUNT_ID
   lib/source: source/table-defaults
-  lib/source-column-alias: PAYMENT
-  lib/original-display-name: Payment
-  source: fields
+  lib/source-column-alias: ACCOUNT_ID
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Float
+  database_type: DOUBLE PRECISION
+  display_name: Payment
+  effective_type: type/Float
   field_ref:
   - field
   - - Sample Database
@@ -108,32 +120,32 @@ result_metadata:
     - INVOICES
     - PAYMENT
   - null
-  effective_type: type/Float
-  active: true
   id:
   - Sample Database
   - PUBLIC
   - INVOICES
   - PAYMENT
-  lib/desired-column-alias: PAYMENT
+  name: PAYMENT
   position: 2
-  visibility_type: normal
-  display_name: Payment
-  base_type: type/Float
-- database_type: BOOLEAN
   semantic_type: null
+  source: fields
   table_id:
   - Sample Database
   - PUBLIC
   - INVOICES
-  qp/implicit-field?: true
-  lib/deduplicated-name: EXPECTED_INVOICE
-  lib/original-name: EXPECTED_INVOICE
-  name: EXPECTED_INVOICE
+  visibility_type: normal
+  lib/deduplicated-name: PAYMENT
+  lib/desired-column-alias: PAYMENT
+  lib/original-display-name: Payment
+  lib/original-name: PAYMENT
   lib/source: source/table-defaults
-  lib/source-column-alias: EXPECTED_INVOICE
-  lib/original-display-name: Expected Invoice
-  source: fields
+  lib/source-column-alias: PAYMENT
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Boolean
+  database_type: BOOLEAN
+  display_name: Expected Invoice
+  effective_type: type/Boolean
   field_ref:
   - field
   - - Sample Database
@@ -141,32 +153,32 @@ result_metadata:
     - INVOICES
     - EXPECTED_INVOICE
   - null
-  effective_type: type/Boolean
-  active: true
   id:
   - Sample Database
   - PUBLIC
   - INVOICES
   - EXPECTED_INVOICE
-  lib/desired-column-alias: EXPECTED_INVOICE
+  name: EXPECTED_INVOICE
   position: 3
-  visibility_type: normal
-  display_name: Expected Invoice
-  base_type: type/Boolean
-- database_type: CHARACTER VARYING
-  semantic_type: type/Category
+  semantic_type: null
+  source: fields
   table_id:
   - Sample Database
   - PUBLIC
   - INVOICES
-  qp/implicit-field?: true
-  lib/deduplicated-name: PLAN
-  lib/original-name: PLAN
-  name: PLAN
+  visibility_type: normal
+  lib/deduplicated-name: EXPECTED_INVOICE
+  lib/desired-column-alias: EXPECTED_INVOICE
+  lib/original-display-name: Expected Invoice
+  lib/original-name: EXPECTED_INVOICE
   lib/source: source/table-defaults
-  lib/source-column-alias: PLAN
-  lib/original-display-name: Plan
-  source: fields
+  lib/source-column-alias: EXPECTED_INVOICE
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Text
+  database_type: CHARACTER VARYING
+  display_name: Plan
+  effective_type: type/Text
   field_ref:
   - field
   - - Sample Database
@@ -174,32 +186,32 @@ result_metadata:
     - INVOICES
     - PLAN
   - null
-  effective_type: type/Text
-  active: true
   id:
   - Sample Database
   - PUBLIC
   - INVOICES
   - PLAN
-  lib/desired-column-alias: PLAN
+  name: PLAN
   position: 4
-  visibility_type: normal
-  display_name: Plan
-  base_type: type/Text
-- database_type: TIMESTAMP
-  semantic_type: null
+  semantic_type: type/Category
+  source: fields
   table_id:
   - Sample Database
   - PUBLIC
   - INVOICES
-  qp/implicit-field?: true
-  lib/deduplicated-name: DATE_RECEIVED
-  lib/original-name: DATE_RECEIVED
-  name: DATE_RECEIVED
+  visibility_type: normal
+  lib/deduplicated-name: PLAN
+  lib/desired-column-alias: PLAN
+  lib/original-display-name: Plan
+  lib/original-name: PLAN
   lib/source: source/table-defaults
-  lib/source-column-alias: DATE_RECEIVED
-  lib/original-display-name: Date Received
-  source: fields
+  lib/source-column-alias: PLAN
+  qp/implicit-field?: true
+- active: true
+  base_type: type/DateTime
+  database_type: TIMESTAMP
+  display_name: Date Received
+  effective_type: type/DateTime
   field_ref:
   - field
   - - Sample Database
@@ -207,35 +219,32 @@ result_metadata:
     - INVOICES
     - DATE_RECEIVED
   - null
-  effective_type: type/DateTime
-  active: true
   id:
   - Sample Database
   - PUBLIC
   - INVOICES
   - DATE_RECEIVED
-  lib/desired-column-alias: DATE_RECEIVED
+  name: DATE_RECEIVED
   position: 5
-  visibility_type: normal
-  display_name: Date Received
-  base_type: type/DateTime
-- database_type: CHARACTER VARYING
-  semantic_type: type/Email
+  semantic_type: null
+  source: fields
   table_id:
   - Sample Database
   - PUBLIC
-  - ACCOUNTS
+  - INVOICES
+  visibility_type: normal
+  lib/deduplicated-name: DATE_RECEIVED
+  lib/desired-column-alias: DATE_RECEIVED
+  lib/original-display-name: Date Received
+  lib/original-name: DATE_RECEIVED
+  lib/source: source/table-defaults
+  lib/source-column-alias: DATE_RECEIVED
   qp/implicit-field?: true
-  lib/deduplicated-name: EMAIL
-  lib/original-name: EMAIL
-  lib/breakout?: false
-  name: EMAIL
-  lib/source: source/implicitly-joinable
-  lib/source-column-alias: EMAIL
-  lib/original-display-name: Email
-  source: fields
-  remapped_from: ACCOUNT_ID
-  fk_field_id: 66
+- active: true
+  base_type: type/Text
+  database_type: CHARACTER VARYING
+  display_name: Account ID
+  effective_type: type/Text
   field_ref:
   - field
   - - Sample Database
@@ -247,55 +256,45 @@ result_metadata:
     - PUBLIC
     - INVOICES
     - ACCOUNT_ID
-  effective_type: type/Text
-  active: true
+  fk_field_id: 66
   id:
   - Sample Database
   - PUBLIC
   - ACCOUNTS
   - EMAIL
-  lib/desired-column-alias: ACCOUNTS__via__ACCOUNT_ID__EMAIL
-  position: 1
-  visibility_type: normal
+  name: EMAIL
   options:
     metabase.query-processor.middleware.add-remaps/new-field-dimension-id: 5
-  display_name: Account ID
-  base_type: type/Text
-embedding_type: null
-card_schema: 22
-database_id: Sample Database
-enable_embedding: false
-collection_id: V0vXJz0_T2C6QqF8Jot6Z
-query_type: query
-name: Invoices
-document_id: null
-type: question
-creator_id: crowberto@metabase.com
-made_public_by_id: null
-embedding_params: null
-dataset_query:
-  database: Sample Database
-  type: query
-  query:
-    source-table:
-    - Sample Database
-    - PUBLIC
-    - INVOICES
-parameter_mappings: []
-serdes/meta:
-- model: Card
-  id: YnZfJuVO0XBc42iK_NnbS
-  label: invoices
-display: table
-archived_directly: false
-entity_id: YnZfJuVO0XBc42iK_NnbS
-collection_preview: true
+  position: 1
+  remapped_from: ACCOUNT_ID
+  semantic_type: type/Email
+  source: fields
+  table_id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  visibility_type: normal
+  lib/breakout?: false
+  lib/deduplicated-name: EMAIL
+  lib/desired-column-alias: ACCOUNTS__via__ACCOUNT_ID__EMAIL
+  lib/original-display-name: Email
+  lib/original-name: EMAIL
+  lib/source: source/implicitly-joinable
+  lib/source-column-alias: EMAIL
+  qp/implicit-field?: true
 visualization_settings:
-  table.pivot_column: EXPECTED_INVOICE
-  table.cell_column: PAYMENT
   column_settings: null
-metabase_version: v1.57.1-SNAPSHOT (29c4144)
-parameters: []
+  table.cell_column: PAYMENT
+  table.pivot_column: EXPECTED_INVOICE
+card_schema: 23
+serdes/meta:
+- id: YnZfJuVO0XBc42iK_NnbS
+  label: invoices
+  model: Card
+archived_directly: false
 dashboard_id: null
-created_at: '2025-11-25T16:40:44.502753Z'
-public_uuid: null
+document_id: null
+embedding_type: null
+metabase_version: v1.57.1-SNAPSHOT (b050245)
+source_card_id: null
+type: question

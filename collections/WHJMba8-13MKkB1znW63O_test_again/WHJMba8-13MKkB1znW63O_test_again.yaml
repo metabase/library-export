@@ -1,19 +1,19 @@
-authority_level: null
-description: null
-archived: false
-slug: test_again
-archive_operation_id: null
 name: test again
-is_remote_synced: true
-personal_owner_id: null
-type: null
-is_sample: false
-parent_id: null
-serdes/meta:
-- model: Collection
-  id: WHJMba8-13MKkB1znW63O
-  label: test_again
-archived_directly: null
+description: null
 entity_id: WHJMba8-13MKkB1znW63O
-namespace: shared-tenant-collection
+slug: test_again
 created_at: '2025-11-25T16:03:39.490653Z'
+archived: false
+type: null
+parent_id: null
+personal_owner_id: null
+namespace: shared-tenant-collection
+authority_level: null
+serdes/meta:
+- id: WHJMba8-13MKkB1znW63O
+  label: test_again
+  model: Collection
+archive_operation_id: null
+archived_directly: null
+is_remote_synced: true
+is_sample: false

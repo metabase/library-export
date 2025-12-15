@@ -1,30 +1,37 @@
+name: Orders
 description: null
+entity_id: C36QAZ5433GtxSeUUCmMc
+created_at: '2025-12-02T20:49:41.620165Z'
+creator_id: crowberto@metabase.com
+display: table
 archived: false
+collection_id: ZOKzpD0QLpcVsU582zJ0I
+collection_preview: true
 collection_position: null
-source_card_id: xKGJV2Ak1bThI_Ti-KBm6
-published_table_id: null
+query_type: query
+database_id: Sample Database
 table_id:
 - Sample Database
 - PUBLIC
 - ORDERS
+enable_embedding: false
+embedding_params: null
+made_public_by_id: null
+public_uuid: null
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Sample Database
+  query:
+    source-table: xKGJV2Ak1bThI_Ti-KBm6
+  type: query
 result_metadata:
-- description: This is a unique ID for the product. It is also called the “Invoice number” or “Confirmation number” in customer facing emails and screens.
+- active: true
+  base_type: type/BigInteger
   database_type: BIGINT
-  semantic_type: type/PK
-  table_id:
-  - Sample Database
-  - PUBLIC
-  - ORDERS
-  qp/implicit-field?: true
-  lib/deduplicated-name: ID
-  lib/original-name: ID
-  lib/breakout?: false
-  name: ID
-  lib/card-id: 118
-  lib/source: source/previous-stage
-  lib/source-column-alias: ID
-  lib/original-display-name: ID
-  source: fields
+  description: This is a unique ID for the product. It is also called the “Invoice number” or “Confirmation number” in customer facing emails and screens.
+  display_name: ID
+  effective_type: type/BigInteger
   field_ref:
   - field
   - - Sample Database
@@ -32,45 +39,35 @@ result_metadata:
     - ORDERS
     - ID
   - null
-  effective_type: type/BigInteger
-  active: true
   id:
   - Sample Database
   - PUBLIC
   - ORDERS
   - ID
-  lib/desired-column-alias: ID
+  name: ID
   position: 0
-  visibility_type: normal
-  display_name: ID
-  base_type: type/BigInteger
-- description: The id of the user who made this order. Note that in some cases where an order was created on behalf of a customer who phoned the order in, this might be the employee who handled the request.
-  database_type: INTEGER
-  semantic_type: type/FK
+  semantic_type: type/PK
+  source: fields
   table_id:
   - Sample Database
   - PUBLIC
   - ORDERS
-  qp/implicit-field?: true
-  lib/deduplicated-name: USER_ID
-  lib/original-name: USER_ID
+  visibility_type: normal
   lib/breakout?: false
-  name: USER_ID
   lib/card-id: 118
+  lib/deduplicated-name: ID
+  lib/desired-column-alias: ID
+  lib/original-display-name: ID
+  lib/original-name: ID
   lib/source: source/previous-stage
-  lib/source-column-alias: USER_ID
-  lib/original-display-name: User ID
-  lib/external-remap:
-    lib/type: metadata.column.remapping/external
-    id: 1
-    name: User ID
-    field-id: 48
-  source: fields
-  fk_target_field_id:
-  - Sample Database
-  - PUBLIC
-  - PEOPLE
-  - ID
+  lib/source-column-alias: ID
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Integer
+  database_type: INTEGER
+  description: The id of the user who made this order. Note that in some cases where an order was created on behalf of a customer who phoned the order in, this might be the employee who handled the request.
+  display_name: User ID
+  effective_type: type/Integer
   field_ref:
   - field
   - - Sample Database
@@ -78,47 +75,47 @@ result_metadata:
     - ORDERS
     - USER_ID
   - null
-  effective_type: type/Integer
-  active: true
+  fk_target_field_id:
+  - Sample Database
+  - PUBLIC
+  - PEOPLE
+  - ID
   id:
   - Sample Database
   - PUBLIC
   - ORDERS
   - USER_ID
-  lib/desired-column-alias: USER_ID
-  position: 1
-  visibility_type: normal
+  name: USER_ID
   options:
     metabase.query-processor.middleware.add-remaps/original-field-dimension-id: 1
-  display_name: User ID
-  base_type: type/Integer
-- description: The product ID. This is an internal identifier for the product, NOT the SKU.
-  database_type: INTEGER
+  position: 1
   semantic_type: type/FK
+  source: fields
   table_id:
   - Sample Database
   - PUBLIC
   - ORDERS
-  qp/implicit-field?: true
-  lib/deduplicated-name: PRODUCT_ID
-  lib/original-name: PRODUCT_ID
+  visibility_type: normal
   lib/breakout?: false
-  name: PRODUCT_ID
   lib/card-id: 118
-  lib/source: source/previous-stage
-  lib/source-column-alias: PRODUCT_ID
-  lib/original-display-name: Product ID
+  lib/deduplicated-name: USER_ID
+  lib/desired-column-alias: USER_ID
   lib/external-remap:
+    field-id: 48
+    id: 1
+    name: User ID
     lib/type: metadata.column.remapping/external
-    id: 2
-    name: Product ID
-    field-id: 17
-  source: fields
-  fk_target_field_id:
-  - Sample Database
-  - PUBLIC
-  - PRODUCTS
-  - ID
+  lib/original-display-name: User ID
+  lib/original-name: USER_ID
+  lib/source: source/previous-stage
+  lib/source-column-alias: USER_ID
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Integer
+  database_type: INTEGER
+  description: The product ID. This is an internal identifier for the product, NOT the SKU.
+  display_name: Product ID
+  effective_type: type/Integer
   field_ref:
   - field
   - - Sample Database
@@ -126,36 +123,47 @@ result_metadata:
     - ORDERS
     - PRODUCT_ID
   - null
-  effective_type: type/Integer
-  active: true
+  fk_target_field_id:
+  - Sample Database
+  - PUBLIC
+  - PRODUCTS
+  - ID
   id:
   - Sample Database
   - PUBLIC
   - ORDERS
   - PRODUCT_ID
-  lib/desired-column-alias: PRODUCT_ID
-  position: 2
-  visibility_type: normal
+  name: PRODUCT_ID
   options:
     metabase.query-processor.middleware.add-remaps/original-field-dimension-id: 2
-  display_name: Product ID
-  base_type: type/Integer
-- description: The raw, pre-tax cost of the order. Note that this might be different in the future from the product price due to promotions, credits, etc.
-  database_type: DOUBLE PRECISION
+  position: 2
+  semantic_type: type/FK
+  source: fields
   table_id:
   - Sample Database
   - PUBLIC
   - ORDERS
-  qp/implicit-field?: true
-  lib/deduplicated-name: SUBTOTAL
-  lib/original-name: SUBTOTAL
+  visibility_type: normal
   lib/breakout?: false
-  name: SUBTOTAL
   lib/card-id: 118
+  lib/deduplicated-name: PRODUCT_ID
+  lib/desired-column-alias: PRODUCT_ID
+  lib/external-remap:
+    field-id: 17
+    id: 2
+    name: Product ID
+    lib/type: metadata.column.remapping/external
+  lib/original-display-name: Product ID
+  lib/original-name: PRODUCT_ID
   lib/source: source/previous-stage
-  lib/source-column-alias: SUBTOTAL
-  lib/original-display-name: Subtotal
-  source: fields
+  lib/source-column-alias: PRODUCT_ID
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Float
+  database_type: DOUBLE PRECISION
+  description: The raw, pre-tax cost of the order. Note that this might be different in the future from the product price due to promotions, credits, etc.
+  display_name: Subtotal
+  effective_type: type/Float
   field_ref:
   - field
   - - Sample Database
@@ -163,34 +171,34 @@ result_metadata:
     - ORDERS
     - SUBTOTAL
   - null
-  effective_type: type/Float
-  active: true
   id:
   - Sample Database
   - PUBLIC
   - ORDERS
   - SUBTOTAL
-  lib/desired-column-alias: SUBTOTAL
+  name: SUBTOTAL
   position: 3
-  visibility_type: normal
-  display_name: Subtotal
-  base_type: type/Float
-- description: This is the amount of local and federal taxes that are collected on the purchase. Note that other governmental fees on some products are not included here, but instead are accounted for in the subtotal.
-  database_type: DOUBLE PRECISION
+  source: fields
   table_id:
   - Sample Database
   - PUBLIC
   - ORDERS
-  qp/implicit-field?: true
-  lib/deduplicated-name: TAX
-  lib/original-name: TAX
+  visibility_type: normal
   lib/breakout?: false
-  name: TAX
   lib/card-id: 118
+  lib/deduplicated-name: SUBTOTAL
+  lib/desired-column-alias: SUBTOTAL
+  lib/original-display-name: Subtotal
+  lib/original-name: SUBTOTAL
   lib/source: source/previous-stage
-  lib/source-column-alias: TAX
-  lib/original-display-name: Tax
-  source: fields
+  lib/source-column-alias: SUBTOTAL
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Float
+  database_type: DOUBLE PRECISION
+  description: This is the amount of local and federal taxes that are collected on the purchase. Note that other governmental fees on some products are not included here, but instead are accounted for in the subtotal.
+  display_name: Tax
+  effective_type: type/Float
   field_ref:
   - field
   - - Sample Database
@@ -198,34 +206,34 @@ result_metadata:
     - ORDERS
     - TAX
   - null
-  effective_type: type/Float
-  active: true
   id:
   - Sample Database
   - PUBLIC
   - ORDERS
   - TAX
-  lib/desired-column-alias: TAX
+  name: TAX
   position: 4
-  visibility_type: normal
-  display_name: Tax
-  base_type: type/Float
-- description: The total billed amount.
-  database_type: DOUBLE PRECISION
+  source: fields
   table_id:
   - Sample Database
   - PUBLIC
   - ORDERS
-  qp/implicit-field?: true
-  lib/deduplicated-name: TOTAL
-  lib/original-name: TOTAL
+  visibility_type: normal
   lib/breakout?: false
-  name: TOTAL
   lib/card-id: 118
+  lib/deduplicated-name: TAX
+  lib/desired-column-alias: TAX
+  lib/original-display-name: Tax
+  lib/original-name: TAX
   lib/source: source/previous-stage
-  lib/source-column-alias: TOTAL
-  lib/original-display-name: Total
-  source: fields
+  lib/source-column-alias: TAX
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Float
+  database_type: DOUBLE PRECISION
+  description: The total billed amount.
+  display_name: Total
+  effective_type: type/Float
   field_ref:
   - field
   - - Sample Database
@@ -233,35 +241,34 @@ result_metadata:
     - ORDERS
     - TOTAL
   - null
-  effective_type: type/Float
-  active: true
   id:
   - Sample Database
   - PUBLIC
   - ORDERS
   - TOTAL
-  lib/desired-column-alias: TOTAL
+  name: TOTAL
   position: 5
-  visibility_type: normal
-  display_name: Total
-  base_type: type/Float
-- description: Discount amount.
-  database_type: DOUBLE PRECISION
-  semantic_type: type/Discount
+  source: fields
   table_id:
   - Sample Database
   - PUBLIC
   - ORDERS
-  qp/implicit-field?: true
-  lib/deduplicated-name: DISCOUNT
-  lib/original-name: DISCOUNT
+  visibility_type: normal
   lib/breakout?: false
-  name: DISCOUNT
   lib/card-id: 118
+  lib/deduplicated-name: TOTAL
+  lib/desired-column-alias: TOTAL
+  lib/original-display-name: Total
+  lib/original-name: TOTAL
   lib/source: source/previous-stage
-  lib/source-column-alias: DISCOUNT
-  lib/original-display-name: Discount
-  source: fields
+  lib/source-column-alias: TOTAL
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Float
+  database_type: DOUBLE PRECISION
+  description: Discount amount.
+  display_name: Discount
+  effective_type: type/Float
   field_ref:
   - field
   - - Sample Database
@@ -269,35 +276,35 @@ result_metadata:
     - ORDERS
     - DISCOUNT
   - null
-  effective_type: type/Float
-  active: true
   id:
   - Sample Database
   - PUBLIC
   - ORDERS
   - DISCOUNT
-  lib/desired-column-alias: DISCOUNT
+  name: DISCOUNT
   position: 6
-  visibility_type: normal
-  display_name: Discount
-  base_type: type/Float
-- description: The date and time an order was submitted.
-  database_type: TIMESTAMP
-  semantic_type: type/CreationTimestamp
+  semantic_type: type/Discount
+  source: fields
   table_id:
   - Sample Database
   - PUBLIC
   - ORDERS
-  qp/implicit-field?: true
-  lib/deduplicated-name: CREATED_AT
-  lib/original-name: CREATED_AT
+  visibility_type: normal
   lib/breakout?: false
-  name: CREATED_AT
   lib/card-id: 118
+  lib/deduplicated-name: DISCOUNT
+  lib/desired-column-alias: DISCOUNT
+  lib/original-display-name: Discount
+  lib/original-name: DISCOUNT
   lib/source: source/previous-stage
-  lib/source-column-alias: CREATED_AT
-  lib/original-display-name: Created At
-  source: fields
+  lib/source-column-alias: DISCOUNT
+  qp/implicit-field?: true
+- active: true
+  base_type: type/DateTime
+  database_type: TIMESTAMP
+  description: The date and time an order was submitted.
+  display_name: Created At
+  effective_type: type/DateTime
   field_ref:
   - field
   - - Sample Database
@@ -305,35 +312,35 @@ result_metadata:
     - ORDERS
     - CREATED_AT
   - null
-  effective_type: type/DateTime
-  active: true
   id:
   - Sample Database
   - PUBLIC
   - ORDERS
   - CREATED_AT
-  lib/desired-column-alias: CREATED_AT
+  name: CREATED_AT
   position: 7
-  visibility_type: normal
-  display_name: Created At
-  base_type: type/DateTime
-- description: Number of products bought.
-  database_type: INTEGER
-  semantic_type: type/Quantity
+  semantic_type: type/CreationTimestamp
+  source: fields
   table_id:
   - Sample Database
   - PUBLIC
   - ORDERS
-  qp/implicit-field?: true
-  lib/deduplicated-name: QUANTITY
-  lib/original-name: QUANTITY
+  visibility_type: normal
   lib/breakout?: false
-  name: QUANTITY
   lib/card-id: 118
+  lib/deduplicated-name: CREATED_AT
+  lib/desired-column-alias: CREATED_AT
+  lib/original-display-name: Created At
+  lib/original-name: CREATED_AT
   lib/source: source/previous-stage
-  lib/source-column-alias: QUANTITY
-  lib/original-display-name: Quantity
-  source: fields
+  lib/source-column-alias: CREATED_AT
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Integer
+  database_type: INTEGER
+  description: Number of products bought.
+  display_name: Quantity
+  effective_type: type/Integer
   field_ref:
   - field
   - - Sample Database
@@ -341,35 +348,35 @@ result_metadata:
     - ORDERS
     - QUANTITY
   - null
-  effective_type: type/Integer
-  active: true
   id:
   - Sample Database
   - PUBLIC
   - ORDERS
   - QUANTITY
-  lib/desired-column-alias: QUANTITY
+  name: QUANTITY
   position: 8
-  visibility_type: normal
-  display_name: Quantity
-  base_type: type/Integer
-- description: The name of the user who owns an account
-  database_type: CHARACTER VARYING
-  semantic_type: type/Name
+  semantic_type: type/Quantity
+  source: fields
   table_id:
   - Sample Database
   - PUBLIC
-  - PEOPLE
-  qp/implicit-field?: true
-  lib/deduplicated-name: NAME
-  lib/original-name: NAME
+  - ORDERS
+  visibility_type: normal
   lib/breakout?: false
-  name: NAME
+  lib/card-id: 118
+  lib/deduplicated-name: QUANTITY
+  lib/desired-column-alias: QUANTITY
+  lib/original-display-name: Quantity
+  lib/original-name: QUANTITY
   lib/source: source/previous-stage
-  lib/source-column-alias: PEOPLE__via__USER_ID__NAME
-  lib/original-display-name: Name
-  lib/original-fk-field-id: 11
-  source: fields
+  lib/source-column-alias: QUANTITY
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Text
+  database_type: CHARACTER VARYING
+  description: The name of the user who owns an account
+  display_name: User → Name
+  effective_type: type/Text
   field_ref:
   - field
   - - Sample Database
@@ -377,37 +384,37 @@ result_metadata:
     - PEOPLE
     - NAME
   - null
-  effective_type: type/Text
-  active: true
   id:
   - Sample Database
   - PUBLIC
   - PEOPLE
   - NAME
-  lib/desired-column-alias: PEOPLE__via__USER_ID__NAME
-  position: 4
-  visibility_type: normal
+  name: NAME
   options:
     metabase.query-processor.middleware.add-remaps/new-field-dimension-id: 1
-  display_name: User → Name
-  base_type: type/Text
-- description: The name of the product as it should be displayed to customers.
-  database_type: CHARACTER VARYING
-  semantic_type: type/Title
+  position: 4
+  semantic_type: type/Name
+  source: fields
   table_id:
   - Sample Database
   - PUBLIC
-  - PRODUCTS
-  qp/implicit-field?: true
-  lib/deduplicated-name: TITLE
-  lib/original-name: TITLE
+  - PEOPLE
+  visibility_type: normal
   lib/breakout?: false
-  name: TITLE
+  lib/deduplicated-name: NAME
+  lib/desired-column-alias: PEOPLE__via__USER_ID__NAME
+  lib/original-display-name: Name
+  lib/original-fk-field-id: 11
+  lib/original-name: NAME
   lib/source: source/previous-stage
-  lib/source-column-alias: PRODUCTS__via__PRODUCT_ID__TITLE
-  lib/original-display-name: Title
-  lib/original-fk-field-id: 14
-  source: fields
+  lib/source-column-alias: PEOPLE__via__USER_ID__NAME
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Text
+  database_type: CHARACTER VARYING
+  description: The name of the product as it should be displayed to customers.
+  display_name: Product → Title
+  effective_type: type/Text
   field_ref:
   - field
   - - Sample Database
@@ -415,50 +422,42 @@ result_metadata:
     - PRODUCTS
     - TITLE
   - null
-  effective_type: type/Text
-  active: true
   id:
   - Sample Database
   - PUBLIC
   - PRODUCTS
   - TITLE
-  lib/desired-column-alias: PRODUCTS__via__PRODUCT_ID__TITLE
-  position: 2
-  visibility_type: normal
+  name: TITLE
   options:
     metabase.query-processor.middleware.add-remaps/new-field-dimension-id: 2
-  display_name: Product → Title
-  base_type: type/Text
-embedding_type: null
-card_schema: 22
-database_id: Sample Database
-enable_embedding: false
-collection_id: ZOKzpD0QLpcVsU582zJ0I
-query_type: query
-name: Orders
-document_id: null
-type: question
-creator_id: crowberto@metabase.com
-made_public_by_id: null
-embedding_params: null
-dataset_query:
-  database: Sample Database
-  type: query
-  query:
-    source-table: xKGJV2Ak1bThI_Ti-KBm6
-parameter_mappings: []
-serdes/meta:
-- model: Card
-  id: C36QAZ5433GtxSeUUCmMc
-  label: orders
-display: table
-archived_directly: false
-entity_id: C36QAZ5433GtxSeUUCmMc
-collection_preview: true
+  position: 2
+  semantic_type: type/Title
+  source: fields
+  table_id:
+  - Sample Database
+  - PUBLIC
+  - PRODUCTS
+  visibility_type: normal
+  lib/breakout?: false
+  lib/deduplicated-name: TITLE
+  lib/desired-column-alias: PRODUCTS__via__PRODUCT_ID__TITLE
+  lib/original-display-name: Title
+  lib/original-fk-field-id: 14
+  lib/original-name: TITLE
+  lib/source: source/previous-stage
+  lib/source-column-alias: PRODUCTS__via__PRODUCT_ID__TITLE
+  qp/implicit-field?: true
 visualization_settings:
   column_settings: null
-metabase_version: v1.57.1-SNAPSHOT (29c4144)
-parameters: []
+card_schema: 23
+serdes/meta:
+- id: C36QAZ5433GtxSeUUCmMc
+  label: orders
+  model: Card
+archived_directly: false
 dashboard_id: null
-created_at: '2025-12-02T20:49:41.620165Z'
-public_uuid: null
+document_id: null
+embedding_type: null
+metabase_version: v1.57.1-SNAPSHOT (b050245)
+source_card_id: xKGJV2Ak1bThI_Ti-KBm6
+type: question

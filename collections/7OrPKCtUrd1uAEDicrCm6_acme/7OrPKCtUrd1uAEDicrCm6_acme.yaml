@@ -1,19 +1,19 @@
-authority_level: null
-description: Acme customer
-archived: false
-slug: acme
-archive_operation_id: null
 name: Acme
-is_remote_synced: true
-personal_owner_id: null
-type: null
-is_sample: false
-parent_id: null
-serdes/meta:
-- model: Collection
-  id: 7OrPKCtUrd1uAEDicrCm6
-  label: acme
-archived_directly: null
+description: Acme customer
 entity_id: 7OrPKCtUrd1uAEDicrCm6
-namespace: shared-tenant-collection
+slug: acme
 created_at: '2025-12-05T15:27:56.42831Z'
+archived: false
+type: null
+parent_id: null
+personal_owner_id: null
+namespace: shared-tenant-collection
+authority_level: null
+serdes/meta:
+- id: 7OrPKCtUrd1uAEDicrCm6
+  label: acme
+  model: Collection
+archive_operation_id: null
+archived_directly: null
+is_remote_synced: true
+is_sample: false
