@@ -1,0 +1,19 @@
+name: Library
+description: null
+entity_id: ulp72TbiZgBqLq4l_HXLU
+slug: library
+created_at: '2025-12-16T14:34:04.225637Z'
+archived: false
+type: library
+parent_id: null
+personal_owner_id: null
+namespace: null
+authority_level: null
+serdes/meta:
+- id: ulp72TbiZgBqLq4l_HXLU
+  label: library
+  model: Collection
+archive_operation_id: null
+archived_directly: null
+is_remote_synced: true
+is_sample: false
