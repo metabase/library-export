@@ -1,0 +1,62 @@
+name: My Greate Metrics
+description: null
+entity_id: 4ix_LHG4gtrL9gkAePaj0
+created_at: '2025-12-18T19:43:33.368764Z'
+creator_id: crowberto@metabase.com
+display: scalar
+archived: false
+collection_id: EUytkSYSoSolGtmfmMo7u
+collection_preview: true
+collection_position: null
+query_type: query
+database_id: Sample Database
+table_id:
+- Sample Database
+- PUBLIC
+- FEEDBACK
+enable_embedding: false
+embedding_params: null
+made_public_by_id: null
+public_uuid: null
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Sample Database
+  query:
+    aggregation:
+    - - count
+    source-table:
+    - Sample Database
+    - PUBLIC
+    - FEEDBACK
+  type: query
+result_metadata:
+- base_type: type/BigInteger
+  database_type: BIGINT
+  display_name: Count
+  effective_type: type/BigInteger
+  field_ref:
+  - aggregation
+  - 0
+  name: count
+  semantic_type: type/Quantity
+  source: aggregation
+  lib/deduplicated-name: count
+  lib/desired-column-alias: count
+  lib/original-name: count
+  lib/source: source/aggregations
+  lib/source-column-alias: count
+visualization_settings:
+  column_settings: null
+card_schema: 23
+serdes/meta:
+- id: 4ix_LHG4gtrL9gkAePaj0
+  label: my_greate_metrics
+  model: Card
+archived_directly: false
+dashboard_id: null
+document_id: null
+embedding_type: null
+metabase_version: v1.57.1-SNAPSHOT (b050245)
+source_card_id: null
+type: metric
