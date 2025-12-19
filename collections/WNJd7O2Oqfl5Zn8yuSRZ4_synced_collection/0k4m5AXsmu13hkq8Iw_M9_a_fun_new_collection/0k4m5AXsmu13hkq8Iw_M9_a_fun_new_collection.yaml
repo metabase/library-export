@@ -1,19 +1,19 @@
-authority_level: null
-description: null
-archived: false
-slug: a_fun_new_collection
-archive_operation_id: null
 name: A FUN NEW COLLECTION
-is_remote_synced: true
-personal_owner_id: null
-type: null
-is_sample: false
-parent_id: WNJd7O2Oqfl5Zn8yuSRZ4
-serdes/meta:
-- model: Collection
-  id: 0k4m5AXsmu13hkq8Iw_M9
-  label: a_fun_new_collection
-archived_directly: null
+description: null
 entity_id: 0k4m5AXsmu13hkq8Iw_M9
-namespace: null
+slug: a_fun_new_collection
 created_at: '2025-11-25T18:35:16.630129Z'
+archived: false
+type: null
+parent_id: WNJd7O2Oqfl5Zn8yuSRZ4
+personal_owner_id: null
+namespace: null
+authority_level: null
+serdes/meta:
+- id: 0k4m5AXsmu13hkq8Iw_M9
+  label: a_fun_new_collection
+  model: Collection
+archive_operation_id: null
+archived_directly: null
+is_remote_synced: true
+is_sample: false

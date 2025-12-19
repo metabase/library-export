@@ -1,19 +1,19 @@
-authority_level: null
-description: null
-archived: false
-slug: another_collection
-archive_operation_id: null
 name: Another collection
-is_remote_synced: true
-personal_owner_id: null
-type: null
-is_sample: false
-parent_id: null
-serdes/meta:
-- model: Collection
-  id: At7FGtcPalc-ekuJAx5gl
-  label: another_collection
-archived_directly: null
+description: null
 entity_id: At7FGtcPalc-ekuJAx5gl
-namespace: shared-tenant-collection
+slug: another_collection
 created_at: '2025-11-26T20:59:23.271793Z'
+archived: false
+type: null
+parent_id: null
+personal_owner_id: null
+namespace: shared-tenant-collection
+authority_level: null
+serdes/meta:
+- id: At7FGtcPalc-ekuJAx5gl
+  label: another_collection
+  model: Collection
+archive_operation_id: null
+archived_directly: null
+is_remote_synced: true
+is_sample: false

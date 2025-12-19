@@ -1,27 +1,39 @@
+name: Feedback
 description: null
+entity_id: ZtOeo2y9XMx-gWil24Tqo
+created_at: '2025-12-04T21:14:44.089132Z'
+creator_id: crowberto@metabase.com
+display: table
 archived: false
+collection_id: RWy_f_brsF63eou_kBV-q
+collection_preview: true
 collection_position: null
-source_card_id: null
-published_table_id: null
+query_type: query
+database_id: Sample Database
 table_id:
 - Sample Database
 - PUBLIC
 - FEEDBACK
+enable_embedding: false
+embedding_params: null
+made_public_by_id: null
+public_uuid: null
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Sample Database
+  query:
+    source-table:
+    - Sample Database
+    - PUBLIC
+    - FEEDBACK
+  type: query
 result_metadata:
-- database_type: BIGINT
-  semantic_type: type/PK
-  table_id:
-  - Sample Database
-  - PUBLIC
-  - FEEDBACK
-  qp/implicit-field?: true
-  lib/deduplicated-name: ID
-  lib/original-name: ID
-  name: ID
-  lib/source: source/table-defaults
-  lib/source-column-alias: ID
-  lib/original-display-name: ID
-  source: fields
+- active: true
+  base_type: type/BigInteger
+  database_type: BIGINT
+  display_name: ID
+  effective_type: type/BigInteger
   field_ref:
   - field
   - - Sample Database
@@ -29,42 +41,32 @@ result_metadata:
     - FEEDBACK
     - ID
   - null
-  effective_type: type/BigInteger
-  active: true
   id:
   - Sample Database
   - PUBLIC
   - FEEDBACK
   - ID
-  lib/desired-column-alias: ID
+  name: ID
   position: 0
-  visibility_type: normal
-  display_name: ID
-  base_type: type/BigInteger
-- database_type: BIGINT
-  semantic_type: type/FK
+  semantic_type: type/PK
+  source: fields
   table_id:
   - Sample Database
   - PUBLIC
   - FEEDBACK
-  qp/implicit-field?: true
-  lib/deduplicated-name: ACCOUNT_ID
-  lib/original-name: ACCOUNT_ID
-  name: ACCOUNT_ID
+  visibility_type: normal
+  lib/deduplicated-name: ID
+  lib/desired-column-alias: ID
+  lib/original-display-name: ID
+  lib/original-name: ID
   lib/source: source/table-defaults
-  lib/source-column-alias: ACCOUNT_ID
-  lib/original-display-name: Account ID
-  lib/external-remap:
-    lib/type: metadata.column.remapping/external
-    id: 4
-    name: Account ID
-    field-id: 62
-  source: fields
-  fk_target_field_id:
-  - Sample Database
-  - PUBLIC
-  - ACCOUNTS
-  - ID
+  lib/source-column-alias: ID
+  qp/implicit-field?: true
+- active: true
+  base_type: type/BigInteger
+  database_type: BIGINT
+  display_name: Account ID
+  effective_type: type/BigInteger
   field_ref:
   - field
   - - Sample Database
@@ -72,34 +74,44 @@ result_metadata:
     - FEEDBACK
     - ACCOUNT_ID
   - null
-  effective_type: type/BigInteger
-  active: true
+  fk_target_field_id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  - ID
   id:
   - Sample Database
   - PUBLIC
   - FEEDBACK
   - ACCOUNT_ID
-  lib/desired-column-alias: ACCOUNT_ID
-  position: 1
-  visibility_type: normal
+  name: ACCOUNT_ID
   options:
     metabase.query-processor.middleware.add-remaps/original-field-dimension-id: 4
-  display_name: Account ID
-  base_type: type/BigInteger
-- database_type: CHARACTER VARYING
-  semantic_type: type/Email
+  position: 1
+  semantic_type: type/FK
+  source: fields
   table_id:
   - Sample Database
   - PUBLIC
   - FEEDBACK
-  qp/implicit-field?: true
-  lib/deduplicated-name: EMAIL
-  lib/original-name: EMAIL
-  name: EMAIL
+  visibility_type: normal
+  lib/deduplicated-name: ACCOUNT_ID
+  lib/desired-column-alias: ACCOUNT_ID
+  lib/external-remap:
+    field-id: 62
+    id: 4
+    name: Account ID
+    lib/type: metadata.column.remapping/external
+  lib/original-display-name: Account ID
+  lib/original-name: ACCOUNT_ID
   lib/source: source/table-defaults
-  lib/source-column-alias: EMAIL
-  lib/original-display-name: Email
-  source: fields
+  lib/source-column-alias: ACCOUNT_ID
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Text
+  database_type: CHARACTER VARYING
+  display_name: Email
+  effective_type: type/Text
   field_ref:
   - field
   - - Sample Database
@@ -107,31 +119,32 @@ result_metadata:
     - FEEDBACK
     - EMAIL
   - null
-  effective_type: type/Text
-  active: true
   id:
   - Sample Database
   - PUBLIC
   - FEEDBACK
   - EMAIL
-  lib/desired-column-alias: EMAIL
+  name: EMAIL
   position: 2
-  visibility_type: normal
-  display_name: Email
-  base_type: type/Text
-- database_type: TIMESTAMP
+  semantic_type: type/Email
+  source: fields
   table_id:
   - Sample Database
   - PUBLIC
   - FEEDBACK
-  qp/implicit-field?: true
-  lib/deduplicated-name: DATE_RECEIVED
-  lib/original-name: DATE_RECEIVED
-  name: DATE_RECEIVED
+  visibility_type: normal
+  lib/deduplicated-name: EMAIL
+  lib/desired-column-alias: EMAIL
+  lib/original-display-name: Email
+  lib/original-name: EMAIL
   lib/source: source/table-defaults
-  lib/source-column-alias: DATE_RECEIVED
-  lib/original-display-name: Date Received
-  source: fields
+  lib/source-column-alias: EMAIL
+  qp/implicit-field?: true
+- active: true
+  base_type: type/DateTime
+  database_type: TIMESTAMP
+  display_name: Date Received
+  effective_type: type/DateTime
   field_ref:
   - field
   - - Sample Database
@@ -139,32 +152,31 @@ result_metadata:
     - FEEDBACK
     - DATE_RECEIVED
   - null
-  effective_type: type/DateTime
-  active: true
   id:
   - Sample Database
   - PUBLIC
   - FEEDBACK
   - DATE_RECEIVED
-  lib/desired-column-alias: DATE_RECEIVED
+  name: DATE_RECEIVED
   position: 3
-  visibility_type: normal
-  display_name: Date Received
-  base_type: type/DateTime
-- database_type: SMALLINT
-  semantic_type: type/Score
+  source: fields
   table_id:
   - Sample Database
   - PUBLIC
   - FEEDBACK
-  qp/implicit-field?: true
-  lib/deduplicated-name: RATING
-  lib/original-name: RATING
-  name: RATING
+  visibility_type: normal
+  lib/deduplicated-name: DATE_RECEIVED
+  lib/desired-column-alias: DATE_RECEIVED
+  lib/original-display-name: Date Received
+  lib/original-name: DATE_RECEIVED
   lib/source: source/table-defaults
-  lib/source-column-alias: RATING
-  lib/original-display-name: Rating
-  source: fields
+  lib/source-column-alias: DATE_RECEIVED
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Integer
+  database_type: SMALLINT
+  display_name: Rating
+  effective_type: type/Integer
   field_ref:
   - field
   - - Sample Database
@@ -172,32 +184,32 @@ result_metadata:
     - FEEDBACK
     - RATING
   - null
-  effective_type: type/Integer
-  active: true
   id:
   - Sample Database
   - PUBLIC
   - FEEDBACK
   - RATING
-  lib/desired-column-alias: RATING
+  name: RATING
   position: 4
-  visibility_type: normal
-  display_name: Rating
-  base_type: type/Integer
-- database_type: CHARACTER VARYING
-  semantic_type: type/Category
+  semantic_type: type/Score
+  source: fields
   table_id:
   - Sample Database
   - PUBLIC
   - FEEDBACK
-  qp/implicit-field?: true
-  lib/deduplicated-name: RATING_MAPPED
-  lib/original-name: RATING_MAPPED
-  name: RATING_MAPPED
+  visibility_type: normal
+  lib/deduplicated-name: RATING
+  lib/desired-column-alias: RATING
+  lib/original-display-name: Rating
+  lib/original-name: RATING
   lib/source: source/table-defaults
-  lib/source-column-alias: RATING_MAPPED
-  lib/original-display-name: Rating Mapped
-  source: fields
+  lib/source-column-alias: RATING
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Text
+  database_type: CHARACTER VARYING
+  display_name: Rating Mapped
+  effective_type: type/Text
   field_ref:
   - field
   - - Sample Database
@@ -205,31 +217,32 @@ result_metadata:
     - FEEDBACK
     - RATING_MAPPED
   - null
-  effective_type: type/Text
-  active: true
   id:
   - Sample Database
   - PUBLIC
   - FEEDBACK
   - RATING_MAPPED
-  lib/desired-column-alias: RATING_MAPPED
+  name: RATING_MAPPED
   position: 5
-  visibility_type: normal
-  display_name: Rating Mapped
-  base_type: type/Text
-- database_type: CHARACTER LARGE OBJECT
+  semantic_type: type/Category
+  source: fields
   table_id:
   - Sample Database
   - PUBLIC
   - FEEDBACK
-  qp/implicit-field?: true
-  lib/deduplicated-name: BODY
-  lib/original-name: BODY
-  name: BODY
+  visibility_type: normal
+  lib/deduplicated-name: RATING_MAPPED
+  lib/desired-column-alias: RATING_MAPPED
+  lib/original-display-name: Rating Mapped
+  lib/original-name: RATING_MAPPED
   lib/source: source/table-defaults
-  lib/source-column-alias: BODY
-  lib/original-display-name: Body
-  source: fields
+  lib/source-column-alias: RATING_MAPPED
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Text
+  database_type: CHARACTER LARGE OBJECT
+  display_name: Body
+  effective_type: type/Text
   field_ref:
   - field
   - - Sample Database
@@ -237,34 +250,31 @@ result_metadata:
     - FEEDBACK
     - BODY
   - null
-  effective_type: type/Text
-  active: true
   id:
   - Sample Database
   - PUBLIC
   - FEEDBACK
   - BODY
-  lib/desired-column-alias: BODY
+  name: BODY
   position: 6
-  visibility_type: normal
-  display_name: Body
-  base_type: type/Text
-- database_type: CHARACTER VARYING
-  semantic_type: type/Email
+  source: fields
   table_id:
   - Sample Database
   - PUBLIC
-  - ACCOUNTS
+  - FEEDBACK
+  visibility_type: normal
+  lib/deduplicated-name: BODY
+  lib/desired-column-alias: BODY
+  lib/original-display-name: Body
+  lib/original-name: BODY
+  lib/source: source/table-defaults
+  lib/source-column-alias: BODY
   qp/implicit-field?: true
-  lib/deduplicated-name: EMAIL_2
-  lib/original-name: EMAIL
-  lib/breakout?: false
-  name: EMAIL_2
-  lib/source: source/implicitly-joinable
-  lib/source-column-alias: EMAIL
-  lib/original-display-name: Email
-  source: fields
-  fk_field_id: 25
+- active: true
+  base_type: type/Text
+  database_type: CHARACTER VARYING
+  display_name: Account → Email
+  effective_type: type/Text
   field_ref:
   - field
   - - Sample Database
@@ -276,53 +286,42 @@ result_metadata:
     - PUBLIC
     - FEEDBACK
     - ACCOUNT_ID
-  effective_type: type/Text
-  active: true
+  fk_field_id: 25
   id:
   - Sample Database
   - PUBLIC
   - ACCOUNTS
   - EMAIL
-  lib/desired-column-alias: ACCOUNTS__via__ACCOUNT_ID__EMAIL
-  position: 1
-  visibility_type: normal
+  name: EMAIL_2
   options:
     metabase.query-processor.middleware.add-remaps/new-field-dimension-id: 4
-  display_name: Account → Email
-  base_type: type/Text
-embedding_type: null
-card_schema: 22
-database_id: Sample Database
-enable_embedding: false
-collection_id: RWy_f_brsF63eou_kBV-q
-query_type: query
-name: Feedback
-document_id: null
-type: question
-creator_id: crowberto@metabase.com
-made_public_by_id: null
-embedding_params: null
-dataset_query:
-  database: Sample Database
-  type: query
-  query:
-    source-table:
-    - Sample Database
-    - PUBLIC
-    - FEEDBACK
-parameter_mappings: []
-serdes/meta:
-- model: Card
-  id: ZtOeo2y9XMx-gWil24Tqo
-  label: feedback
-display: table
-archived_directly: false
-entity_id: ZtOeo2y9XMx-gWil24Tqo
-collection_preview: true
+  position: 1
+  semantic_type: type/Email
+  source: fields
+  table_id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  visibility_type: normal
+  lib/breakout?: false
+  lib/deduplicated-name: EMAIL_2
+  lib/desired-column-alias: ACCOUNTS__via__ACCOUNT_ID__EMAIL
+  lib/original-display-name: Email
+  lib/original-name: EMAIL
+  lib/source: source/implicitly-joinable
+  lib/source-column-alias: EMAIL
+  qp/implicit-field?: true
 visualization_settings:
   column_settings: null
-metabase_version: v1.57.1-SNAPSHOT (29c4144)
-parameters: []
+card_schema: 23
+serdes/meta:
+- id: ZtOeo2y9XMx-gWil24Tqo
+  label: feedback
+  model: Card
+archived_directly: false
 dashboard_id: null
-created_at: '2025-12-04T21:14:44.089132Z'
-public_uuid: null
+document_id: null
+embedding_type: null
+metabase_version: vLOCAL_DEV (06d1ba2ae111e66253209c01c244d6379acfc6dcb1911fa9ab6012cec9ce52e5)
+source_card_id: null
+type: question

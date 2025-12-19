@@ -1,17 +1,17 @@
-name: Synced Collection
+name: Library
 description: null
-entity_id: WNJd7O2Oqfl5Zn8yuSRZ4
-slug: synced_collection
-created_at: '2025-10-27T19:51:12.873227Z'
+entity_id: k5bFvSifLT1QOIl5y6Xlj
+slug: library
+created_at: '2025-12-15T21:52:23.262098Z'
 archived: false
-type: null
+type: library
 parent_id: null
 personal_owner_id: null
 namespace: null
 authority_level: null
 serdes/meta:
-- id: WNJd7O2Oqfl5Zn8yuSRZ4
-  label: synced_collection
+- id: k5bFvSifLT1QOIl5y6Xlj
+  label: library
   model: Collection
 archive_operation_id: null
 archived_directly: null

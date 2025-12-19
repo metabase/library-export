@@ -1,16 +1,19 @@
-name: Seats in the Benzo
+name: METIRC
 description: null
-entity_id: ikxOZpSL3_VhydnA0RsAF
-created_at: '2025-12-02T22:17:35.178827Z'
-creator_id: crowberto@metabase.com
+entity_id: K6ZCGWMmQDqng7invny8z
+created_at: '2025-12-15T21:55:56.37844Z'
+creator_id: a@a.com
 display: scalar
 archived: false
-collection_id: ZOKzpD0QLpcVsU582zJ0I
+collection_id: HVcWO1rsBHa2RcXMTLJdP
 collection_preview: true
 collection_position: null
 query_type: query
 database_id: Sample Database
-table_id: null
+table_id:
+- Sample Database
+- PUBLIC
+- ACCOUNTS
 enable_embedding: false
 embedding_params: null
 made_public_by_id: null
@@ -21,39 +24,39 @@ dataset_query:
   database: Sample Database
   query:
     aggregation:
-    - - sum
-      - - field
-        - SEATS
-        - base-type: type/Integer
-    source-table: NXx-a05KpMJ7CwHSJfJis
+    - - count
+    source-table:
+    - Sample Database
+    - PUBLIC
+    - ACCOUNTS
   type: query
 result_metadata:
 - base_type: type/BigInteger
   database_type: BIGINT
-  display_name: Sum of SEATS
+  display_name: Count
   effective_type: type/BigInteger
   field_ref:
   - aggregation
   - 0
-  name: sum
-  semantic_type: null
+  name: count
+  semantic_type: type/Quantity
   source: aggregation
-  lib/deduplicated-name: sum
-  lib/desired-column-alias: sum
-  lib/original-name: sum
+  lib/deduplicated-name: count
+  lib/desired-column-alias: count
+  lib/original-name: count
   lib/source: source/aggregations
-  lib/source-column-alias: sum
+  lib/source-column-alias: count
 visualization_settings:
   column_settings: null
 card_schema: 23
 serdes/meta:
-- id: ikxOZpSL3_VhydnA0RsAF
-  label: seats_in_the_benzo
+- id: K6ZCGWMmQDqng7invny8z
+  label: metirc
   model: Card
 archived_directly: false
 dashboard_id: null
 document_id: null
 embedding_type: null
-metabase_version: v1.57.1-SNAPSHOT (29c4144)
-source_card_id: NXx-a05KpMJ7CwHSJfJis
-type: question
+metabase_version: vLOCAL_DEV (06d1ba2ae111e66253209c01c244d6379acfc6dcb1911fa9ab6012cec9ce52e5)
+source_card_id: null
+type: metric

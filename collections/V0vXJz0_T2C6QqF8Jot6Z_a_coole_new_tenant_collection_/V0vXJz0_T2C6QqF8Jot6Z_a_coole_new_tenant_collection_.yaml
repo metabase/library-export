@@ -1,19 +1,19 @@
-authority_level: null
-description: will it sync let's find out.
-archived: false
-slug: a_coole_new_tenant_collection_
-archive_operation_id: null
 name: A coole new tenant collection?
-is_remote_synced: true
-personal_owner_id: null
-type: null
-is_sample: false
-parent_id: null
-serdes/meta:
-- model: Collection
-  id: V0vXJz0_T2C6QqF8Jot6Z
-  label: a_coole_new_tenant_collection_
-archived_directly: null
+description: will it sync let's find out.
 entity_id: V0vXJz0_T2C6QqF8Jot6Z
-namespace: shared-tenant-collection
+slug: a_coole_new_tenant_collection_
 created_at: '2025-11-25T15:16:03.301194Z'
+archived: false
+type: null
+parent_id: null
+personal_owner_id: null
+namespace: shared-tenant-collection
+authority_level: null
+serdes/meta:
+- id: V0vXJz0_T2C6QqF8Jot6Z
+  label: a_coole_new_tenant_collection_
+  model: Collection
+archive_operation_id: null
+archived_directly: null
+is_remote_synced: true
+is_sample: false

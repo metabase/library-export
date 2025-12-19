@@ -1,298 +1,297 @@
+name: Benz
 description: null
+entity_id: NXx-a05KpMJ7CwHSJfJis
+created_at: '2025-11-25T15:17:43.996364Z'
+creator_id: crowberto@metabase.com
+display: table
 archived: false
+collection_id: V0vXJz0_T2C6QqF8Jot6Z
+collection_preview: true
 collection_position: null
-source_card_id: null
-published_table_id: null
+query_type: native
+database_id: Sample Database
 table_id: null
+enable_embedding: false
+embedding_params: null
+made_public_by_id: null
+public_uuid: null
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Sample Database
+  native:
+    query: SELECT * FROM ACCOUNTS where first_name like 'Ben%';
+  type: native
 result_metadata:
-- database_type: BIGINT
-  semantic_type: type/PK
-  lib/deduplicated-name: ID
-  lib/original-name: ID
-  name: ID
-  lib/source: source/native
-  lib/source-column-alias: ID
-  source: native
+- base_type: type/BigInteger
+  database_type: BIGINT
+  display_name: ID
+  effective_type: type/BigInteger
   field_ref:
   - field
   - ID
   - base-type: type/BigInteger
-  effective_type: type/BigInteger
-  lib/desired-column-alias: ID
-  display_name: ID
-  base_type: type/BigInteger
-- database_type: CHARACTER VARYING
-  semantic_type: null
-  lib/deduplicated-name: EMAIL
-  lib/original-name: EMAIL
-  name: EMAIL
-  lib/source: source/native
-  lib/source-column-alias: EMAIL
+  name: ID
+  semantic_type: type/PK
   source: native
+  lib/deduplicated-name: ID
+  lib/desired-column-alias: ID
+  lib/original-name: ID
+  lib/source: source/native
+  lib/source-column-alias: ID
+- base_type: type/Text
+  database_type: CHARACTER VARYING
+  display_name: EMAIL
+  effective_type: type/Text
   field_ref:
   - field
   - EMAIL
   - base-type: type/Text
-  effective_type: type/Text
-  lib/desired-column-alias: EMAIL
-  display_name: EMAIL
-  base_type: type/Text
-- database_type: CHARACTER VARYING
-  semantic_type: type/Name
-  lib/deduplicated-name: FIRST_NAME
-  lib/original-name: FIRST_NAME
-  name: FIRST_NAME
-  lib/source: source/native
-  lib/source-column-alias: FIRST_NAME
+  name: EMAIL
+  semantic_type: null
   source: native
+  lib/deduplicated-name: EMAIL
+  lib/desired-column-alias: EMAIL
+  lib/original-name: EMAIL
+  lib/source: source/native
+  lib/source-column-alias: EMAIL
+- base_type: type/Text
+  database_type: CHARACTER VARYING
+  display_name: FIRST_NAME
+  effective_type: type/Text
   field_ref:
   - field
   - FIRST_NAME
   - base-type: type/Text
-  effective_type: type/Text
-  lib/desired-column-alias: FIRST_NAME
-  display_name: FIRST_NAME
-  base_type: type/Text
-- database_type: CHARACTER VARYING
+  name: FIRST_NAME
   semantic_type: type/Name
-  lib/deduplicated-name: LAST_NAME
-  lib/original-name: LAST_NAME
-  name: LAST_NAME
-  lib/source: source/native
-  lib/source-column-alias: LAST_NAME
   source: native
+  lib/deduplicated-name: FIRST_NAME
+  lib/desired-column-alias: FIRST_NAME
+  lib/original-name: FIRST_NAME
+  lib/source: source/native
+  lib/source-column-alias: FIRST_NAME
+- base_type: type/Text
+  database_type: CHARACTER VARYING
+  display_name: LAST_NAME
+  effective_type: type/Text
   field_ref:
   - field
   - LAST_NAME
   - base-type: type/Text
-  effective_type: type/Text
-  lib/desired-column-alias: LAST_NAME
-  display_name: LAST_NAME
-  base_type: type/Text
-- database_type: CHARACTER VARYING
-  semantic_type: null
-  lib/deduplicated-name: PLAN
-  lib/original-name: PLAN
-  name: PLAN
-  lib/source: source/native
-  lib/source-column-alias: PLAN
+  name: LAST_NAME
+  semantic_type: type/Name
   source: native
+  lib/deduplicated-name: LAST_NAME
+  lib/desired-column-alias: LAST_NAME
+  lib/original-name: LAST_NAME
+  lib/source: source/native
+  lib/source-column-alias: LAST_NAME
+- base_type: type/Text
+  database_type: CHARACTER VARYING
+  display_name: PLAN
+  effective_type: type/Text
   field_ref:
   - field
   - PLAN
   - base-type: type/Text
-  effective_type: type/Text
-  lib/desired-column-alias: PLAN
-  display_name: PLAN
-  base_type: type/Text
-- database_type: CHARACTER VARYING
-  semantic_type: type/Source
-  lib/deduplicated-name: SOURCE
-  lib/original-name: SOURCE
-  name: SOURCE
-  lib/source: source/native
-  lib/source-column-alias: SOURCE
+  name: PLAN
+  semantic_type: null
   source: native
+  lib/deduplicated-name: PLAN
+  lib/desired-column-alias: PLAN
+  lib/original-name: PLAN
+  lib/source: source/native
+  lib/source-column-alias: PLAN
+- base_type: type/Text
+  database_type: CHARACTER VARYING
+  display_name: SOURCE
+  effective_type: type/Text
   field_ref:
   - field
   - SOURCE
   - base-type: type/Text
-  effective_type: type/Text
-  lib/desired-column-alias: SOURCE
-  display_name: SOURCE
-  base_type: type/Text
-- database_type: INTEGER
-  semantic_type: null
-  lib/deduplicated-name: SEATS
-  lib/original-name: SEATS
-  name: SEATS
-  lib/source: source/native
-  lib/source-column-alias: SEATS
+  name: SOURCE
+  semantic_type: type/Source
   source: native
+  lib/deduplicated-name: SOURCE
+  lib/desired-column-alias: SOURCE
+  lib/original-name: SOURCE
+  lib/source: source/native
+  lib/source-column-alias: SOURCE
+- base_type: type/Integer
+  database_type: INTEGER
+  display_name: SEATS
+  effective_type: type/Integer
   field_ref:
   - field
   - SEATS
   - base-type: type/Integer
-  effective_type: type/Integer
-  lib/desired-column-alias: SEATS
-  display_name: SEATS
-  base_type: type/Integer
-- database_type: TIMESTAMP
-  semantic_type: type/CreationTimestamp
-  lib/deduplicated-name: CREATED_AT
-  lib/original-name: CREATED_AT
-  name: CREATED_AT
-  lib/source: source/native
-  lib/source-column-alias: CREATED_AT
+  name: SEATS
+  semantic_type: null
   source: native
+  lib/deduplicated-name: SEATS
+  lib/desired-column-alias: SEATS
+  lib/original-name: SEATS
+  lib/source: source/native
+  lib/source-column-alias: SEATS
+- base_type: type/DateTime
+  database_type: TIMESTAMP
+  display_name: CREATED_AT
+  effective_type: type/DateTime
   field_ref:
   - field
   - CREATED_AT
   - base-type: type/DateTime
-  effective_type: type/DateTime
-  lib/desired-column-alias: CREATED_AT
-  display_name: CREATED_AT
-  base_type: type/DateTime
-- database_type: TIMESTAMP
-  semantic_type: null
-  lib/deduplicated-name: TRIAL_ENDS_AT
-  lib/original-name: TRIAL_ENDS_AT
-  name: TRIAL_ENDS_AT
-  lib/source: source/native
-  lib/source-column-alias: TRIAL_ENDS_AT
+  name: CREATED_AT
+  semantic_type: type/CreationTimestamp
   source: native
+  lib/deduplicated-name: CREATED_AT
+  lib/desired-column-alias: CREATED_AT
+  lib/original-name: CREATED_AT
+  lib/source: source/native
+  lib/source-column-alias: CREATED_AT
+- base_type: type/DateTime
+  database_type: TIMESTAMP
+  display_name: TRIAL_ENDS_AT
+  effective_type: type/DateTime
   field_ref:
   - field
   - TRIAL_ENDS_AT
   - base-type: type/DateTime
-  effective_type: type/DateTime
-  lib/desired-column-alias: TRIAL_ENDS_AT
-  display_name: TRIAL_ENDS_AT
-  base_type: type/DateTime
-- database_type: TIMESTAMP
-  semantic_type: type/CancelationTimestamp
-  lib/deduplicated-name: CANCELED_AT
-  lib/original-name: CANCELED_AT
-  name: CANCELED_AT
-  lib/source: source/native
-  lib/source-column-alias: CANCELED_AT
+  name: TRIAL_ENDS_AT
+  semantic_type: null
   source: native
+  lib/deduplicated-name: TRIAL_ENDS_AT
+  lib/desired-column-alias: TRIAL_ENDS_AT
+  lib/original-name: TRIAL_ENDS_AT
+  lib/source: source/native
+  lib/source-column-alias: TRIAL_ENDS_AT
+- base_type: type/DateTime
+  database_type: TIMESTAMP
+  display_name: CANCELED_AT
+  effective_type: type/DateTime
   field_ref:
   - field
   - CANCELED_AT
   - base-type: type/DateTime
-  effective_type: type/DateTime
-  lib/desired-column-alias: CANCELED_AT
-  display_name: CANCELED_AT
-  base_type: type/DateTime
-- database_type: BOOLEAN
-  semantic_type: null
-  lib/deduplicated-name: TRIAL_CONVERTED
-  lib/original-name: TRIAL_CONVERTED
-  name: TRIAL_CONVERTED
-  lib/source: source/native
-  lib/source-column-alias: TRIAL_CONVERTED
+  name: CANCELED_AT
+  semantic_type: type/CancelationTimestamp
   source: native
+  lib/deduplicated-name: CANCELED_AT
+  lib/desired-column-alias: CANCELED_AT
+  lib/original-name: CANCELED_AT
+  lib/source: source/native
+  lib/source-column-alias: CANCELED_AT
+- base_type: type/Boolean
+  database_type: BOOLEAN
+  display_name: TRIAL_CONVERTED
+  effective_type: type/Boolean
   field_ref:
   - field
   - TRIAL_CONVERTED
   - base-type: type/Boolean
-  effective_type: type/Boolean
-  lib/desired-column-alias: TRIAL_CONVERTED
-  display_name: TRIAL_CONVERTED
-  base_type: type/Boolean
-- database_type: BOOLEAN
+  name: TRIAL_CONVERTED
   semantic_type: null
-  lib/deduplicated-name: ACTIVE_SUBSCRIPTION
-  lib/original-name: ACTIVE_SUBSCRIPTION
-  name: ACTIVE_SUBSCRIPTION
-  lib/source: source/native
-  lib/source-column-alias: ACTIVE_SUBSCRIPTION
   source: native
+  lib/deduplicated-name: TRIAL_CONVERTED
+  lib/desired-column-alias: TRIAL_CONVERTED
+  lib/original-name: TRIAL_CONVERTED
+  lib/source: source/native
+  lib/source-column-alias: TRIAL_CONVERTED
+- base_type: type/Boolean
+  database_type: BOOLEAN
+  display_name: ACTIVE_SUBSCRIPTION
+  effective_type: type/Boolean
   field_ref:
   - field
   - ACTIVE_SUBSCRIPTION
   - base-type: type/Boolean
-  effective_type: type/Boolean
-  lib/desired-column-alias: ACTIVE_SUBSCRIPTION
-  display_name: ACTIVE_SUBSCRIPTION
-  base_type: type/Boolean
-- database_type: BOOLEAN
+  name: ACTIVE_SUBSCRIPTION
   semantic_type: null
-  lib/deduplicated-name: LEGACY_PLAN
-  lib/original-name: LEGACY_PLAN
-  name: LEGACY_PLAN
-  lib/source: source/native
-  lib/source-column-alias: LEGACY_PLAN
   source: native
+  lib/deduplicated-name: ACTIVE_SUBSCRIPTION
+  lib/desired-column-alias: ACTIVE_SUBSCRIPTION
+  lib/original-name: ACTIVE_SUBSCRIPTION
+  lib/source: source/native
+  lib/source-column-alias: ACTIVE_SUBSCRIPTION
+- base_type: type/Boolean
+  database_type: BOOLEAN
+  display_name: LEGACY_PLAN
+  effective_type: type/Boolean
   field_ref:
   - field
   - LEGACY_PLAN
   - base-type: type/Boolean
-  effective_type: type/Boolean
-  lib/desired-column-alias: LEGACY_PLAN
-  display_name: LEGACY_PLAN
-  base_type: type/Boolean
-- database_type: DOUBLE PRECISION
-  semantic_type: type/Latitude
-  lib/deduplicated-name: LATITUDE
-  lib/original-name: LATITUDE
-  name: LATITUDE
-  lib/source: source/native
-  lib/source-column-alias: LATITUDE
+  name: LEGACY_PLAN
+  semantic_type: null
   source: native
+  lib/deduplicated-name: LEGACY_PLAN
+  lib/desired-column-alias: LEGACY_PLAN
+  lib/original-name: LEGACY_PLAN
+  lib/source: source/native
+  lib/source-column-alias: LEGACY_PLAN
+- base_type: type/Float
+  database_type: DOUBLE PRECISION
+  display_name: LATITUDE
+  effective_type: type/Float
   field_ref:
   - field
   - LATITUDE
   - base-type: type/Float
-  effective_type: type/Float
-  lib/desired-column-alias: LATITUDE
-  display_name: LATITUDE
-  base_type: type/Float
-- database_type: DOUBLE PRECISION
-  semantic_type: type/Longitude
-  lib/deduplicated-name: LONGITUDE
-  lib/original-name: LONGITUDE
-  name: LONGITUDE
-  lib/source: source/native
-  lib/source-column-alias: LONGITUDE
+  name: LATITUDE
+  semantic_type: type/Latitude
   source: native
+  lib/deduplicated-name: LATITUDE
+  lib/desired-column-alias: LATITUDE
+  lib/original-name: LATITUDE
+  lib/source: source/native
+  lib/source-column-alias: LATITUDE
+- base_type: type/Float
+  database_type: DOUBLE PRECISION
+  display_name: LONGITUDE
+  effective_type: type/Float
   field_ref:
   - field
   - LONGITUDE
   - base-type: type/Float
-  effective_type: type/Float
-  lib/desired-column-alias: LONGITUDE
-  display_name: LONGITUDE
-  base_type: type/Float
-- database_type: CHARACTER
-  semantic_type: type/Country
-  lib/deduplicated-name: COUNTRY
-  lib/original-name: COUNTRY
-  name: COUNTRY
-  lib/source: source/native
-  lib/source-column-alias: COUNTRY
+  name: LONGITUDE
+  semantic_type: type/Longitude
   source: native
+  lib/deduplicated-name: LONGITUDE
+  lib/desired-column-alias: LONGITUDE
+  lib/original-name: LONGITUDE
+  lib/source: source/native
+  lib/source-column-alias: LONGITUDE
+- base_type: type/Text
+  database_type: CHARACTER
+  display_name: COUNTRY
+  effective_type: type/Text
   field_ref:
   - field
   - COUNTRY
   - base-type: type/Text
-  effective_type: type/Text
+  name: COUNTRY
+  semantic_type: type/Country
+  source: native
+  lib/deduplicated-name: COUNTRY
   lib/desired-column-alias: COUNTRY
-  display_name: COUNTRY
-  base_type: type/Text
-embedding_type: null
-card_schema: 22
-database_id: Sample Database
-enable_embedding: false
-collection_id: V0vXJz0_T2C6QqF8Jot6Z
-query_type: native
-name: Benz
-document_id: null
-type: question
-creator_id: crowberto@metabase.com
-made_public_by_id: null
-embedding_params: null
-dataset_query:
-  database: Sample Database
-  type: native
-  native:
-    query: SELECT * FROM ACCOUNTS where first_name like 'Ben%';
-parameter_mappings: []
-serdes/meta:
-- model: Card
-  id: NXx-a05KpMJ7CwHSJfJis
-  label: benz
-display: table
-archived_directly: false
-entity_id: NXx-a05KpMJ7CwHSJfJis
-collection_preview: true
+  lib/original-name: COUNTRY
+  lib/source: source/native
+  lib/source-column-alias: COUNTRY
 visualization_settings:
-  table.pivot_column: TRIAL_CONVERTED
-  table.cell_column: SEATS
   column_settings: null
-metabase_version: v1.57.1-SNAPSHOT (29c4144)
-parameters: []
+  table.cell_column: SEATS
+  table.pivot_column: TRIAL_CONVERTED
+card_schema: 23
+serdes/meta:
+- id: NXx-a05KpMJ7CwHSJfJis
+  label: benz
+  model: Card
+archived_directly: false
 dashboard_id: null
-created_at: '2025-11-25T15:17:43.996364Z'
-public_uuid: null
+document_id: null
+embedding_type: null
+metabase_version: v1.57.1-SNAPSHOT (29c4144)
+source_card_id: null
+type: question

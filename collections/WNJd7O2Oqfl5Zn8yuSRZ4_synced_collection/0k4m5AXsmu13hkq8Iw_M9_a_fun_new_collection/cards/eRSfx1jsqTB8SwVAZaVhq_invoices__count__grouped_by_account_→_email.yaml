@@ -1,88 +1,30 @@
+name: Invoices, Count, Grouped by Account → Email
 description: null
+entity_id: eRSfx1jsqTB8SwVAZaVhq
+created_at: '2025-11-25T18:35:32.4933Z'
+creator_id: crowberto@metabase.com
+display: table
 archived: false
+collection_id: 0k4m5AXsmu13hkq8Iw_M9
+collection_preview: true
 collection_position: null
-source_card_id: null
-published_table_id: null
+query_type: query
+database_id: Sample Database
 table_id:
 - Sample Database
 - PUBLIC
 - INVOICES
-result_metadata:
-- database_type: CHARACTER VARYING
-  semantic_type: type/Email
-  table_id:
-  - Sample Database
-  - PUBLIC
-  - ACCOUNTS
-  lib/deduplicated-name: EMAIL
-  lib/original-name: EMAIL
-  lib/breakout?: true
-  name: EMAIL
-  lib/source: source/implicitly-joinable
-  lib/source-column-alias: EMAIL
-  lib/original-display-name: Email
-  source: breakout
-  fk_field_id: 66
-  field_ref:
-  - field
-  - - Sample Database
-    - PUBLIC
-    - ACCOUNTS
-    - EMAIL
-  - source-field:
-    - Sample Database
-    - PUBLIC
-    - INVOICES
-    - ACCOUNT_ID
-  effective_type: type/Text
-  active: true
-  id:
-  - Sample Database
-  - PUBLIC
-  - ACCOUNTS
-  - EMAIL
-  lib/desired-column-alias: ACCOUNTS__via__ACCOUNT_ID__EMAIL
-  position: 1
-  visibility_type: normal
-  display_name: Account → Email
-  base_type: type/Text
-- database_type: BIGINT
-  semantic_type: type/Quantity
-  lib/deduplicated-name: count
-  lib/original-name: count
-  name: count
-  lib/source: source/aggregations
-  lib/source-column-alias: count
-  source: aggregation
-  field_ref:
-  - aggregation
-  - 0
-  effective_type: type/BigInteger
-  lib/desired-column-alias: count
-  display_name: Count
-  base_type: type/BigInteger
-embedding_type: null
-card_schema: 22
-database_id: Sample Database
 enable_embedding: false
-collection_id: 0k4m5AXsmu13hkq8Iw_M9
-query_type: query
-name: Invoices, Count, Grouped by Account → Email
-document_id: null
-type: question
-creator_id: crowberto@metabase.com
-made_public_by_id: null
 embedding_params: null
+made_public_by_id: null
+public_uuid: null
+parameters: []
+parameter_mappings: []
 dataset_query:
   database: Sample Database
-  type: query
   query:
     aggregation:
     - - count
-    source-table:
-    - Sample Database
-    - PUBLIC
-    - INVOICES
     breakout:
     - - field
       - - Sample Database
@@ -95,20 +37,77 @@ dataset_query:
         - PUBLIC
         - INVOICES
         - ACCOUNT_ID
-parameter_mappings: []
-serdes/meta:
-- model: Card
-  id: eRSfx1jsqTB8SwVAZaVhq
-  label: invoices__count__grouped_by_account_→_email
-display: table
-archived_directly: false
-entity_id: eRSfx1jsqTB8SwVAZaVhq
-collection_preview: true
+    source-table:
+    - Sample Database
+    - PUBLIC
+    - INVOICES
+  type: query
+result_metadata:
+- active: true
+  base_type: type/Text
+  database_type: CHARACTER VARYING
+  display_name: Account → Email
+  effective_type: type/Text
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - ACCOUNTS
+    - EMAIL
+  - source-field:
+    - Sample Database
+    - PUBLIC
+    - INVOICES
+    - ACCOUNT_ID
+  fk_field_id: 66
+  id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  - EMAIL
+  name: EMAIL
+  position: 1
+  semantic_type: type/Email
+  source: breakout
+  table_id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  visibility_type: normal
+  lib/breakout?: true
+  lib/deduplicated-name: EMAIL
+  lib/desired-column-alias: ACCOUNTS__via__ACCOUNT_ID__EMAIL
+  lib/original-display-name: Email
+  lib/original-name: EMAIL
+  lib/source: source/implicitly-joinable
+  lib/source-column-alias: EMAIL
+- base_type: type/BigInteger
+  database_type: BIGINT
+  display_name: Count
+  effective_type: type/BigInteger
+  field_ref:
+  - aggregation
+  - 0
+  name: count
+  semantic_type: type/Quantity
+  source: aggregation
+  lib/deduplicated-name: count
+  lib/desired-column-alias: count
+  lib/original-name: count
+  lib/source: source/aggregations
+  lib/source-column-alias: count
 visualization_settings:
-  table.cell_column: count
   column_settings: null
-metabase_version: v1.57.1-SNAPSHOT (29c4144)
-parameters: []
+  table.cell_column: count
+card_schema: 23
+serdes/meta:
+- id: eRSfx1jsqTB8SwVAZaVhq
+  label: invoices__count__grouped_by_account_→_email
+  model: Card
+archived_directly: false
 dashboard_id: null
-created_at: '2025-11-25T18:35:32.4933Z'
-public_uuid: null
+document_id: null
+embedding_type: null
+metabase_version: v1.57.1-SNAPSHOT (29c4144)
+source_card_id: null
+type: question
