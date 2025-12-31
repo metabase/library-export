@@ -1,0 +1,19 @@
+name: Synced Collection
+description: null
+entity_id: z2yIjbKwcN5MIBOW-XVqT
+slug: synced_collection
+created_at: '2025-12-31T19:39:37.441515Z'
+archived: false
+type: null
+parent_id: null
+personal_owner_id: null
+namespace: null
+authority_level: null
+serdes/meta:
+- id: z2yIjbKwcN5MIBOW-XVqT
+  label: synced_collection
+  model: Collection
+archive_operation_id: null
+archived_directly: null
+is_remote_synced: true
+is_sample: false
