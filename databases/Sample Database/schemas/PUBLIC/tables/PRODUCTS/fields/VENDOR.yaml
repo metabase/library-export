@@ -23,7 +23,7 @@ preview_display: true
 position: 4
 custom_position: 0
 database_position: 4
-has_field_values: auto-list
+has_field_values: search
 settings: null
 caveats: null
 points_of_interest: null
