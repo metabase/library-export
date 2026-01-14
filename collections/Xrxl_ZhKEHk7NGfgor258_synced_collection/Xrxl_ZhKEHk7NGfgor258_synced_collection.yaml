@@ -1,0 +1,19 @@
+name: Synced Collection
+description: null
+entity_id: Xrxl_ZhKEHk7NGfgor258
+slug: synced_collection
+created_at: '2026-01-14T21:51:20.954198Z'
+archived: false
+type: null
+parent_id: null
+personal_owner_id: null
+namespace: null
+authority_level: null
+serdes/meta:
+- id: Xrxl_ZhKEHk7NGfgor258
+  label: synced_collection
+  model: Collection
+archive_operation_id: null
+archived_directly: null
+is_remote_synced: true
+is_sample: false
