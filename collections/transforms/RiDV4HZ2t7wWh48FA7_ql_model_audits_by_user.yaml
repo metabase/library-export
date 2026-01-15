@@ -1,0 +1,45 @@
+collection_id: null
+created_at: '2026-01-15T19:41:17.824201Z'
+creator_id: crowberto@metabase.com
+description: null
+entity_id: RiDV4HZ2t7wWh48FA7_ql
+name: Model Audits by User
+source:
+  query:
+    database: App DB
+    query:
+      aggregation:
+      - - count
+      breakout:
+      - - field
+        - - App DB
+          - public
+          - audit_log
+          - model_id
+        - base-type: type/Integer
+          binning:
+            strategy: default
+      - - field
+        - - App DB
+          - public
+          - audit_log
+          - user_id
+        - base-type: type/Integer
+          binning:
+            strategy: default
+      source-table:
+      - App DB
+      - public
+      - audit_log
+    type: query
+  type: query
+tags: []
+target:
+  database: App DB
+  name: model_audits_by_user
+  schema: public
+  type: table
+serdes/meta:
+- id: RiDV4HZ2t7wWh48FA7_ql
+  label: model_audits_by_user
+  model: Transform
