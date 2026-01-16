@@ -1,0 +1,19 @@
+name: Test again
+description: null
+entity_id: CxKkIF4h2gARD29RyuFzq
+slug: test_again
+created_at: '2026-01-16T19:42:19.784353Z'
+archived: false
+type: null
+parent_id: null
+personal_owner_id: null
+namespace: transforms
+authority_level: null
+serdes/meta:
+- id: CxKkIF4h2gARD29RyuFzq
+  label: test_again
+  model: Collection
+archive_operation_id: null
+archived_directly: null
+is_remote_synced: false
+is_sample: false

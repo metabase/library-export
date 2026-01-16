@@ -1,0 +1,19 @@
+name: Nested
+description: null
+entity_id: aonoWEVKxXZSRq96poSa1
+slug: nested
+created_at: '2026-01-16T20:08:40.671516Z'
+archived: false
+type: null
+parent_id: jzkhfEqjdof0ucE6s3092
+personal_owner_id: null
+namespace: transforms
+authority_level: null
+serdes/meta:
+- id: aonoWEVKxXZSRq96poSa1
+  label: nested
+  model: Collection
+archive_operation_id: null
+archived_directly: null
+is_remote_synced: false
+is_sample: false
