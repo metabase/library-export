@@ -1,0 +1,19 @@
+name: deeply nested
+description: null
+entity_id: FSj601IZ3h3lip6CO_KVy
+slug: deeply_nested
+created_at: '2026-01-16T20:09:32.866296Z'
+archived: false
+type: null
+parent_id: aonoWEVKxXZSRq96poSa1
+personal_owner_id: null
+namespace: transforms
+authority_level: null
+serdes/meta:
+- id: FSj601IZ3h3lip6CO_KVy
+  label: deeply_nested
+  model: Collection
+archive_operation_id: null
+archived_directly: null
+is_remote_synced: false
+is_sample: false
