@@ -8,6 +8,14 @@ source:
   query:
     database: BigQuery
     query:
+      order-by:
+      - - asc
+        - - field
+          - - BigQuery
+            - transform_output
+            - attempted_output
+            - id
+          - base-type: type/Integer
       source-table:
       - BigQuery
       - transform_output
