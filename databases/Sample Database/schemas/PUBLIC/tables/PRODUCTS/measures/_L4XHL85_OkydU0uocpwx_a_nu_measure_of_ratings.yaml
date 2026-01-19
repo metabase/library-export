@@ -1,0 +1,30 @@
+archived: false
+created_at: '2026-01-19T21:40:13.44608Z'
+creator_id: crowberto@metabase.com
+definition:
+  database: Sample Database
+  query:
+    aggregation:
+    - - sum
+      - - field
+        - - Sample Database
+          - PUBLIC
+          - PRODUCTS
+          - RATING
+        - base-type: type/Float
+    source-table:
+    - Sample Database
+    - PUBLIC
+    - PRODUCTS
+  type: query
+description: null
+entity_id: _L4XHL85_OkydU0uocpwx
+name: A NU Measure of RATINGS
+table_id:
+- Sample Database
+- PUBLIC
+- PRODUCTS
+serdes/meta:
+- id: _L4XHL85_OkydU0uocpwx
+  label: a_nu_measure_of_ratings
+  model: Measure
