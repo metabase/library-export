@@ -1,0 +1,45 @@
+name: num_crows
+display_name: Num Crows
+description: null
+created_at: '2026-01-16T20:45:19.808097Z'
+active: true
+visibility_type: normal
+table_id:
+- BigQuery
+- v3_attempted_murders
+- attempts
+database_type: INTEGER
+base_type: type/Integer
+effective_type: type/Integer
+semantic_type: type/Quantity
+database_is_auto_increment: false
+database_required: false
+fk_target_field_id: null
+dimensions: []
+json_unfolding: false
+parent_id: null
+coercion_strategy: null
+preview_display: true
+position: 9
+custom_position: 0
+database_position: 9
+has_field_values: auto-list
+settings: null
+caveats: null
+points_of_interest: null
+nfc_path: null
+serdes/meta:
+- id: BigQuery
+  model: Database
+- id: v3_attempted_murders
+  model: Schema
+- id: attempts
+  model: Table
+- id: num_crows
+  model: Field
+database_default: null
+database_indexed: null
+database_is_generated: null
+database_is_nullable: null
+database_is_pk: null
+database_partitioned: false
