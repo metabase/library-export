@@ -1,0 +1,11 @@
+created_at: '2026-01-21T22:02:05.297511Z'
+path: common.py
+source: |-
+  def something():
+      return "COOL"
+
+  def something_else():
+      return "NOT COOL"
+serdes/meta:
+- id: common.py
+  model: PythonLibrary
