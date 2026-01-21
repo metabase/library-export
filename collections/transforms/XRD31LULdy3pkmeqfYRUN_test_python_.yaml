@@ -1,0 +1,45 @@
+collection_id: null
+created_at: '2026-01-19T22:39:12.860562Z'
+creator_id: pr@metabase.com
+description: null
+entity_id: XRD31LULdy3pkmeqfYRUN
+name: TEST PYTHON!
+owner_email: null
+owner_user_id: pr@metabase.com
+source:
+  body: |-
+    # Write your Python transformation script here
+    import common
+    import pandas as pd
+
+    def transform(metabase_ci_bigquery_sheet):
+        """
+        Your transformation function.
+
+        Args:
+            metabase_ci_bigquery_sheet: DataFrame containing the data from the "BigQuery.google_drive_dataset.metabase_ci_bigquery_sheet" table
+
+        Returns:
+            DataFrame to write to the destination table
+        """
+        # Your transformation logic here
+        return pd.DataFrame([{"message": "Hello from Python transform!"}])
+  query: {}
+  source-database: 5
+  source-tables:
+    metabase_ci_bigquery_sheet:
+      database_id: 5
+      schema: google_drive_dataset
+      table: metabase_ci_bigquery_sheet
+      table_id: 121
+  type: python
+tags: []
+target:
+  database: BigQuery
+  name: test_python
+  schema: google_drive_dataset
+  type: table
+serdes/meta:
+- id: XRD31LULdy3pkmeqfYRUN
+  label: test_python_
+  model: Transform

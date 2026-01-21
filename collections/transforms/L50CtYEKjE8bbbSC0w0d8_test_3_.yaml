@@ -4,6 +4,8 @@ creator_id: pr@metabase.com
 description: null
 entity_id: L50CtYEKjE8bbbSC0w0d8
 name: Test 3!
+owner_email: null
+owner_user_id: pr@metabase.com
 source:
   query:
     database: BigQuery
