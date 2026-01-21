@@ -1,0 +1,132 @@
+name: Total orders by product category
+description: Breaks down the overall performance of each of the product categories
+entity_id: ShsD1PjGTlFIvzm5FM9qC
+created_at: '2026-01-16T20:42:53.358414Z'
+creator_id: internal@metabase.com
+display: pie
+archived: false
+collection_id: HyB3nRtqb7pBPhFG26evI
+collection_preview: true
+collection_position: null
+query_type: query
+database_id: Sample Database
+table_id:
+- Sample Database
+- PUBLIC
+- ORDERS
+enable_embedding: false
+embedding_params: null
+made_public_by_id: null
+public_uuid: null
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Sample Database
+  query:
+    aggregation:
+    - - metric
+      - 8EdazRgPwfxdiltp7NCjS
+    breakout:
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - PRODUCTS
+        - CATEGORY
+      - base-type: type/Text
+        source-field:
+        - Sample Database
+        - PUBLIC
+        - ORDERS
+        - PRODUCT_ID
+    source-table:
+    - Sample Database
+    - PUBLIC
+    - ORDERS
+  type: query
+result_metadata:
+- base_type: type/Text
+  coercion_strategy: null
+  description: 'The type of product, valid values include: Doohicky, Gadget, Gizmo and Widget'
+  display_name: Product → Category
+  effective_type: type/Text
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - PRODUCTS
+    - CATEGORY
+  - base-type: type/Text
+    source-field:
+    - Sample Database
+    - PUBLIC
+    - ORDERS
+    - PRODUCT_ID
+  fk_target_field_id: null
+  id:
+  - Sample Database
+  - PUBLIC
+  - PRODUCTS
+  - CATEGORY
+  name: CATEGORY
+  semantic_type: type/Category
+  settings: null
+  visibility_type: normal
+- base_type: type/BigInteger
+  display_name: Count
+  effective_type: type/BigInteger
+  field_ref:
+  - aggregation
+  - 0
+  name: count
+  semantic_type: type/Quantity
+visualization_settings:
+  column_settings: null
+  pie.decimal_places: 0
+  pie.percent_visibility: both
+  pie.rows:
+  - color: '#7172AD'
+    defaultColor: false
+    enabled: true
+    hidden: false
+    isOther: false
+    key: Doohickey
+    name: Doohickey
+    originalName: Doohickey
+  - color: '#A989C5'
+    defaultColor: false
+    enabled: true
+    hidden: false
+    isOther: false
+    key: Gadget
+    name: Gadget
+    originalName: Gadget
+  - color: '#C7EAEA'
+    defaultColor: false
+    enabled: true
+    hidden: false
+    isOther: false
+    key: Gizmo
+    name: Gizmo
+    originalName: Gizmo
+  - color: '#227FD2'
+    defaultColor: false
+    enabled: true
+    hidden: false
+    isOther: false
+    key: Widget
+    name: Widget
+    originalName: Widget
+  pie.show_labels: false
+  pie.sort_rows: false
+card_schema: 23
+serdes/meta:
+- id: ShsD1PjGTlFIvzm5FM9qC
+  label: total_orders_by_product_category
+  model: Card
+archived_directly: false
+dashboard_id: null
+document_id: null
+embedding_type: null
+metabase_version: null
+source_card_id: null
+type: question
