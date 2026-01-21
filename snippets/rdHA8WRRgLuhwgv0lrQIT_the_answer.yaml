@@ -1,0 +1,13 @@
+name: The ANSWER
+description: null
+entity_id: rdHA8WRRgLuhwgv0lrQIT
+created_at: '2026-01-21T18:51:07.744723Z'
+archived: false
+collection_id: null
+content: Select 42;
+creator_id: crowberto@metabase.com
+template_tags: {}
+serdes/meta:
+- id: rdHA8WRRgLuhwgv0lrQIT
+  label: the_answer
+  model: NativeQuerySnippet

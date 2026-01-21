@@ -1,0 +1,13 @@
+name: The Question
+description: null
+entity_id: OHmEWeXt7iYBMs34hVf8u
+created_at: '2026-01-21T18:51:49.990833Z'
+archived: false
+collection_id: QKDV5G3nGY0HPM7pJ0p90
+content: select 6 * 9;
+creator_id: crowberto@metabase.com
+template_tags: {}
+serdes/meta:
+- id: OHmEWeXt7iYBMs34hVf8u
+  label: the_question
+  model: NativeQuerySnippet
