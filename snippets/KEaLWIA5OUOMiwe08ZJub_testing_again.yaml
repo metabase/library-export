@@ -1,0 +1,13 @@
+name: Testing again
+description: null
+entity_id: KEaLWIA5OUOMiwe08ZJub
+created_at: '2026-01-21T18:56:43.453119Z'
+archived: false
+collection_id: null
+content: select 'test';
+creator_id: crowberto@metabase.com
+template_tags: {}
+serdes/meta:
+- id: KEaLWIA5OUOMiwe08ZJub
+  label: testing_again
+  model: NativeQuerySnippet
