@@ -1,0 +1,28 @@
+collection_id: null
+created_at: '2026-01-21T22:35:35.737609Z'
+creator_id: pr@metabase.com
+description: null
+entity_id: SPjFuzvyib5tiy0TEF87D
+name: test overwrite?
+owner_email: null
+owner_user_id: pr@metabase.com
+source:
+  query:
+    database: MySQL
+    query:
+      source-table:
+      - MySQL
+      - null
+      - kamil_attempts_transform
+    type: query
+  type: query
+tags: []
+target:
+  database: MySQL
+  name: test_overwrite%3F
+  schema: null
+  type: table
+serdes/meta:
+- id: SPjFuzvyib5tiy0TEF87D
+  label: test_overwrite_
+  model: Transform

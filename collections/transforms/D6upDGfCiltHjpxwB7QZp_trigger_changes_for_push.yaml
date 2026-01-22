@@ -1,0 +1,28 @@
+collection_id: null
+created_at: '2026-01-22T22:29:10.758611Z'
+creator_id: pr@metabase.com
+description: null
+entity_id: D6upDGfCiltHjpxwB7QZp
+name: Trigger changes for push
+owner_email: null
+owner_user_id: pr@metabase.com
+source:
+  query:
+    database: Postgres
+    query:
+      source-table:
+      - Postgres
+      - public
+      - thomas_test_transform
+    type: query
+  type: query
+tags: []
+target:
+  database: Postgres
+  name: trigger_changes_for_push
+  schema: mb__isolation_4148e_3
+  type: table
+serdes/meta:
+- id: D6upDGfCiltHjpxwB7QZp
+  label: trigger_changes_for_push
+  model: Transform

@@ -1,0 +1,28 @@
+collection_id: null
+created_at: '2026-01-17T00:10:50.332412Z'
+creator_id: pr@metabase.com
+description: null
+entity_id: bKrN7CuFVA9uQ3shVgMXg
+name: New transform
+owner_email: null
+owner_user_id: pr@metabase.com
+source:
+  query:
+    database: MySQL
+    query:
+      source-table:
+      - MySQL
+      - null
+      - kamil_attempts_transform
+    type: query
+  type: query
+tags: []
+target:
+  database: MySQL
+  name: new_transform
+  schema: null
+  type: table
+serdes/meta:
+- id: bKrN7CuFVA9uQ3shVgMXg
+  label: new_transform
+  model: Transform
