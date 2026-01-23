@@ -1,0 +1,19 @@
+name: Library
+description: null
+entity_id: c0u2jztrNRK76-yF2i2xM
+slug: library
+created_at: '2026-01-23T21:59:59.914412Z'
+archived: false
+type: library
+parent_id: null
+personal_owner_id: null
+namespace: null
+authority_level: null
+serdes/meta:
+- id: c0u2jztrNRK76-yF2i2xM
+  label: library
+  model: Collection
+archive_operation_id: null
+archived_directly: null
+is_remote_synced: true
+is_sample: false
