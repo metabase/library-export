@@ -1,0 +1,19 @@
+name: Metrics
+description: null
+entity_id: fDp8mB4cYf8l8RY5rGof-
+slug: metrics
+created_at: '2026-01-13T22:12:35.252979Z'
+archived: false
+type: library-metrics
+parent_id: wZ2g2geERFYmw6z1yX-LN
+personal_owner_id: null
+namespace: null
+authority_level: null
+serdes/meta:
+- id: fDp8mB4cYf8l8RY5rGof-
+  label: metrics
+  model: Collection
+archive_operation_id: null
+archived_directly: null
+is_remote_synced: true
+is_sample: false

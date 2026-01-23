@@ -1,11 +1,11 @@
 collection_id: null
-created_at: '2026-01-17T00:10:50.332412Z'
+created_at: '2026-01-09T22:40:49.428437Z'
 creator_id: pr@metabase.com
 description: null
-entity_id: bKrN7CuFVA9uQ3shVgMXg
-name: New transform
+entity_id: QVbmFmfnYuReQL0-oBfw-
+name: my-sql-transform
 owner_email: null
-owner_user_id: null
+owner_user_id: pr@metabase.com
 source:
   query:
     database: MySQL
@@ -13,17 +13,17 @@ source:
       source-table:
       - MySQL
       - null
-      - kamil_attempts_transform
+      - attempts
     type: query
   type: query
 source_database_id: MySQL
 tags: []
 target:
   database: MySQL
-  name: new_transform
+  name: my-sql-trasnform
   schema: null
   type: table
 serdes/meta:
-- id: bKrN7CuFVA9uQ3shVgMXg
-  label: new_transform
+- id: QVbmFmfnYuReQL0-oBfw-
+  label: my_sql_transform
   model: Transform

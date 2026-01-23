@@ -1,0 +1,29 @@
+collection_id: null
+created_at: '2026-01-20T16:08:07.046193Z'
+creator_id: pr@metabase.com
+description: null
+entity_id: bbDToH6Y5c_h5LnYwOvtG
+name: test
+owner_email: null
+owner_user_id: pr@metabase.com
+source:
+  query:
+    database: Postgres
+    query:
+      source-table:
+      - Postgres
+      - mb__isolation_4148e_34
+      - public__chris_mbql_xform_output
+    type: query
+  type: query
+source_database_id: Postgres
+tags: []
+target:
+  database: Postgres
+  name: test
+  schema: mb__isolation_4148e_3
+  type: table
+serdes/meta:
+- id: bbDToH6Y5c_h5LnYwOvtG
+  label: test
+  model: Transform

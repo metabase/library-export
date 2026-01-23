@@ -1,0 +1,19 @@
+name: Data
+description: null
+entity_id: kNbiJk08f8_Ey9Lci24_U
+slug: data
+created_at: '2026-01-13T22:12:35.208235Z'
+archived: false
+type: library-data
+parent_id: wZ2g2geERFYmw6z1yX-LN
+personal_owner_id: null
+namespace: null
+authority_level: null
+serdes/meta:
+- id: kNbiJk08f8_Ey9Lci24_U
+  label: data
+  model: Collection
+archive_operation_id: null
+archived_directly: null
+is_remote_synced: true
+is_sample: false

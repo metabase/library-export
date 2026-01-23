@@ -1,0 +1,35 @@
+collection_id: null
+created_at: '2026-01-09T22:41:13.976631Z'
+creator_id: pr@metabase.com
+description: null
+entity_id: 7ZqHodwD0IPlsHHEFK_xK
+name: postgres-transform
+owner_email: null
+owner_user_id: pr@metabase.com
+source:
+  query:
+    database: Postgres
+    query:
+      source-table:
+      - Postgres
+      - mb__isolation_4148e_3
+      - public__chris_mbql_xform_output
+    type: query
+  type: query
+source_database_id: Postgres
+tags:
+- entity_id: k7HRWcz9CnBQ9bvUfRRNF
+  position: 0
+  tag_id: DeeJHc81qKhD9qWINISO8
+  serdes/meta:
+  - id: k7HRWcz9CnBQ9bvUfRRNF
+    model: TransformTransformTag
+target:
+  database: Postgres
+  name: postgres-transform
+  schema: mb__isolation_4148e_3
+  type: table
+serdes/meta:
+- id: 7ZqHodwD0IPlsHHEFK_xK
+  label: postgres_transform
+  model: Transform

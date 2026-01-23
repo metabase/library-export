@@ -4,6 +4,8 @@ creator_id: pr@metabase.com
 description: null
 entity_id: XRD31LULdy3pkmeqfYRUN
 name: TEST PYTHON
+owner_email: null
+owner_user_id: null
 source:
   body: |-
     # Write your Python transformation script here
@@ -22,7 +24,7 @@ source:
         """
         # Your transformation logic here
         return pd.DataFrame([{"message": "Hello from Python transform!"}])
-  query: null
+  query: {}
   source-database: 5
   source-tables:
     metabase_ci_bigquery_sheet:
@@ -31,6 +33,7 @@ source:
       table: metabase_ci_bigquery_sheet
       table_id: 121
   type: python
+source_database_id: BigQuery
 tags: []
 target:
   database: BigQuery

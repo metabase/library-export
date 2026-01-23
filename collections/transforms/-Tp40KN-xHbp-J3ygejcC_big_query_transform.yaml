@@ -1,0 +1,35 @@
+collection_id: null
+created_at: '2026-01-09T22:40:36.597451Z'
+creator_id: pr@metabase.com
+description: null
+entity_id: -Tp40KN-xHbp-J3ygejcC
+name: big-query-transform
+owner_email: null
+owner_user_id: pr@metabase.com
+source:
+  query:
+    database: BigQuery
+    query:
+      source-table:
+      - BigQuery
+      - google_drive_dataset
+      - metabase_ci_bigquery_sheet
+    type: query
+  type: query
+source_database_id: BigQuery
+tags:
+- entity_id: hwKu7eb3c_RsLQdpvsG9c
+  position: 0
+  tag_id: wYLcUPbtF7jVPO0duGGHR
+  serdes/meta:
+  - id: hwKu7eb3c_RsLQdpvsG9c
+    model: TransformTransformTag
+target:
+  database: BigQuery
+  name: big-query-transform
+  schema: google_drive_dataset
+  type: table
+serdes/meta:
+- id: -Tp40KN-xHbp-J3ygejcC
+  label: big_query_transform
+  model: Transform

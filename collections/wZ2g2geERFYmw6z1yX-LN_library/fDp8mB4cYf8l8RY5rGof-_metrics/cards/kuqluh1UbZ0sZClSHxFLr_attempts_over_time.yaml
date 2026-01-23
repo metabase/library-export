@@ -1,0 +1,106 @@
+name: Attempts over time
+description: null
+entity_id: kuqluh1UbZ0sZClSHxFLr
+created_at: '2026-01-13T22:13:05.803409Z'
+creator_id: pr@metabase.com
+display: line
+archived: false
+collection_id: fDp8mB4cYf8l8RY5rGof-
+collection_preview: true
+collection_position: null
+query_type: query
+database_id: MySQL
+table_id:
+- MySQL
+- null
+- attempts
+enable_embedding: false
+embedding_params: null
+made_public_by_id: null
+public_uuid: null
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: MySQL
+  query:
+    aggregation:
+    - - count
+    breakout:
+    - - field
+      - - MySQL
+        - null
+        - attempts
+        - date
+      - base-type: type/Date
+        temporal-unit: day
+    source-table:
+    - MySQL
+    - null
+    - attempts
+  type: query
+result_metadata:
+- active: true
+  base_type: type/Date
+  database_type: DATE
+  display_name: 'Date: Day'
+  effective_type: type/Date
+  field_ref:
+  - field
+  - - MySQL
+    - null
+    - attempts
+    - date
+  - temporal-unit: day
+  id:
+  - MySQL
+  - null
+  - attempts
+  - date
+  inherited_temporal_unit: day
+  name: date
+  position: 1
+  semantic_type: null
+  source: breakout
+  table_id:
+  - MySQL
+  - null
+  - attempts
+  unit: day
+  visibility_type: normal
+  lib/breakout?: true
+  lib/deduplicated-name: date
+  lib/desired-column-alias: date
+  lib/original-display-name: Date
+  lib/original-name: date
+  lib/source: source/table-defaults
+  lib/source-column-alias: date
+  metabase.lib.field/temporal-unit: day
+- base_type: type/BigInteger
+  database_type: BIGINT
+  display_name: Count
+  effective_type: type/BigInteger
+  field_ref:
+  - aggregation
+  - 0
+  name: count
+  semantic_type: type/Quantity
+  source: aggregation
+  lib/deduplicated-name: count
+  lib/desired-column-alias: count
+  lib/original-name: count
+  lib/source: source/aggregations
+  lib/source-column-alias: count
+visualization_settings:
+  column_settings: null
+card_schema: 23
+serdes/meta:
+- id: kuqluh1UbZ0sZClSHxFLr
+  label: attempts_over_time
+  model: Card
+archived_directly: false
+dashboard_id: null
+document_id: null
+embedding_type: null
+metabase_version: vUNKNOWN (e61c478)
+source_card_id: null
+type: metric
