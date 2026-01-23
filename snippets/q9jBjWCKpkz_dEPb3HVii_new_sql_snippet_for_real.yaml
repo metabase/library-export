@@ -1,0 +1,13 @@
+name: New SQL snippet for real
+description: null
+entity_id: q9jBjWCKpkz_dEPb3HVii
+created_at: '2026-01-23T22:35:02.110924Z'
+archived: false
+collection_id: null
+content: something
+creator_id: pr@metabase.com
+template_tags: {}
+serdes/meta:
+- id: q9jBjWCKpkz_dEPb3HVii
+  label: new_sql_snippet_for_real
+  model: NativeQuerySnippet
