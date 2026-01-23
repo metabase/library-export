@@ -1,0 +1,28 @@
+collection_id: null
+created_at: '2026-01-23T22:30:23.653261Z'
+creator_id: pr@metabase.com
+description: null
+entity_id: ZrBmnGme9FF3q1AzFVUbx
+name: Test
+owner_email: null
+owner_user_id: pr@metabase.com
+source:
+  query:
+    database: MySQL
+    query:
+      source-table:
+      - MySQL
+      - null
+      - kamil_attempts_transform
+    type: query
+  type: query
+tags: []
+target:
+  database: MySQL
+  name: test
+  schema: null
+  type: table
+serdes/meta:
+- id: ZrBmnGme9FF3q1AzFVUbx
+  label: test
+  model: Transform

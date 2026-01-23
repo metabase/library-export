@@ -1,0 +1,33 @@
+name: metabase_ci_bigquery_sheet
+display_name: Metabase Ci Bigquery Sheet
+description: null
+created_at: '2026-01-23T21:40:53.376831Z'
+db_id: BigQuery
+schema: google_drive_dataset
+entity_type: entity/GenericTable
+active: true
+is_upload: false
+field_order: database
+visibility_type: null
+show_in_getting_started: false
+initial_sync_status: complete
+points_of_interest: null
+caveats: null
+serdes/meta:
+- id: BigQuery
+  model: Database
+- id: google_drive_dataset
+  model: Schema
+- id: metabase_ci_bigquery_sheet
+  model: Table
+archived_at: null
+collection_id: lEiOR2BQa1eQO8g7ZvKsg
+data_authority: unconfigured
+data_layer: bronze
+data_source: null
+database_require_filter: false
+deactivated_at: null
+is_published: true
+is_writable: null
+owner_email: null
+owner_user_id: null
