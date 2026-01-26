@@ -1,0 +1,19 @@
+name: Test Transform Folder
+description: null
+entity_id: 3rs0xzAChgokkDIr6jIUk
+slug: test_transform_folder
+created_at: '2026-01-26T17:08:33.685433Z'
+archived: false
+type: null
+parent_id: null
+personal_owner_id: null
+namespace: transforms
+authority_level: null
+serdes/meta:
+- id: 3rs0xzAChgokkDIr6jIUk
+  label: test_transform_folder
+  model: Collection
+archive_operation_id: null
+archived_directly: null
+is_remote_synced: false
+is_sample: false
