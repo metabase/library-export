@@ -1,0 +1,13 @@
+name: New SQL snippet
+description: null
+entity_id: Lumn1YHS2ZQhNscpJoTaL
+created_at: '2026-01-26T16:21:20.66714Z'
+archived: false
+collection_id: sv9o_ZEFbtcU7XM1Kqphe
+content: Test
+creator_id: pr@metabase.com
+template_tags: {}
+serdes/meta:
+- id: Lumn1YHS2ZQhNscpJoTaL
+  label: new_sql_snippet
+  model: NativeQuerySnippet
