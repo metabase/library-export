@@ -1,0 +1,97 @@
+name: Revenue per quarter
+description: Total revenue last quarter compared to the previous
+entity_id: D4o8cCTOY-SnxoYDRVWcO
+created_at: '2026-01-26T20:31:33.606168Z'
+creator_id: internal@metabase.com
+display: smartscalar
+archived: false
+collection_id: HyB3nRtqb7pBPhFG26evI
+collection_preview: true
+collection_position: null
+query_type: query
+database_id: Sample Database
+table_id:
+- Sample Database
+- PUBLIC
+- ORDERS
+enable_embedding: false
+embedding_params: null
+made_public_by_id: null
+public_uuid: null
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Sample Database
+  query:
+    aggregation:
+    - - metric
+      - skXR69-dlhJST5C7Rd9nR
+    breakout:
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - ORDERS
+        - CREATED_AT
+      - base-type: type/DateTime
+        temporal-unit: quarter
+    source-table:
+    - Sample Database
+    - PUBLIC
+    - ORDERS
+  type: query
+result_metadata:
+- base_type: type/DateTime
+  coercion_strategy: null
+  description: The date and time an order was submitted.
+  display_name: 'Created At: Quarter'
+  effective_type: type/DateTime
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - ORDERS
+    - CREATED_AT
+  - base-type: type/DateTime
+    temporal-unit: quarter
+  fk_target_field_id: null
+  id:
+  - Sample Database
+  - PUBLIC
+  - ORDERS
+  - CREATED_AT
+  name: CREATED_AT
+  semantic_type: type/CreationTimestamp
+  settings:
+    time_enabled: milliseconds
+  unit: quarter
+  visibility_type: normal
+- base_type: type/Float
+  display_name: Sum of Total
+  effective_type: type/Float
+  field_ref:
+  - aggregation
+  - 0
+  name: sum
+  semantic_type: type/Currency
+  settings:
+    currency: USD
+visualization_settings:
+  column_settings: null
+  scalar.comparisons:
+  - id: a8d008d4-d8f1-cbc1-b0ad-f4ab30791b9e
+    type: previousPeriod
+  - id: e7fa0d15-867c-2628-dbea-9f9a41e3ca38
+    type: periodsAgo
+    value: 4
+card_schema: 23
+serdes/meta:
+- id: D4o8cCTOY-SnxoYDRVWcO
+  label: revenue_per_quarter
+  model: Card
+archived_directly: false
+dashboard_id: null
+document_id: null
+embedding_type: null
+metabase_version: null
+source_card_id: null
+type: question
