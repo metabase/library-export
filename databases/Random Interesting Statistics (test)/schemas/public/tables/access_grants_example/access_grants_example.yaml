@@ -1,0 +1,33 @@
+name: access_grants_example
+display_name: Access Grants Example
+description: null
+created_at: '2026-01-27T22:48:28.880948Z'
+db_id: Random Interesting Statistics (test)
+schema: public
+entity_type: entity/GenericTable
+active: true
+is_upload: false
+field_order: database
+visibility_type: null
+show_in_getting_started: false
+initial_sync_status: complete
+points_of_interest: null
+caveats: null
+serdes/meta:
+- id: Random Interesting Statistics (test)
+  model: Database
+- id: public
+  model: Schema
+- id: access_grants_example
+  model: Table
+archived_at: null
+collection_id: 0z5LSNZKCQsVOhngwVs4C
+data_authority: unconfigured
+data_layer: bronze
+data_source: null
+database_require_filter: null
+deactivated_at: null
+is_published: true
+is_writable: true
+owner_email: null
+owner_user_id: null

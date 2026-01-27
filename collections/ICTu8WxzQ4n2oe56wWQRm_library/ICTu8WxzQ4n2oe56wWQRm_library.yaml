@@ -1,0 +1,19 @@
+name: Library
+description: null
+entity_id: ICTu8WxzQ4n2oe56wWQRm
+slug: library
+created_at: '2026-01-27T22:56:12.630394Z'
+archived: false
+type: library
+parent_id: null
+personal_owner_id: null
+namespace: null
+authority_level: null
+serdes/meta:
+- id: ICTu8WxzQ4n2oe56wWQRm
+  label: library
+  model: Collection
+archive_operation_id: null
+archived_directly: null
+is_remote_synced: true
+is_sample: false

@@ -1,0 +1,19 @@
+name: Metrics
+description: null
+entity_id: nyNOhpMT89UW9YFt2xtmQ
+slug: metrics
+created_at: '2026-01-27T22:56:12.702322Z'
+archived: false
+type: library-metrics
+parent_id: ICTu8WxzQ4n2oe56wWQRm
+personal_owner_id: null
+namespace: null
+authority_level: null
+serdes/meta:
+- id: nyNOhpMT89UW9YFt2xtmQ
+  label: metrics
+  model: Collection
+archive_operation_id: null
+archived_directly: null
+is_remote_synced: true
+is_sample: false
