@@ -30,4 +30,4 @@ deactivated_at: null
 is_published: true
 is_writable: true
 owner_email: null
-owner_user_id: null
+owner_user_id: 34

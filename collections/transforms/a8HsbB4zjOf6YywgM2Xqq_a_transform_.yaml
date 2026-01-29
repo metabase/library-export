@@ -16,6 +16,7 @@ source:
       - access_grants_example
     type: query
   type: query
+source_database_id: Random Interesting Statistics (test)
 tags: []
 target:
   database: Random Interesting Statistics (test)
