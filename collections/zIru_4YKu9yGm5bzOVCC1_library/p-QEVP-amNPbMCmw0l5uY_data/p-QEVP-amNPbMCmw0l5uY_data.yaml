@@ -1,17 +1,17 @@
-name: Library
+name: Data
 description: null
-entity_id: WNJd7O2Oqfl5Zn8yuSRZ4
-slug: library
-created_at: '2025-10-27T19:51:12.873227Z'
+entity_id: p-QEVP-amNPbMCmw0l5uY
+slug: data
+created_at: '2026-01-30T16:41:07.652605Z'
 archived: false
-type: null
-parent_id: null
+type: library-data
+parent_id: zIru_4YKu9yGm5bzOVCC1
 personal_owner_id: null
 namespace: null
 authority_level: null
 serdes/meta:
-- id: WNJd7O2Oqfl5Zn8yuSRZ4
-  label: library
+- id: p-QEVP-amNPbMCmw0l5uY
+  label: data
   model: Collection
 archive_operation_id: null
 archived_directly: null
