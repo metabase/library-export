@@ -1,0 +1,37 @@
+collection_id: null
+created_at: '2026-01-30T15:47:43.953422Z'
+creator_id: tanya@metabase.com
+description: null
+entity_id: _D77lZQuoQP2NueM5Hz7f
+name: Product Events with Previous Event
+owner_email: null
+owner_user_id: tanya@metabase.com
+source:
+  query:
+    database: Random Interesting Statistics (test)
+    native:
+      query: |-
+        SELECT
+          "_mb_row_id",
+          "uuid",
+          "event_name",
+          "timestamp",
+          LAG("event_name") OVER (
+            PARTITION BY "uuid"
+            ORDER BY "timestamp"
+          ) AS previous_event
+        FROM public.product_events10_20260130154212
+        ORDER BY "uuid", "timestamp"
+    type: native
+  type: query
+source_database_id: Random Interesting Statistics (test)
+tags: []
+target:
+  database: Random Interesting Statistics (test)
+  name: product_events_with_previous_event
+  schema: null
+  type: table
+serdes/meta:
+- id: _D77lZQuoQP2NueM5Hz7f
+  label: product_events_with_previous_event
+  model: Transform
