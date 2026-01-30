@@ -1,0 +1,29 @@
+collection_id: null
+created_at: '2026-01-30T16:51:06.256252Z'
+creator_id: tanya@metabase.com
+description: null
+entity_id: gCr_3YbkYfScFqSuVbppX
+name: blabla
+owner_email: null
+owner_user_id: tanya@metabase.com
+source:
+  query:
+    database: postgres
+    native:
+      query: |-
+        SELECT
+        * from public.amplitude_sample
+        LIMIT 10
+    type: native
+  type: query
+source_database_id: postgres
+tags: []
+target:
+  database: postgres
+  name: blabla
+  schema: airbyte_internal
+  type: table
+serdes/meta:
+- id: gCr_3YbkYfScFqSuVbppX
+  label: blabla
+  model: Transform

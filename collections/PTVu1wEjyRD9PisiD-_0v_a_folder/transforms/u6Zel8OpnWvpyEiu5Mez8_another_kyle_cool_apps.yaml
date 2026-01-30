@@ -1,0 +1,26 @@
+collection_id: PTVu1wEjyRD9PisiD-_0v
+created_at: '2026-01-30T16:52:26.18099Z'
+creator_id: nicolo.mezzopera@metabase.com
+description: null
+entity_id: u6Zel8OpnWvpyEiu5Mez8
+name: Another Kyle Cool Apps
+owner_email: null
+owner_user_id: nicolo.mezzopera@metabase.com
+source:
+  query:
+    database: Random Interesting Statistics (test)
+    native:
+      query: SELECT * FROM "mb__isolation_0c4b1_487"."cool_apps_added_by_kyle"
+    type: native
+  type: query
+source_database_id: Random Interesting Statistics (test)
+tags: []
+target:
+  database: Random Interesting Statistics (test)
+  name: another_kyle_cool_apps
+  schema: mb__isolation_0c4b1_487
+  type: table
+serdes/meta:
+- id: u6Zel8OpnWvpyEiu5Mez8
+  label: another_kyle_cool_apps
+  model: Transform

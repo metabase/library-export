@@ -1,0 +1,8 @@
+built_in_type: null
+created_at: '2026-01-30T17:25:42.806511Z'
+entity_id: rsEa1gquM00LThHohVbQs
+name: weekly-friday
+serdes/meta:
+- id: rsEa1gquM00LThHohVbQs
+  label: weekly_friday
+  model: TransformTag

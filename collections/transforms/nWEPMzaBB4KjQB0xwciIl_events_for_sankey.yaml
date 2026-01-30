@@ -25,7 +25,13 @@ source:
     type: native
   type: query
 source_database_id: Random Interesting Statistics (test)
-tags: []
+tags:
+- entity_id: r-4-DbSnMJlTuaPK8QwKE
+  position: 0
+  tag_id: wYLcUPbtF7jVPO0duGGHR
+  serdes/meta:
+  - id: r-4-DbSnMJlTuaPK8QwKE
+    model: TransformTransformTag
 target:
   database: Random Interesting Statistics (test)
   name: events-for-sankey
