@@ -1,0 +1,19 @@
+name: test again
+description: null
+entity_id: NOuj4WOI4TbfGFXy1ZxRF
+slug: test_again
+created_at: '2026-01-30T17:19:01.864543Z'
+archived: false
+type: null
+parent_id: null
+personal_owner_id: null
+namespace: snippets
+authority_level: null
+serdes/meta:
+- id: NOuj4WOI4TbfGFXy1ZxRF
+  label: test_again
+  model: Collection
+archive_operation_id: null
+archived_directly: null
+is_remote_synced: false
+is_sample: false

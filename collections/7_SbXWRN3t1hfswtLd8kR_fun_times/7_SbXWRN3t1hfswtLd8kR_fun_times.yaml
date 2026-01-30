@@ -1,0 +1,19 @@
+name: Fun times
+description: null
+entity_id: 7_SbXWRN3t1hfswtLd8kR
+slug: fun_times
+created_at: '2026-01-30T16:56:05.008122Z'
+archived: false
+type: null
+parent_id: null
+personal_owner_id: null
+namespace: snippets
+authority_level: null
+serdes/meta:
+- id: 7_SbXWRN3t1hfswtLd8kR
+  label: fun_times
+  model: Collection
+archive_operation_id: null
+archived_directly: null
+is_remote_synced: false
+is_sample: false
