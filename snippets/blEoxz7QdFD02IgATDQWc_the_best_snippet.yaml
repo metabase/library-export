@@ -1,0 +1,13 @@
+name: The best snippet
+description: null
+entity_id: blEoxz7QdFD02IgATDQWc
+created_at: '2026-01-30T23:52:52.949531Z'
+archived: false
+collection_id: null
+content: 'SELECT * '
+creator_id: eliot@metabase.com
+template_tags: {}
+serdes/meta:
+- id: blEoxz7QdFD02IgATDQWc
+  label: the_best_snippet
+  model: NativeQuerySnippet
