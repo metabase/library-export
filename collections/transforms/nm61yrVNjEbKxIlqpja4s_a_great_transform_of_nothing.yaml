@@ -1,0 +1,29 @@
+collection_id: null
+created_at: '2026-01-30T20:43:18.51092Z'
+creator_id: crowberto@metabase.com
+description: null
+entity_id: nm61yrVNjEbKxIlqpja4s
+name: A great transform of nothing
+owner_email: null
+owner_user_id: crowberto@metabase.com
+source:
+  query:
+    database: App DB
+    query:
+      source-table:
+      - App DB
+      - public
+      - auth_identity
+    type: query
+  type: query
+source_database_id: App DB
+tags: []
+target:
+  database: App DB
+  name: a_great_transform_of_nothing
+  schema: public
+  type: table
+serdes/meta:
+- id: nm61yrVNjEbKxIlqpja4s
+  label: a_great_transform_of_nothing
+  model: Transform
