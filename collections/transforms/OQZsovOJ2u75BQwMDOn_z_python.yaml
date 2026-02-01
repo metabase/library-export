@@ -12,7 +12,7 @@ source:
         result = sheets_supabase_df[['gp_first_name', 'gp_last_name', 'gp_country']].copy()
         result.columns = ['first_name', 'last_name', 'country']
         return result
-  query: null
+  query: {}
   source-database: 67
   source-tables:
     sheets_supabase_df:

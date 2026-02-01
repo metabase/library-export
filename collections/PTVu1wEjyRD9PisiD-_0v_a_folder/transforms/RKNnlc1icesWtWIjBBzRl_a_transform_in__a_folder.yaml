@@ -24,7 +24,7 @@ source:
         """
         # Your transformation logic here
         return pd.DataFrame([{"message": "Hello from Python transform!"}])
-  query: null
+  query: {}
   source-database: 34
   source-tables:
     cool_apps_transform:
