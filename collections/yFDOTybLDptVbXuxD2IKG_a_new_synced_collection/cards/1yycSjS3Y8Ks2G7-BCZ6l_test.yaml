@@ -1,0 +1,67 @@
+name: Test
+description: null
+entity_id: 1yycSjS3Y8Ks2G7-BCZ6l
+created_at: '2026-02-03T18:01:38.414708Z'
+creator_id: crowberto@metabase.com
+display: table
+archived: false
+collection_id: yFDOTybLDptVbXuxD2IKG
+collection_preview: true
+collection_position: null
+query_type: native
+database_id: Sample Database
+table_id: null
+enable_embedding: false
+embedding_params: null
+made_public_by_id: null
+public_uuid: null
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Sample Database
+  native:
+    query: 'select * from ({{snippet: A Snippet}});'
+    template-tags:
+      'snippet: A Snippet':
+        display-name: 'Snippet: A Snippet'
+        id: 1fd0fe5a-b601-4b77-ae81-fe267dc07ae3
+        name: 'snippet: A Snippet'
+        snippet-id: Y_I9ethBeG8y7fxpSy1UX
+        snippet-name: A Snippet
+        type: snippet
+  type: native
+result_metadata:
+- base_type: type/Integer
+  database_type: INTEGER
+  display_name: '54'
+  effective_type: type/Integer
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - PEOPLE
+    - PASSWORD
+  - base-type: type/Integer
+  name: '54'
+  semantic_type: null
+  source: native
+  lib/deduplicated-name: '54'
+  lib/desired-column-alias: '54'
+  lib/original-name: '54'
+  lib/source: source/native
+  lib/source-column-alias: '54'
+visualization_settings:
+  column_settings: null
+  table.pivot_column: '54'
+card_schema: 23
+serdes/meta:
+- id: 1yycSjS3Y8Ks2G7-BCZ6l
+  label: test
+  model: Card
+archived_directly: false
+dashboard_id: null
+document_id: null
+embedding_type: null
+metabase_version: v1.57.1-SNAPSHOT (b050245)
+source_card_id: null
+type: question
