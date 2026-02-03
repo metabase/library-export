@@ -1,0 +1,19 @@
+name: A new synced collection
+description: null
+entity_id: yFDOTybLDptVbXuxD2IKG
+slug: a_new_synced_collection
+created_at: '2026-02-03T18:00:02.850017Z'
+archived: false
+type: null
+parent_id: null
+personal_owner_id: null
+namespace: null
+authority_level: null
+serdes/meta:
+- id: yFDOTybLDptVbXuxD2IKG
+  label: a_new_synced_collection
+  model: Collection
+archive_operation_id: null
+archived_directly: null
+is_remote_synced: true
+is_sample: false
