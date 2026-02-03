@@ -1,0 +1,19 @@
+name: Data
+description: null
+entity_id: v_oGXlDR5wK_6oR2vgxXY
+slug: data
+created_at: '2026-02-03T17:58:15.103559Z'
+archived: false
+type: library-data
+parent_id: smbhrQ6IWmS8phNUQg0xO
+personal_owner_id: null
+namespace: null
+authority_level: null
+serdes/meta:
+- id: v_oGXlDR5wK_6oR2vgxXY
+  label: data
+  model: Collection
+archive_operation_id: null
+archived_directly: null
+is_remote_synced: true
+is_sample: false

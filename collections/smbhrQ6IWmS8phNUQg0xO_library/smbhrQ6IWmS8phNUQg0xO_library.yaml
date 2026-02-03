@@ -1,0 +1,19 @@
+name: Library
+description: null
+entity_id: smbhrQ6IWmS8phNUQg0xO
+slug: library
+created_at: '2026-02-03T17:58:15.069403Z'
+archived: false
+type: library
+parent_id: null
+personal_owner_id: null
+namespace: null
+authority_level: null
+serdes/meta:
+- id: smbhrQ6IWmS8phNUQg0xO
+  label: library
+  model: Collection
+archive_operation_id: null
+archived_directly: null
+is_remote_synced: true
+is_sample: false

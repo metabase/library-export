@@ -1,0 +1,13 @@
+name: A Snippet
+description: null
+entity_id: Y_I9ethBeG8y7fxpSy1UX
+created_at: '2026-02-03T17:59:13.589584Z'
+archived: false
+collection_id: null
+content: select 6 * 9;
+creator_id: crowberto@metabase.com
+template_tags: {}
+serdes/meta:
+- id: Y_I9ethBeG8y7fxpSy1UX
+  label: a_snippet
+  model: NativeQuerySnippet
