@@ -23,7 +23,7 @@ serdes/meta:
 archived_at: null
 collection_id: 0z5LSNZKCQsVOhngwVs4C
 data_authority: unconfigured
-data_layer: bronze
+data_layer: final
 data_source: null
 database_require_filter: null
 deactivated_at: null
