@@ -1,0 +1,45 @@
+name: exchange_rate
+display_name: Exchange Rate
+description: null
+created_at: '2026-01-30T16:12:52.643187Z'
+active: true
+visibility_type: normal
+table_id:
+- postgres
+- public
+- balance_transactions
+database_type: numeric
+base_type: type/Decimal
+effective_type: type/Decimal
+semantic_type: null
+database_is_auto_increment: false
+database_required: false
+fk_target_field_id: null
+dimensions: []
+json_unfolding: false
+parent_id: null
+coercion_strategy: null
+preview_display: true
+position: 13
+custom_position: 0
+database_position: 13
+has_field_values: null
+settings: null
+caveats: null
+points_of_interest: null
+nfc_path: null
+serdes/meta:
+- id: postgres
+  model: Database
+- id: public
+  model: Schema
+- id: balance_transactions
+  model: Table
+- id: exchange_rate
+  model: Field
+database_default: null
+database_indexed: null
+database_is_generated: false
+database_is_nullable: true
+database_is_pk: false
+database_partitioned: null
