@@ -63,8 +63,9 @@ dataset_query:
     - ORDERS
   type: query
 result_metadata:
-- base_type: type/Text
-  coercion_strategy: null
+- active: true
+  base_type: type/Text
+  database_type: CHARACTER VARYING
   description: 'The type of product, valid values include: Doohicky, Gadget, Gizmo and Widget'
   display_name: Product → Category
   effective_type: type/Text
@@ -74,24 +75,37 @@ result_metadata:
     - PUBLIC
     - PRODUCTS
     - CATEGORY
-  - base-type: type/Text
-    source-field:
+  - source-field:
     - Sample Database
     - PUBLIC
     - ORDERS
     - PRODUCT_ID
-  fk_target_field_id: null
+  fk_field_id: 14
   id:
   - Sample Database
   - PUBLIC
   - PRODUCTS
   - CATEGORY
   name: CATEGORY
+  position: 3
   semantic_type: type/Category
-  settings: null
+  source: breakout
+  table_id:
+  - Sample Database
+  - PUBLIC
+  - PRODUCTS
   visibility_type: normal
-- base_type: type/DateTime
-  coercion_strategy: null
+  lib/breakout?: true
+  lib/deduplicated-name: CATEGORY
+  lib/desired-column-alias: PRODUCTS__via__PRODUCT_ID__CATEGORY
+  lib/original-display-name: Category
+  lib/original-name: CATEGORY
+  lib/source: source/implicitly-joinable
+  lib/source-column-alias: CATEGORY
+  qp/implicit-field?: true
+- active: true
+  base_type: type/DateTime
+  database_type: TIMESTAMP
   description: The date and time an order was submitted.
   display_name: 'Created At: Quarter'
   effective_type: type/DateTime
@@ -101,22 +115,33 @@ result_metadata:
     - PUBLIC
     - ORDERS
     - CREATED_AT
-  - base-type: type/DateTime
-    temporal-unit: quarter
-    original-temporal-unit: month
-  fk_target_field_id: null
+  - temporal-unit: quarter
   id:
   - Sample Database
   - PUBLIC
   - ORDERS
   - CREATED_AT
+  inherited_temporal_unit: quarter
   name: CREATED_AT
+  position: 7
   semantic_type: type/CreationTimestamp
-  settings:
-    time_enabled: milliseconds
+  source: breakout
+  table_id:
+  - Sample Database
+  - PUBLIC
+  - ORDERS
   unit: quarter
   visibility_type: normal
+  lib/breakout?: true
+  lib/deduplicated-name: CREATED_AT
+  lib/desired-column-alias: CREATED_AT
+  lib/original-display-name: Created At
+  lib/original-name: CREATED_AT
+  lib/source: source/table-defaults
+  lib/source-column-alias: CREATED_AT
+  metabase.lib.field/temporal-unit: quarter
 - base_type: type/BigInteger
+  database_type: BIGINT
   display_name: Count
   effective_type: type/BigInteger
   field_ref:
@@ -124,6 +149,12 @@ result_metadata:
   - 0
   name: count
   semantic_type: type/Quantity
+  source: aggregation
+  lib/deduplicated-name: count
+  lib/desired-column-alias: count
+  lib/original-name: count
+  lib/source: source/aggregations
+  lib/source-column-alias: count
 visualization_settings:
   column_settings: null
   graph.dimensions:

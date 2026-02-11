@@ -62,43 +62,83 @@ dataset_query:
     - ORDERS
   type: query
 result_metadata:
-- base_type: type/Integer
-  coercion_strategy: null
+- active: true
+  base-type: type/Text
+  database-type: CHARACTER VARYING
   description: 'The channel through which we acquired this user. Valid values include: Affiliate, Facebook, Google, Organic and Twitter'
-  display_name: pivot-grouping
-  effective_type: type/Text
-  field_ref:
-  - expression
-  - pivot-grouping
-  fk_target_field_id: null
+  display-name: User → Source
+  effective-type: type/Text
+  field-ref:
+  - field
+  - 30
+  - source-field: 11
+  fk-field-id: 11
   id:
   - Sample Database
   - PUBLIC
   - PEOPLE
   - SOURCE
   name: SOURCE
-  semantic_type: null
-  settings: null
-  visibility_type: normal
-- base_type: type/Float
-  coercion_strategy: null
+  position: 8
+  semantic-type: type/Source
+  source: breakout
+  table-id: 1
+  visibility-type: normal
+  lib/breakout?: true
+  lib/deduplicated-name: SOURCE
+  lib/desired-column-alias: PEOPLE__via__USER_ID__SOURCE
+  lib/original-display-name: Source
+  lib/original-name: SOURCE
+  lib/source: source/implicitly-joinable
+  lib/source-column-alias: SOURCE
+  lib/type: metadata/column
+  qp/implicit-field?: true
+- active: true
+  base-type: type/DateTime
+  database-type: TIMESTAMP
   description: The date and time an order was submitted.
-  display_name: Sum of Total
-  effective_type: type/DateTime
-  field_ref:
-  - aggregation
-  - 0
-  fk_target_field_id: null
+  display-name: 'Created At: Quarter'
+  effective-type: type/DateTime
+  field-ref:
+  - field
+  - 13
+  - temporal-unit: quarter
   id:
   - Sample Database
   - PUBLIC
   - ORDERS
   - CREATED_AT
+  inherited-temporal-unit: quarter
   name: CREATED_AT
-  semantic_type: type/Currency
-  settings:
-    time_enabled: milliseconds
-  visibility_type: normal
+  position: 7
+  semantic-type: type/CreationTimestamp
+  source: breakout
+  table-id: 2
+  unit: quarter
+  visibility-type: normal
+  lib/breakout?: true
+  lib/deduplicated-name: CREATED_AT
+  lib/desired-column-alias: CREATED_AT
+  lib/original-display-name: Created At
+  lib/original-name: CREATED_AT
+  lib/source: source/table-defaults
+  lib/source-column-alias: CREATED_AT
+  lib/type: metadata/column
+  metabase.lib.field/temporal-unit: quarter
+- base-type: type/Float
+  display-name: Sum of Total
+  effective-type: type/Float
+  field-ref:
+  - aggregation
+  - 0
+  name: sum
+  source: aggregation
+  lib/deduplicated-name: sum
+  lib/desired-column-alias: sum
+  lib/original-name: sum
+  lib/source: source/aggregations
+  lib/source-column-alias: sum
+  lib/type: metadata/column
 visualization_settings:
   column_settings:
     '["name","CREATED_AT"]':

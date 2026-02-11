@@ -40,8 +40,9 @@ dataset_query:
     - ORDERS
   type: query
 result_metadata:
-- base_type: type/DateTime
-  coercion_strategy: null
+- active: true
+  base_type: type/DateTime
+  database_type: TIMESTAMP
   description: The date and time an order was submitted.
   display_name: 'Created At: Quarter'
   effective_type: type/DateTime
@@ -51,30 +52,46 @@ result_metadata:
     - PUBLIC
     - ORDERS
     - CREATED_AT
-  - base-type: type/DateTime
-    temporal-unit: quarter
-  fk_target_field_id: null
+  - temporal-unit: quarter
   id:
   - Sample Database
   - PUBLIC
   - ORDERS
   - CREATED_AT
+  inherited_temporal_unit: quarter
   name: CREATED_AT
+  position: 7
   semantic_type: type/CreationTimestamp
-  settings:
-    time_enabled: milliseconds
+  source: breakout
+  table_id:
+  - Sample Database
+  - PUBLIC
+  - ORDERS
   unit: quarter
   visibility_type: normal
+  lib/breakout?: true
+  lib/deduplicated-name: CREATED_AT
+  lib/desired-column-alias: CREATED_AT
+  lib/original-display-name: Created At
+  lib/original-name: CREATED_AT
+  lib/source: source/table-defaults
+  lib/source-column-alias: CREATED_AT
+  metabase.lib.field/temporal-unit: quarter
 - base_type: type/Float
+  database_type: DECFLOAT
   display_name: Sum of Total
   effective_type: type/Float
   field_ref:
   - aggregation
   - 0
   name: sum
-  semantic_type: type/Currency
-  settings:
-    currency: USD
+  semantic_type: null
+  source: aggregation
+  lib/deduplicated-name: sum
+  lib/desired-column-alias: sum
+  lib/original-name: sum
+  lib/source: source/aggregations
+  lib/source-column-alias: sum
 visualization_settings:
   column_settings: null
   scalar.comparisons:

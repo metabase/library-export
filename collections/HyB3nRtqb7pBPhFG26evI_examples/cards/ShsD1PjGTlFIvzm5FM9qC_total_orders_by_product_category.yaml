@@ -44,8 +44,9 @@ dataset_query:
     - ORDERS
   type: query
 result_metadata:
-- base_type: type/Text
-  coercion_strategy: null
+- active: true
+  base_type: type/Text
+  database_type: CHARACTER VARYING
   description: 'The type of product, valid values include: Doohicky, Gadget, Gizmo and Widget'
   display_name: Product → Category
   effective_type: type/Text
@@ -55,23 +56,36 @@ result_metadata:
     - PUBLIC
     - PRODUCTS
     - CATEGORY
-  - base-type: type/Text
-    source-field:
+  - source-field:
     - Sample Database
     - PUBLIC
     - ORDERS
     - PRODUCT_ID
-  fk_target_field_id: null
+  fk_field_id: 14
   id:
   - Sample Database
   - PUBLIC
   - PRODUCTS
   - CATEGORY
   name: CATEGORY
+  position: 3
   semantic_type: type/Category
-  settings: null
+  source: breakout
+  table_id:
+  - Sample Database
+  - PUBLIC
+  - PRODUCTS
   visibility_type: normal
+  lib/breakout?: true
+  lib/deduplicated-name: CATEGORY
+  lib/desired-column-alias: PRODUCTS__via__PRODUCT_ID__CATEGORY
+  lib/original-display-name: Category
+  lib/original-name: CATEGORY
+  lib/source: source/implicitly-joinable
+  lib/source-column-alias: CATEGORY
+  qp/implicit-field?: true
 - base_type: type/BigInteger
+  database_type: BIGINT
   display_name: Count
   effective_type: type/BigInteger
   field_ref:
@@ -79,6 +93,12 @@ result_metadata:
   - 0
   name: count
   semantic_type: type/Quantity
+  source: aggregation
+  lib/deduplicated-name: count
+  lib/desired-column-alias: count
+  lib/original-name: count
+  lib/source: source/aggregations
+  lib/source-column-alias: count
 visualization_settings:
   column_settings: null
   pie.decimal_places: 0
