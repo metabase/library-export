@@ -1,0 +1,176 @@
+name: Orders according to sources per quarter
+description: Orders placed per quarter broken down by source and formatted to highlight best and worst quarters
+entity_id: km2d9-ZqHrlAM79yPh13G
+created_at: '2026-01-26T22:02:15.938235Z'
+creator_id: internal@metabase.com
+display: pivot
+archived: false
+collection_id: HyB3nRtqb7pBPhFG26evI
+collection_preview: true
+collection_position: null
+query_type: query
+database_id: Sample Database
+table_id:
+- Sample Database
+- PUBLIC
+- ORDERS
+enable_embedding: false
+embedding_params: null
+made_public_by_id: null
+public_uuid: null
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Sample Database
+  query:
+    aggregation:
+    - - metric
+      - skXR69-dlhJST5C7Rd9nR
+    breakout:
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - PEOPLE
+        - SOURCE
+      - base-type: type/Text
+        source-field:
+        - Sample Database
+        - PUBLIC
+        - ORDERS
+        - USER_ID
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - ORDERS
+        - CREATED_AT
+      - base-type: type/DateTime
+        temporal-unit: quarter
+    filter:
+    - time-interval
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - ORDERS
+        - CREATED_AT
+      - base-type: type/DateTime
+    - -2
+    - year
+    - include-current: true
+    source-table:
+    - Sample Database
+    - PUBLIC
+    - ORDERS
+  type: query
+result_metadata:
+- active: true
+  base-type: type/Text
+  database-type: CHARACTER VARYING
+  description: 'The channel through which we acquired this user. Valid values include: Affiliate, Facebook, Google, Organic and Twitter'
+  display-name: User → Source
+  effective-type: type/Text
+  fk-field-id: 11
+  id:
+  - Sample Database
+  - PUBLIC
+  - PEOPLE
+  - SOURCE
+  name: SOURCE
+  position: 8
+  semantic-type: type/Source
+  table-id: 1
+  visibility-type: normal
+  lib/breakout?: true
+  lib/deduplicated-name: SOURCE
+  lib/desired-column-alias: PEOPLE__via__USER_ID__SOURCE
+  lib/original-display-name: Source
+  lib/original-name: SOURCE
+  lib/source: source/implicitly-joinable
+  lib/source-column-alias: SOURCE
+  lib/type: metadata/column
+  qp/implicit-field?: true
+- active: true
+  base-type: type/DateTime
+  database-type: TIMESTAMP
+  description: The date and time an order was submitted.
+  display-name: 'Created At: Quarter'
+  effective-type: type/DateTime
+  id:
+  - Sample Database
+  - PUBLIC
+  - ORDERS
+  - CREATED_AT
+  inherited-temporal-unit: quarter
+  name: CREATED_AT
+  position: 7
+  semantic-type: type/CreationTimestamp
+  table-id: 2
+  visibility-type: normal
+  lib/breakout?: true
+  lib/deduplicated-name: CREATED_AT
+  lib/desired-column-alias: CREATED_AT
+  lib/original-display-name: Created At
+  lib/original-name: CREATED_AT
+  lib/source: source/table-defaults
+  lib/source-column-alias: CREATED_AT
+  lib/type: metadata/column
+  metabase.lib.field/temporal-unit: quarter
+- base-type: type/Float
+  display-name: Sum of Total
+  effective-type: type/Float
+  name: sum
+  lib/deduplicated-name: sum
+  lib/desired-column-alias: sum
+  lib/original-name: sum
+  lib/source: source/aggregations
+  lib/source-column-alias: sum
+  lib/type: metadata/column
+visualization_settings:
+  column_settings:
+    '["name","CREATED_AT"]':
+      column_title: Date
+  pivot_table.column_split:
+    columns:
+    - SOURCE
+    rows:
+    - CREATED_AT
+    values:
+    - sum
+  pivot_table.column_widths:
+    leftHeaderWidths:
+    - 135
+    totalLeftHeaderWidths: 135
+    valueHeaderWidths:
+      '0': 148
+      '1': 158
+      '2': 159
+      '3': 144
+      '4': 139
+      '5': 124
+  table.column_formatting:
+  - color: '#509EE3'
+    colors:
+    - white
+    - '#A7D07C'
+    columns:
+    - sum
+    highlight_row: false
+    id: 0
+    max_type: null
+    max_value: 100
+    min_type: null
+    min_value: 0
+    operator: =
+    type: range
+    value: ''
+card_schema: 23
+serdes/meta:
+- id: km2d9-ZqHrlAM79yPh13G
+  label: orders_according_to_sources_per_quarter
+  model: Card
+archived_directly: false
+dashboard_id: null
+document_id: null
+embedding_type: null
+metabase_version: vUNKNOWN (bfc4963)
+source_card_id: null
+type: question
