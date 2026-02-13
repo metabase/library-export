@@ -1,0 +1,62 @@
+name: aaaa
+description: null
+entity_id: dP1vUcJWSOHj3YyV2D-NY
+created_at: '2026-02-13T22:28:29.31314Z'
+creator_id: eliot@metabase.com
+display: scalar
+archived: false
+collection_id: librarylibrarymetrics
+collection_preview: true
+collection_position: null
+query_type: query
+database_id: Sample Database
+table_id:
+- Sample Database
+- PUBLIC
+- REVIEWS
+enable_embedding: false
+embedding_params: null
+made_public_by_id: null
+public_uuid: null
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Sample Database
+  query:
+    aggregation:
+    - - count
+    source-table:
+    - Sample Database
+    - PUBLIC
+    - REVIEWS
+  type: query
+result_metadata:
+- base_type: type/BigInteger
+  database_type: BIGINT
+  display_name: Count
+  effective_type: type/BigInteger
+  field_ref:
+  - aggregation
+  - 0
+  name: count
+  semantic_type: type/Quantity
+  source: aggregation
+  lib/deduplicated-name: count
+  lib/desired-column-alias: count
+  lib/original-name: count
+  lib/source: source/aggregations
+  lib/source-column-alias: count
+visualization_settings:
+  column_settings: null
+card_schema: 23
+serdes/meta:
+- id: dP1vUcJWSOHj3YyV2D-NY
+  label: aaaa
+  model: Card
+archived_directly: false
+dashboard_id: null
+document_id: null
+embedding_type: null
+metabase_version: vLOCAL_DEV (06d1ba2ae111e66253209c01c244d6379acfc6dcb1911fa9ab6012cec9ce52e5)
+source_card_id: null
+type: metric
