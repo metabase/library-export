@@ -1,0 +1,13 @@
+name: New SQL snippet
+description: null
+entity_id: TZbvgeHoXr94Fz8M-jGrY
+created_at: '2026-02-13T22:18:02.306427Z'
+archived: false
+collection_id: null
+content: Test
+creator_id: eliot@metabase.com
+template_tags: {}
+serdes/meta:
+- id: TZbvgeHoXr94Fz8M-jGrY
+  label: new_sql_snippet
+  model: NativeQuerySnippet

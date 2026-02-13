@@ -1,17 +1,17 @@
-name: Library
+name: Metrics
 description: null
-entity_id: WNJd7O2Oqfl5Zn8yuSRZ4
-slug: library
-created_at: '2025-10-27T19:51:12.873227Z'
+entity_id: librarylibrarymetrics
+slug: metrics
+created_at: '2026-02-13T22:17:57.23639Z'
 archived: false
-type: null
-parent_id: null
+type: library-metrics
+parent_id: librarylibrarylibrary
 personal_owner_id: null
 namespace: null
 authority_level: null
 serdes/meta:
-- id: WNJd7O2Oqfl5Zn8yuSRZ4
-  label: library
+- id: librarylibrarymetrics
+  label: metrics
   model: Collection
 archive_operation_id: null
 archived_directly: null

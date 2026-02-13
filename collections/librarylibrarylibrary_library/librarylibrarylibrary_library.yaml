@@ -1,16 +1,16 @@
 name: Library
 description: null
-entity_id: WNJd7O2Oqfl5Zn8yuSRZ4
+entity_id: librarylibrarylibrary
 slug: library
-created_at: '2025-10-27T19:51:12.873227Z'
+created_at: '2026-02-13T22:17:57.212845Z'
 archived: false
-type: null
+type: library
 parent_id: null
 personal_owner_id: null
 namespace: null
 authority_level: null
 serdes/meta:
-- id: WNJd7O2Oqfl5Zn8yuSRZ4
+- id: librarylibrarylibrary
   label: library
   model: Collection
 archive_operation_id: null

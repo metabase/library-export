@@ -1,20 +1,20 @@
-name: Library
+name: a
 description: null
-entity_id: WNJd7O2Oqfl5Zn8yuSRZ4
-slug: library
-created_at: '2025-10-27T19:51:12.873227Z'
+entity_id: ZjjGzZjkVpE2nqS1dvcrR
+slug: a
+created_at: '2026-02-13T22:18:08.379742Z'
 archived: false
 type: null
 parent_id: null
 personal_owner_id: null
-namespace: null
+namespace: transforms
 authority_level: null
 serdes/meta:
-- id: WNJd7O2Oqfl5Zn8yuSRZ4
-  label: library
+- id: ZjjGzZjkVpE2nqS1dvcrR
+  label: a
   model: Collection
 archive_operation_id: null
 archived_directly: null
-is_remote_synced: true
+is_remote_synced: false
 is_sample: false
 workspace_id: null
