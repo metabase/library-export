@@ -1,0 +1,24 @@
+archived: false
+created_at: '2026-02-17T20:43:21.557208Z'
+creator_id: a@a.com
+definition:
+  database: Sample Database
+  query:
+    aggregation:
+    - - count
+    source-table:
+    - Sample Database
+    - PUBLIC
+    - ACCOUNTS
+  type: query
+description: null
+entity_id: cTgXDU3Th3_07VAuMDqMy
+name: tezt
+table_id:
+- Sample Database
+- PUBLIC
+- ACCOUNTS
+serdes/meta:
+- id: cTgXDU3Th3_07VAuMDqMy
+  label: tezt
+  model: Measure
