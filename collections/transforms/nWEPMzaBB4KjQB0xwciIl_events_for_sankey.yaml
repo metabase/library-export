@@ -1,0 +1,43 @@
+collection_id: null
+created_at: '2026-01-30T15:47:08.124353Z'
+creator_id: tanya@metabase.com
+description: null
+entity_id: nWEPMzaBB4KjQB0xwciIl
+name: events-for-sankey
+owner_email: null
+owner_user_id: tanya@metabase.com
+source:
+  query:
+    database: Random Interesting Statistics (test)
+    native:
+      query: |-
+        SELECT
+          "_mb_row_id",
+          "uuid",
+          "event_name",
+          "timestamp",
+          LAG("event_name") OVER (
+            PARTITION BY "uuid"
+            ORDER BY "timestamp"
+          ) AS previous_event
+        FROM public.product_events10_20260130154212
+        ORDER BY "uuid", "timestamp"
+    type: native
+  type: query
+source_database_id: Random Interesting Statistics (test)
+tags:
+- entity_id: r-4-DbSnMJlTuaPK8QwKE
+  position: 0
+  tag_id: wYLcUPbtF7jVPO0duGGHR
+  serdes/meta:
+  - id: r-4-DbSnMJlTuaPK8QwKE
+    model: TransformTransformTag
+target:
+  database: Random Interesting Statistics (test)
+  name: events-for-sankey
+  schema: mb__isolation_0c4b1_487
+  type: table
+serdes/meta:
+- id: nWEPMzaBB4KjQB0xwciIl
+  label: events_for_sankey
+  model: Transform

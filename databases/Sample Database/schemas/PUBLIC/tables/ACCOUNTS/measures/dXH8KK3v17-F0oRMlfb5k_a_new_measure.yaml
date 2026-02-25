@@ -1,0 +1,24 @@
+archived: false
+created_at: '2026-01-27T23:10:56.06615Z'
+creator_id: eliot@metabase.com
+definition:
+  database: Sample Database
+  query:
+    aggregation:
+    - - count
+    source-table:
+    - Sample Database
+    - PUBLIC
+    - ACCOUNTS
+  type: query
+description: null
+entity_id: dXH8KK3v17-F0oRMlfb5k
+name: a new measure
+table_id:
+- Sample Database
+- PUBLIC
+- ACCOUNTS
+serdes/meta:
+- id: dXH8KK3v17-F0oRMlfb5k
+  label: a_new_measure
+  model: Measure

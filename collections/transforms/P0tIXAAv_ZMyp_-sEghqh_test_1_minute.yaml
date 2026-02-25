@@ -1,0 +1,35 @@
+collection_id: null
+created_at: '2026-01-30T17:21:56.292495Z'
+creator_id: eliot@metabase.com
+description: null
+entity_id: P0tIXAAv_ZMyp_-sEghqh
+name: Test 1 minute
+owner_email: null
+owner_user_id: eliot@metabase.com
+source:
+  query:
+    database: Random Interesting Statistics (test)
+    native:
+      query: |-
+        SELECT
+        * from public.product_events10_20260130154212
+        LIMIT 10
+    type: native
+  type: query
+source_database_id: Random Interesting Statistics (test)
+tags:
+- entity_id: jwDMoZ2fgtYpw70s9srG5
+  position: 0
+  tag_id: suajYC_4WSNSzDF7NeVuG
+  serdes/meta:
+  - id: jwDMoZ2fgtYpw70s9srG5
+    model: TransformTransformTag
+target:
+  database: Random Interesting Statistics (test)
+  name: test_1_minute
+  schema: mb__isolation_0c4b1_487
+  type: table
+serdes/meta:
+- id: P0tIXAAv_ZMyp_-sEghqh
+  label: test_1_minute
+  model: Transform

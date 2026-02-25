@@ -1,0 +1,13 @@
+name: est
+description: null
+entity_id: QodzpFEON9maGR0i1PjTJ
+created_at: '2026-01-29T21:47:47.593238Z'
+archived: false
+collection_id: AWjcH0xxgtiRyEMMuwv0A
+content: Test
+creator_id: eliot@metabase.com
+template_tags: {}
+serdes/meta:
+- id: QodzpFEON9maGR0i1PjTJ
+  label: est
+  model: NativeQuerySnippet

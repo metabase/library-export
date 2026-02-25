@@ -1,0 +1,29 @@
+collection_id: null
+created_at: '2026-01-27T22:49:06.558807Z'
+creator_id: eliot@metabase.com
+description: null
+entity_id: a8HsbB4zjOf6YywgM2Xqq
+name: A Transform!
+owner_email: null
+owner_user_id: eliot@metabase.com
+source:
+  query:
+    database: Random Interesting Statistics (test)
+    query:
+      source-table:
+      - Random Interesting Statistics (test)
+      - public
+      - access_grants_example
+    type: query
+  type: query
+source_database_id: Random Interesting Statistics (test)
+tags: []
+target:
+  database: Random Interesting Statistics (test)
+  name: a_transform!
+  schema: mb__isolation_0c4b1_487
+  type: table
+serdes/meta:
+- id: a8HsbB4zjOf6YywgM2Xqq
+  label: a_transform_
+  model: Transform

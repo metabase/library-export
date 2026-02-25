@@ -1,0 +1,45 @@
+name: url
+display_name: URL
+description: null
+created_at: '2026-01-27T22:48:31.112215Z'
+active: true
+visibility_type: normal
+table_id:
+- Random Interesting Statistics (test)
+- mb__isolation_754bd_133
+- cool_apps_transform
+database_type: varchar
+base_type: type/Text
+effective_type: type/Text
+semantic_type: type/URL
+database_is_auto_increment: false
+database_required: false
+fk_target_field_id: null
+dimensions: []
+json_unfolding: false
+parent_id: null
+coercion_strategy: null
+preview_display: true
+position: 2
+custom_position: 0
+database_position: 2
+has_field_values: auto-list
+settings: null
+caveats: null
+points_of_interest: null
+nfc_path: null
+serdes/meta:
+- id: Random Interesting Statistics (test)
+  model: Database
+- id: mb__isolation_754bd_133
+  model: Schema
+- id: cool_apps_transform
+  model: Table
+- id: url
+  model: Field
+database_default: null
+database_indexed: null
+database_is_generated: false
+database_is_nullable: true
+database_is_pk: false
+database_partitioned: null
