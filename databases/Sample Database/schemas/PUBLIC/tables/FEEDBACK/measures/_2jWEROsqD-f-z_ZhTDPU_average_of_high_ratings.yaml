@@ -1,0 +1,38 @@
+archived: false
+created_at: '2026-03-03T16:43:48.941218Z'
+creator_id: eliot@metabase.com
+definition:
+  database: Sample Database
+  query:
+    aggregation:
+    - - aggregation-options
+      - - avg
+        - - if
+          - - - - '>='
+                - - field
+                  - - Sample Database
+                    - PUBLIC
+                    - FEEDBACK
+                    - RATING
+                  - base-type: type/Integer
+                - 4
+              - 1
+          - default: 0
+      - name: Average high ratings
+        display-name: Average high ratings
+    source-table:
+    - Sample Database
+    - PUBLIC
+    - FEEDBACK
+  type: query
+description: null
+entity_id: _2jWEROsqD-f-z_ZhTDPU
+name: Average of high ratings
+table_id:
+- Sample Database
+- PUBLIC
+- FEEDBACK
+serdes/meta:
+- id: _2jWEROsqD-f-z_ZhTDPU
+  label: average_of_high_ratings
+  model: Measure

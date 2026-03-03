@@ -1,0 +1,62 @@
+name: Test
+description: null
+entity_id: 85qfSvnn1vgjJDN-QGp-a
+created_at: '2026-03-03T21:26:19.328903Z'
+creator_id: kevin.kelleher@metabase.com
+display: scalar
+archived: false
+collection_id: librarylibrarymetrics
+collection_preview: true
+collection_position: null
+query_type: query
+database_id: Sample Database
+table_id:
+- Sample Database
+- PUBLIC
+- ORDERS
+enable_embedding: false
+embedding_params: null
+made_public_by_id: null
+public_uuid: null
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Sample Database
+  query:
+    aggregation:
+    - - count
+    source-table:
+    - Sample Database
+    - PUBLIC
+    - ORDERS
+  type: query
+result_metadata:
+- base_type: type/BigInteger
+  database_type: BIGINT
+  display_name: Count
+  effective_type: type/BigInteger
+  field_ref:
+  - aggregation
+  - 0
+  name: count
+  semantic_type: type/Quantity
+  source: aggregation
+  lib/deduplicated-name: count
+  lib/desired-column-alias: count
+  lib/original-name: count
+  lib/source: source/aggregations
+  lib/source-column-alias: count
+visualization_settings:
+  column_settings: null
+card_schema: 23
+serdes/meta:
+- id: 85qfSvnn1vgjJDN-QGp-a
+  label: test
+  model: Card
+archived_directly: false
+dashboard_id: null
+document_id: null
+embedding_type: null
+metabase_version: vUNKNOWN (1c76ea1)
+source_card_id: null
+type: metric

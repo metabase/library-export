@@ -1,0 +1,33 @@
+archived: false
+created_at: '2026-03-03T16:45:49.9986Z'
+creator_id: eliot@metabase.com
+definition:
+  database: Sample Database
+  query:
+    aggregation:
+    - - aggregation-options
+      - - avg
+        - - field
+          - - Sample Database
+            - PUBLIC
+            - FEEDBACK
+            - RATING
+          - base-type: type/Integer
+      - name: Simple average
+        display-name: Simple average
+    source-table:
+    - Sample Database
+    - PUBLIC
+    - FEEDBACK
+  type: query
+description: null
+entity_id: RJEKN1mys-UQdfhIZ3P-p
+name: Simple average
+table_id:
+- Sample Database
+- PUBLIC
+- FEEDBACK
+serdes/meta:
+- id: RJEKN1mys-UQdfhIZ3P-p
+  label: simple_average
+  model: Measure

@@ -1,0 +1,121 @@
+name: 'Products, Count, Grouped by Created At: Month, Filtered by Price is greater than 10'
+description: null
+entity_id: fdacLMeEb-wIM_vsSEKGJ
+created_at: '2026-03-03T17:15:22.97562Z'
+creator_id: anderson@metabase.com
+display: line
+archived: false
+collection_id: librarylibrarymetrics
+collection_preview: true
+collection_position: 2
+query_type: query
+database_id: Sample Database
+table_id:
+- Sample Database
+- PUBLIC
+- PRODUCTS
+enable_embedding: false
+embedding_params: null
+made_public_by_id: null
+public_uuid: null
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Sample Database
+  query:
+    aggregation:
+    - - count
+    breakout:
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - PRODUCTS
+        - CREATED_AT
+      - base-type: type/DateTime
+        temporal-unit: month
+    filter:
+    - '>'
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - PRODUCTS
+        - PRICE
+      - base-type: type/Float
+    - 10
+    source-table:
+    - Sample Database
+    - PUBLIC
+    - PRODUCTS
+  type: query
+result_metadata:
+- active: true
+  base_type: type/DateTime
+  database_type: TIMESTAMP
+  description: The date the product was added to our catalog.
+  display_name: 'Created At: Month'
+  effective_type: type/DateTime
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - PRODUCTS
+    - CREATED_AT
+  - temporal-unit: month
+  id:
+  - Sample Database
+  - PUBLIC
+  - PRODUCTS
+  - CREATED_AT
+  inherited_temporal_unit: month
+  name: CREATED_AT
+  position: 7
+  semantic_type: type/CreationTimestamp
+  source: breakout
+  table_id:
+  - Sample Database
+  - PUBLIC
+  - PRODUCTS
+  unit: month
+  visibility_type: normal
+  lib/breakout?: true
+  lib/deduplicated-name: CREATED_AT
+  lib/desired-column-alias: CREATED_AT
+  lib/original-display-name: Created At
+  lib/original-name: CREATED_AT
+  lib/source: source/table-defaults
+  lib/source-column-alias: CREATED_AT
+  lib/temporal-unit: month
+- base_type: type/BigInteger
+  database_type: BIGINT
+  display_name: Count
+  effective_type: type/BigInteger
+  field_ref:
+  - aggregation
+  - 0
+  name: count
+  semantic_type: type/Quantity
+  source: aggregation
+  lib/deduplicated-name: count
+  lib/desired-column-alias: count
+  lib/original-name: count
+  lib/source: source/aggregations
+  lib/source-column-alias: count
+visualization_settings:
+  column_settings: null
+  graph.dimensions:
+  - CREATED_AT
+  graph.metrics:
+  - count
+  graph.x_axis.scale: timeseries
+card_schema: 23
+serdes/meta:
+- id: fdacLMeEb-wIM_vsSEKGJ
+  label: products__count__grouped_by_created_at__month__filtered_by_price_is_greater_than_10
+  model: Card
+archived_directly: false
+dashboard_id: null
+document_id: null
+embedding_type: null
+metabase_version: vUNKNOWN (aa4b761)
+source_card_id: null
+type: metric

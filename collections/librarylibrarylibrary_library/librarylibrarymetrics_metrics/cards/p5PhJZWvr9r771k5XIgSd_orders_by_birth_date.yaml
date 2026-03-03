@@ -1,0 +1,119 @@
+name: Orders by Birth Date
+description: null
+entity_id: p5PhJZWvr9r771k5XIgSd
+created_at: '2026-03-03T17:42:01.84164Z'
+creator_id: kevin.kelleher@metabase.com
+display: line
+archived: false
+collection_id: librarylibrarymetrics
+collection_preview: true
+collection_position: null
+query_type: query
+database_id: Sample Database
+table_id:
+- Sample Database
+- PUBLIC
+- ORDERS
+enable_embedding: false
+embedding_params: null
+made_public_by_id: null
+public_uuid: null
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Sample Database
+  query:
+    aggregation:
+    - - count
+    breakout:
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - PEOPLE
+        - BIRTH_DATE
+      - base-type: type/Date
+        temporal-unit: month
+        source-field:
+        - Sample Database
+        - PUBLIC
+        - ORDERS
+        - USER_ID
+    source-table:
+    - Sample Database
+    - PUBLIC
+    - ORDERS
+  type: query
+result_metadata:
+- active: true
+  base_type: type/Date
+  database_type: DATE
+  description: The date of birth of the user
+  display_name: 'User → Birth Date: Month'
+  effective_type: type/Date
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - PEOPLE
+    - BIRTH_DATE
+  - temporal-unit: month
+    source-field:
+    - Sample Database
+    - PUBLIC
+    - ORDERS
+    - USER_ID
+  fk_field_id: 11
+  id:
+  - Sample Database
+  - PUBLIC
+  - PEOPLE
+  - BIRTH_DATE
+  inherited_temporal_unit: month
+  name: BIRTH_DATE
+  position: 9
+  semantic_type: null
+  source: breakout
+  table_id:
+  - Sample Database
+  - PUBLIC
+  - PEOPLE
+  unit: month
+  visibility_type: normal
+  lib/breakout?: true
+  lib/deduplicated-name: BIRTH_DATE
+  lib/desired-column-alias: PEOPLE__via__USER_ID__BIRTH_DATE
+  lib/original-display-name: Birth Date
+  lib/original-name: BIRTH_DATE
+  lib/source: source/implicitly-joinable
+  lib/source-column-alias: BIRTH_DATE
+  lib/temporal-unit: month
+  qp/implicit-field?: true
+- base_type: type/BigInteger
+  database_type: BIGINT
+  display_name: Count
+  effective_type: type/BigInteger
+  field_ref:
+  - aggregation
+  - 0
+  name: count
+  semantic_type: type/Quantity
+  source: aggregation
+  lib/deduplicated-name: count
+  lib/desired-column-alias: count
+  lib/original-name: count
+  lib/source: source/aggregations
+  lib/source-column-alias: count
+visualization_settings:
+  column_settings: null
+card_schema: 23
+serdes/meta:
+- id: p5PhJZWvr9r771k5XIgSd
+  label: orders_by_birth_date
+  model: Card
+archived_directly: false
+dashboard_id: null
+document_id: null
+embedding_type: null
+metabase_version: vUNKNOWN (aa4b761)
+source_card_id: null
+type: metric
