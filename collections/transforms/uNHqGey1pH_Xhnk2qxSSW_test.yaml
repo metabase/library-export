@@ -1,0 +1,46 @@
+collection_id: null
+created_at: '2026-03-04T21:14:55.255951Z'
+creator_id: eliot@metabase.com
+description: null
+entity_id: uNHqGey1pH_Xhnk2qxSSW
+name: Test
+owner_email: null
+owner_user_id: eliot@metabase.com
+source:
+  body: |-
+    # Write your Python transformation script here
+    import common
+    import pandas as pd
+
+    def transform(access_grants_example):
+        """
+        Your transformation function.
+
+        Args:
+            access_grants_example: DataFrame containing the data from the "Postgres.public.access_grants_example" table
+
+        Returns:
+            DataFrame to write to the destination table
+        """
+        # Your transformation logic here
+        return pd.DataFrame([{"message": "Hello from Python transform!"}])
+  query: null
+  source-database: 34
+  source-tables:
+    access_grants_example:
+      database_id: 34
+      schema: public
+      table: access_grants_example
+      table_id: 56
+  type: python
+source_database_id: Postgres
+tags: []
+target:
+  database: Postgres
+  name: test
+  schema: mb__isolation_0c4b1_487
+  type: table
+serdes/meta:
+- id: uNHqGey1pH_Xhnk2qxSSW
+  label: test
+  model: Transform
