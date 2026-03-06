@@ -1,0 +1,133 @@
+name: Revenue per quarter
+description: Total revenue last quarter compared to the previous
+entity_id: D4o8cCTOY-SnxoYDRVWcO
+created_at: '2026-03-06T15:54:29.813596Z'
+creator_id: internal@metabase.com
+display: smartscalar
+archived: false
+collection_id: HyB3nRtqb7pBPhFG26evI
+collection_preview: true
+collection_position: null
+query_type: query
+database_id: Sample Database
+table_id:
+- Sample Database
+- PUBLIC
+- ORDERS
+enable_embedding: false
+embedding_params: null
+made_public_by_id: null
+public_uuid: null
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Sample Database
+  query:
+    aggregation:
+    - - metric
+      - skXR69-dlhJST5C7Rd9nR
+    breakout:
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - ORDERS
+        - CREATED_AT
+      - base-type: type/DateTime
+        temporal-unit: quarter
+    filter:
+    - in
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - PRODUCTS
+        - CATEGORY
+      - base-type: type/Text
+        source-field:
+        - Sample Database
+        - PUBLIC
+        - ORDERS
+        - PRODUCT_ID
+    - Doohickey
+    - Gizmo
+    - Gadget
+    - Widget
+    source-table:
+    - Sample Database
+    - PUBLIC
+    - ORDERS
+  type: query
+result_metadata:
+- active: true
+  base_type: type/DateTime
+  database_type: TIMESTAMP
+  description: The date and time an order was submitted.
+  display_name: 'Created At: Quarter'
+  effective_type: type/DateTime
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - ORDERS
+    - CREATED_AT
+  - temporal-unit: quarter
+  id:
+  - Sample Database
+  - PUBLIC
+  - ORDERS
+  - CREATED_AT
+  inherited_temporal_unit: quarter
+  name: CREATED_AT
+  position: 7
+  semantic_type: type/CreationTimestamp
+  source: breakout
+  table_id:
+  - Sample Database
+  - PUBLIC
+  - ORDERS
+  unit: quarter
+  visibility_type: normal
+  lib/breakout?: true
+  lib/deduplicated-name: CREATED_AT
+  lib/desired-column-alias: CREATED_AT
+  lib/original-display-name: Created At
+  lib/original-name: CREATED_AT
+  lib/source: source/table-defaults
+  lib/source-column-alias: CREATED_AT
+  lib/temporal-unit: quarter
+- base_type: type/Float
+  database_type: DECFLOAT
+  display_name: Sum of Total
+  effective_type: type/Float
+  field_ref:
+  - aggregation
+  - 0
+  name: sum
+  semantic_type: null
+  source: aggregation
+  lib/deduplicated-name: sum
+  lib/desired-column-alias: sum
+  lib/original-name: sum
+  lib/source: source/aggregations
+  lib/source-column-alias: sum
+visualization_settings:
+  column_settings:
+    '["name","sum"]':
+      decimals: 0
+  scalar.comparisons:
+  - id: a8d008d4-d8f1-cbc1-b0ad-f4ab30791b9e
+    type: previousPeriod
+  - id: e7fa0d15-867c-2628-dbea-9f9a41e3ca38
+    type: periodsAgo
+    value: 4
+card_schema: 23
+serdes/meta:
+- id: D4o8cCTOY-SnxoYDRVWcO
+  label: revenue_per_quarter
+  model: Card
+archived_directly: false
+dashboard_id: null
+document_id: null
+embedding_type: null
+metabase_version: null
+source_card_id: null
+type: question

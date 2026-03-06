@@ -1,0 +1,153 @@
+name: Total orders this quarter
+description: Total number of orders in the current quarter.
+entity_id: YeKGeCqzoVP1hWDERjPKG
+created_at: '2026-03-06T15:54:29.813596Z'
+creator_id: internal@metabase.com
+display: scalar
+archived: false
+collection_id: HyB3nRtqb7pBPhFG26evI
+collection_preview: true
+collection_position: null
+query_type: query
+database_id: Sample Database
+table_id:
+- Sample Database
+- PUBLIC
+- ORDERS
+enable_embedding: false
+embedding_params: null
+made_public_by_id: null
+public_uuid: null
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Sample Database
+  query:
+    aggregation:
+    - - count
+    breakout:
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - ORDERS
+        - CREATED_AT
+      - base-type: type/DateTime
+        temporal-unit: quarter
+    filter:
+    - and
+    - - in
+      - - field
+        - - Sample Database
+          - PUBLIC
+          - PRODUCTS
+          - CATEGORY
+        - base-type: type/Text
+          source-field:
+          - Sample Database
+          - PUBLIC
+          - ORDERS
+          - PRODUCT_ID
+      - Doohickey
+      - Gadget
+      - Gizmo
+      - Widget
+    - - time-interval
+      - - field
+        - - Sample Database
+          - PUBLIC
+          - ORDERS
+          - CREATED_AT
+        - base-type: type/DateTime
+      - 0
+      - quarter
+    source-table:
+    - Sample Database
+    - PUBLIC
+    - ORDERS
+  type: query
+result_metadata:
+- active: true
+  base_type: type/DateTime
+  database_type: TIMESTAMP
+  description: The date and time an order was submitted.
+  display_name: 'Created At: Quarter'
+  effective_type: type/DateTime
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - ORDERS
+    - CREATED_AT
+  - temporal-unit: quarter
+  id:
+  - Sample Database
+  - PUBLIC
+  - ORDERS
+  - CREATED_AT
+  inherited_temporal_unit: quarter
+  name: CREATED_AT
+  position: 7
+  semantic_type: type/CreationTimestamp
+  source: breakout
+  table_id:
+  - Sample Database
+  - PUBLIC
+  - ORDERS
+  unit: quarter
+  visibility_type: normal
+  lib/breakout?: true
+  lib/deduplicated-name: CREATED_AT
+  lib/desired-column-alias: CREATED_AT
+  lib/original-display-name: Created At
+  lib/original-name: CREATED_AT
+  lib/source: source/table-defaults
+  lib/source-column-alias: CREATED_AT
+  lib/temporal-unit: quarter
+- base_type: type/BigInteger
+  database_type: BIGINT
+  display_name: Count
+  effective_type: type/BigInteger
+  field_ref:
+  - aggregation
+  - 0
+  name: count
+  semantic_type: type/Quantity
+  source: aggregation
+  lib/deduplicated-name: count
+  lib/desired-column-alias: count
+  lib/original-name: count
+  lib/source: source/aggregations
+  lib/source-column-alias: count
+visualization_settings:
+  column_settings: null
+  graph.dimensions:
+  - CREATED_AT
+  graph.metrics:
+  - count
+  graph.x_axis.scale: timeseries
+  scalar.field: count
+  scalar.segments:
+  - color: '#E75454'
+    label: Low
+    max: 1500
+    min: 0
+  - color: '#51528D'
+    label: Medium
+    max: 1700
+    min: 1501
+  - color: '#689735'
+    label: High
+    max: 10000
+    min: 1701
+card_schema: 23
+serdes/meta:
+- id: YeKGeCqzoVP1hWDERjPKG
+  label: total_orders_this_quarter
+  model: Card
+archived_directly: false
+dashboard_id: null
+document_id: null
+embedding_type: null
+metabase_version: null
+source_card_id: null
+type: question

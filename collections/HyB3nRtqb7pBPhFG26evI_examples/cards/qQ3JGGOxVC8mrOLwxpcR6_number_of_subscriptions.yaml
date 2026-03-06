@@ -1,0 +1,174 @@
+name: Number of subscriptions
+description: Customers that signed up for our monthly subscription
+entity_id: qQ3JGGOxVC8mrOLwxpcR6
+created_at: '2026-03-06T15:54:29.813596Z'
+creator_id: internal@metabase.com
+display: area
+archived: false
+collection_id: HyB3nRtqb7pBPhFG26evI
+collection_preview: true
+collection_position: null
+query_type: query
+database_id: Sample Database
+table_id:
+- Sample Database
+- PUBLIC
+- ANALYTIC_EVENTS
+enable_embedding: false
+embedding_params: null
+made_public_by_id: null
+public_uuid: null
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Sample Database
+  query:
+    filter:
+    - =
+    - - field
+      - BUTTON_LABEL
+      - base-type: type/Text
+    - Subscribe
+    source-query:
+      aggregation:
+      - - count
+      breakout:
+      - - field
+        - - Sample Database
+          - PUBLIC
+          - ANALYTIC_EVENTS
+          - BUTTON_LABEL
+        - base-type: type/Text
+      - - field
+        - - Sample Database
+          - PUBLIC
+          - ANALYTIC_EVENTS
+          - TIMESTAMP
+        - base-type: type/DateTime
+          temporal-unit: month
+      source-table:
+      - Sample Database
+      - PUBLIC
+      - ANALYTIC_EVENTS
+  type: query
+result_metadata:
+- active: true
+  base_type: type/Text
+  database_type: CHARACTER VARYING
+  display_name: Button Label
+  effective_type: type/Text
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - ANALYTIC_EVENTS
+    - BUTTON_LABEL
+  - null
+  id:
+  - Sample Database
+  - PUBLIC
+  - ANALYTIC_EVENTS
+  - BUTTON_LABEL
+  name: BUTTON_LABEL
+  position: 5
+  semantic_type: type/Category
+  source: fields
+  table_id:
+  - Sample Database
+  - PUBLIC
+  - ANALYTIC_EVENTS
+  visibility_type: normal
+  lib/breakout?: false
+  lib/deduplicated-name: BUTTON_LABEL
+  lib/desired-column-alias: BUTTON_LABEL
+  lib/original-display-name: Button Label
+  lib/original-name: BUTTON_LABEL
+  lib/source: source/previous-stage
+  lib/source-column-alias: BUTTON_LABEL
+  qp/implicit-field?: true
+- active: true
+  base_type: type/DateTime
+  database_type: TIMESTAMP
+  display_name: 'Timestamp: Month'
+  effective_type: type/DateTime
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - ANALYTIC_EVENTS
+    - TIMESTAMP
+  - null
+  id:
+  - Sample Database
+  - PUBLIC
+  - ANALYTIC_EVENTS
+  - TIMESTAMP
+  inherited_temporal_unit: month
+  name: TIMESTAMP
+  position: 3
+  semantic_type: null
+  source: fields
+  table_id:
+  - Sample Database
+  - PUBLIC
+  - ANALYTIC_EVENTS
+  unit: month
+  visibility_type: normal
+  lib/breakout?: false
+  lib/deduplicated-name: TIMESTAMP
+  lib/desired-column-alias: TIMESTAMP
+  lib/original-display-name: Timestamp
+  lib/original-name: TIMESTAMP
+  lib/source: source/previous-stage
+  lib/source-column-alias: TIMESTAMP
+  qp/implicit-field?: true
+- base_type: type/BigInteger
+  database_type: BIGINT
+  display_name: Count
+  effective_type: type/BigInteger
+  field_ref:
+  - field
+  - count
+  - base-type: type/BigInteger
+  name: count
+  semantic_type: type/Quantity
+  source: fields
+  lib/breakout?: false
+  lib/deduplicated-name: count
+  lib/desired-column-alias: count
+  lib/original-name: count
+  lib/source: source/previous-stage
+  lib/source-column-alias: count
+  qp/implicit-field?: true
+visualization_settings:
+  column_settings: null
+  graph.dimensions:
+  - TIMESTAMP
+  graph.metrics:
+  - count
+  graph.series_order: null
+  graph.series_order_dimension: null
+  graph.show_trendline: true
+  graph.show_values: true
+  graph.x_axis.title_text: ''
+  graph.y_axis.title_text: ''
+  scalar.field: count
+  series_settings:
+    Subscribe:
+      color: '#7172AD'
+      line.interpolate: linear
+      title: Subscriptions
+    count:
+      color: '#7172AD'
+card_schema: 23
+serdes/meta:
+- id: qQ3JGGOxVC8mrOLwxpcR6
+  label: number_of_subscriptions
+  model: Card
+archived_directly: false
+dashboard_id: null
+document_id: null
+embedding_type: null
+metabase_version: null
+source_card_id: null
+type: question

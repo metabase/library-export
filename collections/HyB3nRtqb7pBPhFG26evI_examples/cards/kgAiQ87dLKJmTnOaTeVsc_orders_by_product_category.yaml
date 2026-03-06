@@ -1,0 +1,200 @@
+name: Orders by product category
+description: Compares the orders of each category quarter over quarter
+entity_id: kgAiQ87dLKJmTnOaTeVsc
+created_at: '2026-03-06T15:54:29.813596Z'
+creator_id: internal@metabase.com
+display: line
+archived: false
+collection_id: HyB3nRtqb7pBPhFG26evI
+collection_preview: true
+collection_position: null
+query_type: query
+database_id: Sample Database
+table_id:
+- Sample Database
+- PUBLIC
+- ORDERS
+enable_embedding: false
+embedding_params: null
+made_public_by_id: null
+public_uuid: null
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Sample Database
+  query:
+    aggregation:
+    - - metric
+      - 8EdazRgPwfxdiltp7NCjS
+    breakout:
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - PRODUCTS
+        - CATEGORY
+      - base-type: type/Text
+        source-field:
+        - Sample Database
+        - PUBLIC
+        - ORDERS
+        - PRODUCT_ID
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - ORDERS
+        - CREATED_AT
+      - temporal-unit: quarter
+        base-type: type/DateTime
+        original-temporal-unit: month
+    filter:
+    - time-interval
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - ORDERS
+        - CREATED_AT
+      - base-type: type/DateTime
+    - -2
+    - year
+    - include-current: true
+    source-table:
+    - Sample Database
+    - PUBLIC
+    - ORDERS
+  type: query
+result_metadata:
+- active: true
+  base_type: type/Text
+  database_type: CHARACTER VARYING
+  description: 'The type of product, valid values include: Doohicky, Gadget, Gizmo and Widget'
+  display_name: Product → Category
+  effective_type: type/Text
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - PRODUCTS
+    - CATEGORY
+  - source-field:
+    - Sample Database
+    - PUBLIC
+    - ORDERS
+    - PRODUCT_ID
+  fk_field_id: 14
+  id:
+  - Sample Database
+  - PUBLIC
+  - PRODUCTS
+  - CATEGORY
+  name: CATEGORY
+  position: 3
+  semantic_type: type/Category
+  source: breakout
+  table_id:
+  - Sample Database
+  - PUBLIC
+  - PRODUCTS
+  visibility_type: normal
+  lib/breakout?: true
+  lib/deduplicated-name: CATEGORY
+  lib/desired-column-alias: PRODUCTS__via__PRODUCT_ID__CATEGORY
+  lib/original-display-name: Category
+  lib/original-name: CATEGORY
+  lib/source: source/implicitly-joinable
+  lib/source-column-alias: CATEGORY
+  qp/implicit-field?: true
+- active: true
+  base_type: type/DateTime
+  database_type: TIMESTAMP
+  description: The date and time an order was submitted.
+  display_name: 'Created At: Quarter'
+  effective_type: type/DateTime
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - ORDERS
+    - CREATED_AT
+  - temporal-unit: quarter
+  id:
+  - Sample Database
+  - PUBLIC
+  - ORDERS
+  - CREATED_AT
+  inherited_temporal_unit: quarter
+  name: CREATED_AT
+  position: 7
+  semantic_type: type/CreationTimestamp
+  source: breakout
+  table_id:
+  - Sample Database
+  - PUBLIC
+  - ORDERS
+  unit: quarter
+  visibility_type: normal
+  lib/breakout?: true
+  lib/deduplicated-name: CREATED_AT
+  lib/desired-column-alias: CREATED_AT
+  lib/original-display-name: Created At
+  lib/original-name: CREATED_AT
+  lib/source: source/table-defaults
+  lib/source-column-alias: CREATED_AT
+  lib/temporal-unit: quarter
+- base_type: type/BigInteger
+  database_type: BIGINT
+  display_name: Count
+  effective_type: type/BigInteger
+  field_ref:
+  - aggregation
+  - 0
+  name: count
+  semantic_type: type/Quantity
+  source: aggregation
+  lib/deduplicated-name: count
+  lib/desired-column-alias: count
+  lib/original-name: count
+  lib/source: source/aggregations
+  lib/source-column-alias: count
+visualization_settings:
+  column_settings: null
+  graph.dimensions:
+  - CREATED_AT
+  - CATEGORY
+  graph.goal_value: 500
+  graph.label_value_formatting: compact
+  graph.metrics:
+  - count
+  graph.show_goal: true
+  graph.show_trendline: false
+  graph.show_values: true
+  graph.x_axis.title_text: ''
+  graph.y_axis.title_text: ''
+  series_settings:
+    Doohickey:
+      color: '#7172AD'
+      display: area
+      line.interpolate: cardinal
+      line.size: M
+      line.style: solid
+    Gadget:
+      color: '#A989C5'
+      line.size: M
+    Gizmo:
+      color: '#C7EAEA'
+      line.size: M
+      line.style: solid
+    Widget:
+      color: '#227FD2'
+      line.size: M
+card_schema: 23
+serdes/meta:
+- id: kgAiQ87dLKJmTnOaTeVsc
+  label: orders_by_product_category
+  model: Card
+archived_directly: false
+dashboard_id: null
+document_id: null
+embedding_type: null
+metabase_version: null
+source_card_id: null
+type: question

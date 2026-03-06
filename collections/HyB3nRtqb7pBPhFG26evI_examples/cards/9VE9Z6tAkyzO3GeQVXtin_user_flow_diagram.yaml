@@ -1,0 +1,187 @@
+name: User flow diagram
+description: Sankey flow from visiting our website to taking an action
+entity_id: 9VE9Z6tAkyzO3GeQVXtin
+created_at: '2026-03-06T15:54:29.813596Z'
+creator_id: internal@metabase.com
+display: sankey
+archived: false
+collection_id: HyB3nRtqb7pBPhFG26evI
+collection_preview: true
+collection_position: null
+query_type: query
+database_id: Sample Database
+table_id:
+- Sample Database
+- PUBLIC
+- ANALYTIC_EVENTS
+enable_embedding: false
+embedding_params: null
+made_public_by_id: null
+public_uuid: null
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Sample Database
+  query:
+    expressions:
+      Step:
+      - case
+      - - - - is-null
+            - - field
+              - BUTTON_LABEL
+              - base-type: type/Text
+          - Bounced
+      - default:
+        - field
+        - BUTTON_LABEL
+        - base-type: type/Text
+    filter:
+    - '!='
+    - - expression
+      - Step
+      - base-type: type/Text
+    - Bounced
+    source-query:
+      aggregation:
+      - - count
+      breakout:
+      - - field
+        - - Sample Database
+          - PUBLIC
+          - ANALYTIC_EVENTS
+          - BUTTON_LABEL
+        - base-type: type/Text
+      - - field
+        - - Sample Database
+          - PUBLIC
+          - ANALYTIC_EVENTS
+          - EVENT
+        - base-type: type/Text
+      source-table:
+      - Sample Database
+      - PUBLIC
+      - ANALYTIC_EVENTS
+  type: query
+result_metadata:
+- active: true
+  base_type: type/Text
+  database_type: CHARACTER VARYING
+  display_name: Button Label
+  effective_type: type/Text
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - ANALYTIC_EVENTS
+    - BUTTON_LABEL
+  - null
+  id:
+  - Sample Database
+  - PUBLIC
+  - ANALYTIC_EVENTS
+  - BUTTON_LABEL
+  name: BUTTON_LABEL
+  position: 5
+  semantic_type: type/Category
+  source: fields
+  table_id:
+  - Sample Database
+  - PUBLIC
+  - ANALYTIC_EVENTS
+  visibility_type: normal
+  lib/breakout?: false
+  lib/deduplicated-name: BUTTON_LABEL
+  lib/desired-column-alias: BUTTON_LABEL
+  lib/original-display-name: Button Label
+  lib/original-name: BUTTON_LABEL
+  lib/source: source/previous-stage
+  lib/source-column-alias: BUTTON_LABEL
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Text
+  database_type: CHARACTER VARYING
+  display_name: Event
+  effective_type: type/Text
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - ANALYTIC_EVENTS
+    - EVENT
+  - null
+  id:
+  - Sample Database
+  - PUBLIC
+  - ANALYTIC_EVENTS
+  - EVENT
+  name: EVENT
+  position: 2
+  semantic_type: type/Category
+  source: fields
+  table_id:
+  - Sample Database
+  - PUBLIC
+  - ANALYTIC_EVENTS
+  visibility_type: normal
+  lib/breakout?: false
+  lib/deduplicated-name: EVENT
+  lib/desired-column-alias: EVENT
+  lib/original-display-name: Event
+  lib/original-name: EVENT
+  lib/source: source/previous-stage
+  lib/source-column-alias: EVENT
+  qp/implicit-field?: true
+- base_type: type/BigInteger
+  database_type: BIGINT
+  display_name: Count
+  effective_type: type/BigInteger
+  field_ref:
+  - field
+  - count
+  - base-type: type/BigInteger
+  name: count
+  semantic_type: type/Quantity
+  source: fields
+  lib/breakout?: false
+  lib/deduplicated-name: count
+  lib/desired-column-alias: count
+  lib/original-name: count
+  lib/source: source/previous-stage
+  lib/source-column-alias: count
+  qp/implicit-field?: true
+- base_type: type/Text
+  database_type: CHARACTER VARYING
+  display_name: Step
+  effective_type: type/Text
+  field_ref:
+  - expression
+  - Step
+  name: Step
+  semantic_type: null
+  source: fields
+  lib/deduplicated-name: Step
+  lib/desired-column-alias: Step
+  lib/expression-name: Step
+  lib/original-name: Step
+  lib/source: source/expressions
+  lib/source-column-alias: Step
+  qp/implicit-field?: true
+visualization_settings:
+  column_settings: null
+  sankey.edge_color: source
+  sankey.node_align: right
+  sankey.show_edge_labels: true
+  sankey.source: EVENT
+  sankey.target: Step
+card_schema: 23
+serdes/meta:
+- id: 9VE9Z6tAkyzO3GeQVXtin
+  label: user_flow_diagram
+  model: Card
+archived_directly: false
+dashboard_id: null
+document_id: null
+embedding_type: null
+metabase_version: null
+source_card_id: null
+type: question

@@ -1,0 +1,465 @@
+name: Most recent subscription
+description: The most recent subscription in our database
+entity_id: AXDOILGSNqoWoxV1NuvTt
+created_at: '2026-03-06T15:54:29.813596Z'
+creator_id: internal@metabase.com
+display: object
+archived: false
+collection_id: HyB3nRtqb7pBPhFG26evI
+collection_preview: true
+collection_position: null
+query_type: query
+database_id: Sample Database
+table_id:
+- Sample Database
+- PUBLIC
+- ACCOUNTS
+enable_embedding: false
+embedding_params: null
+made_public_by_id: null
+public_uuid: null
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Sample Database
+  query:
+    fields:
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - ACCOUNTS
+        - ID
+      - base-type: type/BigInteger
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - ACCOUNTS
+        - FIRST_NAME
+      - base-type: type/Text
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - ACCOUNTS
+        - LAST_NAME
+      - base-type: type/Text
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - ACCOUNTS
+        - PLAN
+      - base-type: type/Text
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - ACCOUNTS
+        - SOURCE
+      - base-type: type/Text
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - ACCOUNTS
+        - CREATED_AT
+      - base-type: type/DateTime
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - ACCOUNTS
+        - TRIAL_ENDS_AT
+      - base-type: type/DateTime
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - ACCOUNTS
+        - CANCELED_AT
+      - base-type: type/DateTime
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - ACCOUNTS
+        - TRIAL_CONVERTED
+      - base-type: type/Boolean
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - ACCOUNTS
+        - ACTIVE_SUBSCRIPTION
+      - base-type: type/Boolean
+    filter:
+    - time-interval
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - ACCOUNTS
+        - CREATED_AT
+      - base-type: type/DateTime
+    - -12
+    - month
+    order-by:
+    - - desc
+      - - field
+        - - Sample Database
+          - PUBLIC
+          - ACCOUNTS
+          - CREATED_AT
+        - base-type: type/DateTime
+    source-table:
+    - Sample Database
+    - PUBLIC
+    - ACCOUNTS
+  type: query
+result_metadata:
+- active: true
+  base_type: type/BigInteger
+  database_type: BIGINT
+  display_name: ID
+  effective_type: type/BigInteger
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - ACCOUNTS
+    - ID
+  - null
+  id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  - ID
+  name: ID
+  position: 0
+  semantic_type: type/PK
+  source: fields
+  table_id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  visibility_type: normal
+  lib/deduplicated-name: ID
+  lib/desired-column-alias: ID
+  lib/original-display-name: ID
+  lib/original-name: ID
+  lib/source: source/table-defaults
+  lib/source-column-alias: ID
+- active: true
+  base_type: type/Text
+  database_type: CHARACTER VARYING
+  display_name: First Name
+  effective_type: type/Text
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - ACCOUNTS
+    - FIRST_NAME
+  - null
+  id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  - FIRST_NAME
+  name: FIRST_NAME
+  position: 2
+  semantic_type: type/Name
+  source: fields
+  table_id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  visibility_type: normal
+  lib/deduplicated-name: FIRST_NAME
+  lib/desired-column-alias: FIRST_NAME
+  lib/original-display-name: First Name
+  lib/original-name: FIRST_NAME
+  lib/source: source/table-defaults
+  lib/source-column-alias: FIRST_NAME
+- active: true
+  base_type: type/Text
+  database_type: CHARACTER VARYING
+  display_name: Last Name
+  effective_type: type/Text
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - ACCOUNTS
+    - LAST_NAME
+  - null
+  id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  - LAST_NAME
+  name: LAST_NAME
+  position: 3
+  semantic_type: type/Name
+  source: fields
+  table_id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  visibility_type: normal
+  lib/deduplicated-name: LAST_NAME
+  lib/desired-column-alias: LAST_NAME
+  lib/original-display-name: Last Name
+  lib/original-name: LAST_NAME
+  lib/source: source/table-defaults
+  lib/source-column-alias: LAST_NAME
+- active: true
+  base_type: type/Text
+  database_type: CHARACTER VARYING
+  display_name: Plan
+  effective_type: type/Text
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - ACCOUNTS
+    - PLAN
+  - null
+  id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  - PLAN
+  name: PLAN
+  position: 4
+  semantic_type: type/Category
+  source: fields
+  table_id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  visibility_type: normal
+  lib/deduplicated-name: PLAN
+  lib/desired-column-alias: PLAN
+  lib/original-display-name: Plan
+  lib/original-name: PLAN
+  lib/source: source/table-defaults
+  lib/source-column-alias: PLAN
+- active: true
+  base_type: type/Text
+  database_type: CHARACTER VARYING
+  display_name: Source
+  effective_type: type/Text
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - ACCOUNTS
+    - SOURCE
+  - null
+  id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  - SOURCE
+  name: SOURCE
+  position: 5
+  semantic_type: type/Source
+  source: fields
+  table_id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  visibility_type: normal
+  lib/deduplicated-name: SOURCE
+  lib/desired-column-alias: SOURCE
+  lib/original-display-name: Source
+  lib/original-name: SOURCE
+  lib/source: source/table-defaults
+  lib/source-column-alias: SOURCE
+- active: true
+  base_type: type/DateTime
+  database_type: TIMESTAMP
+  display_name: Created At
+  effective_type: type/DateTime
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - ACCOUNTS
+    - CREATED_AT
+  - null
+  id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  - CREATED_AT
+  name: CREATED_AT
+  position: 7
+  semantic_type: type/CreationTimestamp
+  source: fields
+  table_id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  visibility_type: normal
+  lib/deduplicated-name: CREATED_AT
+  lib/desired-column-alias: CREATED_AT
+  lib/original-display-name: Created At
+  lib/original-name: CREATED_AT
+  lib/source: source/table-defaults
+  lib/source-column-alias: CREATED_AT
+- active: true
+  base_type: type/DateTime
+  database_type: TIMESTAMP
+  display_name: Trial Ends At
+  effective_type: type/DateTime
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - ACCOUNTS
+    - TRIAL_ENDS_AT
+  - null
+  id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  - TRIAL_ENDS_AT
+  name: TRIAL_ENDS_AT
+  position: 8
+  semantic_type: null
+  source: fields
+  table_id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  visibility_type: normal
+  lib/deduplicated-name: TRIAL_ENDS_AT
+  lib/desired-column-alias: TRIAL_ENDS_AT
+  lib/original-display-name: Trial Ends At
+  lib/original-name: TRIAL_ENDS_AT
+  lib/source: source/table-defaults
+  lib/source-column-alias: TRIAL_ENDS_AT
+- active: true
+  base_type: type/DateTime
+  database_type: TIMESTAMP
+  display_name: Canceled At
+  effective_type: type/DateTime
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - ACCOUNTS
+    - CANCELED_AT
+  - null
+  id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  - CANCELED_AT
+  name: CANCELED_AT
+  position: 9
+  semantic_type: type/CancelationTimestamp
+  source: fields
+  table_id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  visibility_type: normal
+  lib/deduplicated-name: CANCELED_AT
+  lib/desired-column-alias: CANCELED_AT
+  lib/original-display-name: Canceled At
+  lib/original-name: CANCELED_AT
+  lib/source: source/table-defaults
+  lib/source-column-alias: CANCELED_AT
+- active: true
+  base_type: type/Boolean
+  database_type: BOOLEAN
+  display_name: Trial Converted
+  effective_type: type/Boolean
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - ACCOUNTS
+    - TRIAL_CONVERTED
+  - null
+  id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  - TRIAL_CONVERTED
+  name: TRIAL_CONVERTED
+  position: 10
+  semantic_type: null
+  source: fields
+  table_id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  visibility_type: normal
+  lib/deduplicated-name: TRIAL_CONVERTED
+  lib/desired-column-alias: TRIAL_CONVERTED
+  lib/original-display-name: Trial Converted
+  lib/original-name: TRIAL_CONVERTED
+  lib/source: source/table-defaults
+  lib/source-column-alias: TRIAL_CONVERTED
+- active: true
+  base_type: type/Boolean
+  database_type: BOOLEAN
+  display_name: Active Subscription
+  effective_type: type/Boolean
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - ACCOUNTS
+    - ACTIVE_SUBSCRIPTION
+  - null
+  id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  - ACTIVE_SUBSCRIPTION
+  name: ACTIVE_SUBSCRIPTION
+  position: 11
+  semantic_type: null
+  source: fields
+  table_id:
+  - Sample Database
+  - PUBLIC
+  - ACCOUNTS
+  visibility_type: normal
+  lib/deduplicated-name: ACTIVE_SUBSCRIPTION
+  lib/desired-column-alias: ACTIVE_SUBSCRIPTION
+  lib/original-display-name: Active Subscription
+  lib/original-name: ACTIVE_SUBSCRIPTION
+  lib/source: source/table-defaults
+  lib/source-column-alias: ACTIVE_SUBSCRIPTION
+visualization_settings:
+  column_settings: null
+  table.columns:
+  - enabled: true
+    name: ID
+  - enabled: true
+    name: FIRST_NAME
+  - enabled: true
+    name: LAST_NAME
+  - enabled: true
+    name: PLAN
+  - enabled: false
+    name: SOURCE
+  - enabled: true
+    name: CREATED_AT
+  - enabled: true
+    name: TRIAL_ENDS_AT
+  - enabled: true
+    name: CANCELED_AT
+  - enabled: false
+    name: TRIAL_CONVERTED
+  - enabled: false
+    name: ACTIVE_SUBSCRIPTION
+card_schema: 23
+serdes/meta:
+- id: AXDOILGSNqoWoxV1NuvTt
+  label: most_recent_subscription
+  model: Card
+archived_directly: false
+dashboard_id: null
+document_id: null
+embedding_type: null
+metabase_version: null
+source_card_id: null
+type: question
