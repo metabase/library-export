@@ -1,0 +1,20 @@
+name: Remote Collection
+description: null
+entity_id: Kpkgv6AOIPm-5SzOb6Yvt
+slug: remote_collection
+created_at: '2024-08-28T09:46:18.671622Z'
+archived: false
+type: null
+parent_id: null
+personal_owner_id: null
+namespace: null
+authority_level: null
+serdes/meta:
+- id: Kpkgv6AOIPm-5SzOb6Yvt
+  label: remote_collection
+  model: Collection
+archive_operation_id: null
+archived_directly: null
+is_remote_synced: true
+is_sample: false
+workspace_id: null
