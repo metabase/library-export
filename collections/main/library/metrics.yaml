@@ -1,0 +1,11 @@
+name: Metrics
+entity_id: librarylibrarymetrics
+slug: metrics
+created_at: '2026-04-29T20:23:49.809873Z'
+type: library-metrics
+parent_id: librarylibrarylibrary
+serdes/meta:
+- id: librarylibrarymetrics
+  label: metrics
+  model: Collection
+is_remote_synced: true

@@ -1,0 +1,36 @@
+name: Test
+entity_id: _mnkE0EcFzQMMh20d5GmB
+created_at: '2026-04-29T20:25:44.113658Z'
+creator_id: pr@metabase.com
+display: scalar
+collection_id: K4txRkI2D9X9sJr4CcHgy
+collection_position: 1
+query_type: query
+database_id: Postgres
+table_id:
+- Postgres
+- mb__isolation_4148e_35
+- public__chris_mbql_xform_output
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Postgres
+  stages:
+  - aggregation:
+    - - count
+      - {}
+    source-table:
+    - Postgres
+    - mb__isolation_4148e_35
+    - public__chris_mbql_xform_output
+    lib/type: mbql.stage/mbql
+  lib/type: mbql/query
+visualization_settings:
+  column_settings: null
+card_schema: 23
+serdes/meta:
+- id: _mnkE0EcFzQMMh20d5GmB
+  label: test
+  model: Card
+metabase_version: vUNKNOWN (d47b2e6)
+type: metric
