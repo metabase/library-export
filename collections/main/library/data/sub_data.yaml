@@ -1,0 +1,11 @@
+name: Sub-data
+entity_id: pJSRuI7frVwz04sPWN7EF
+slug: sub_data
+created_at: '2026-04-29T20:57:30.100179Z'
+type: library-data
+parent_id: librarylibrarydatadat
+serdes/meta:
+- id: pJSRuI7frVwz04sPWN7EF
+  label: sub_data
+  model: Collection
+is_remote_synced: true

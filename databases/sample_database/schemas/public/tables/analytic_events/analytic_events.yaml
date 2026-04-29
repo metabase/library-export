@@ -1,0 +1,24 @@
+name: ANALYTIC_EVENTS
+display_name: Analytic Events
+description: Piespace does some anonymous analytics tracking on how users interact with their platform. They’ve only had time to implement a few events, but you know how it is. Pies come first.
+created_at: '2026-04-29T16:08:09.402085Z'
+db_id: Sample Database
+schema: PUBLIC
+entity_type: entity/EventTable
+active: true
+field_order: database
+initial_sync_status: complete
+points_of_interest: Is it? We’ll let you be the judge of that.
+caveats: Piespace has cracked time travel, so keep in mind that some events may have already happened in the future.
+serdes/meta:
+- id: Sample Database
+  model: Database
+- id: PUBLIC
+  model: Schema
+- id: ANALYTIC_EVENTS
+  model: Table
+collection_id: librarylibrarydatadat
+data_authority: unconfigured
+data_layer: final
+is_published: true
+is_writable: true

@@ -1,0 +1,26 @@
+name: TIMESTAMP
+display_name: Timestamp
+created_at: '2026-04-29T16:08:09.402085Z'
+visibility_type: normal
+table_id:
+- Sample Database
+- PUBLIC
+- ANALYTIC_EVENTS
+database_type: TIMESTAMP
+base_type: type/DateTime
+effective_type: type/DateTime
+dimensions: []
+position: 3
+custom_position: 0
+database_position: 3
+serdes/meta:
+- id: Sample Database
+  model: Database
+- id: PUBLIC
+  model: Schema
+- id: ANALYTIC_EVENTS
+  model: Table
+- id: TIMESTAMP
+  model: Field
+database_is_generated: false
+database_is_nullable: true

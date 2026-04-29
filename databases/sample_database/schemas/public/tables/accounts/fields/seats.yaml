@@ -1,0 +1,27 @@
+name: SEATS
+display_name: Seats
+created_at: '2026-04-29T16:08:09.402085Z'
+visibility_type: normal
+table_id:
+- Sample Database
+- PUBLIC
+- ACCOUNTS
+database_type: INTEGER
+base_type: type/Integer
+effective_type: type/Integer
+dimensions: []
+position: 6
+custom_position: 0
+database_position: 6
+has_field_values: auto-list
+serdes/meta:
+- id: Sample Database
+  model: Database
+- id: PUBLIC
+  model: Schema
+- id: ACCOUNTS
+  model: Table
+- id: SEATS
+  model: Field
+database_is_generated: false
+database_is_nullable: true

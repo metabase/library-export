@@ -1,0 +1,28 @@
+name: PAGE_URL
+display_name: Page URL
+created_at: '2026-04-29T16:08:09.402085Z'
+visibility_type: normal
+table_id:
+- Sample Database
+- PUBLIC
+- ANALYTIC_EVENTS
+database_type: CHARACTER VARYING
+base_type: type/Text
+effective_type: type/Text
+semantic_type: type/URL
+dimensions: []
+position: 4
+custom_position: 0
+database_position: 4
+has_field_values: auto-list
+serdes/meta:
+- id: Sample Database
+  model: Database
+- id: PUBLIC
+  model: Schema
+- id: ANALYTIC_EVENTS
+  model: Table
+- id: PAGE_URL
+  model: Field
+database_is_generated: false
+database_is_nullable: true
