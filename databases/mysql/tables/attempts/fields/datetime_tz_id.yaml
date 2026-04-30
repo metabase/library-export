@@ -1,0 +1,26 @@
+name: datetime_tz_id
+display_name: Datetime Tz ID
+created_at: '2026-04-29T16:10:56.494756Z'
+visibility_type: normal
+table_id:
+- MySQL
+- null
+- attempts
+database_type: TIMESTAMP
+base_type: type/DateTimeWithLocalTZ
+effective_type: type/DateTimeWithLocalTZ
+dimensions: []
+position: 5
+custom_position: 0
+database_position: 5
+serdes/meta:
+- id: MySQL
+  model: Database
+- id: attempts
+  model: Table
+- id: datetime_tz_id
+  model: Field
+database_default: '1970-01-01 00:00:01.000'
+database_is_generated: false
+database_is_nullable: true
+database_is_pk: false
