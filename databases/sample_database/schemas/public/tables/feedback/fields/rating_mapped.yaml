@@ -1,0 +1,28 @@
+name: RATING_MAPPED
+display_name: Rating Mapped
+created_at: '2026-04-29T16:08:09.402085Z'
+visibility_type: normal
+table_id:
+- Sample Database
+- PUBLIC
+- FEEDBACK
+database_type: CHARACTER VARYING
+base_type: type/Text
+effective_type: type/Text
+semantic_type: type/Category
+dimensions: []
+position: 5
+custom_position: 0
+database_position: 5
+has_field_values: auto-list
+serdes/meta:
+- id: Sample Database
+  model: Database
+- id: PUBLIC
+  model: Schema
+- id: FEEDBACK
+  model: Table
+- id: RATING_MAPPED
+  model: Field
+database_is_generated: false
+database_is_nullable: true

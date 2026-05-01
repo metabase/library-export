@@ -1,0 +1,28 @@
+name: COUNTRY
+display_name: Country
+created_at: '2026-04-29T16:08:09.402085Z'
+visibility_type: normal
+table_id:
+- Sample Database
+- PUBLIC
+- ACCOUNTS
+database_type: CHARACTER
+base_type: type/Text
+effective_type: type/Text
+semantic_type: type/Country
+dimensions: []
+position: 15
+custom_position: 0
+database_position: 15
+has_field_values: auto-list
+serdes/meta:
+- id: Sample Database
+  model: Database
+- id: PUBLIC
+  model: Schema
+- id: ACCOUNTS
+  model: Table
+- id: COUNTRY
+  model: Field
+database_is_generated: false
+database_is_nullable: true
