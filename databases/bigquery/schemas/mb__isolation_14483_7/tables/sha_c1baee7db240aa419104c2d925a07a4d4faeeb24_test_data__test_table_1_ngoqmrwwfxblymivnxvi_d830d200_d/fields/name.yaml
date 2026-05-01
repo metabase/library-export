@@ -1,0 +1,27 @@
+name: name
+display_name: Name
+created_at: '2026-04-29T16:11:34.932231Z'
+visibility_type: normal
+table_id:
+- BigQuery
+- mb__isolation_14483_7
+- sha_c1baee7db240aa419104c2d925a07a4d4faeeb24_test_data__test_table_1_NGOQMRWWFXBLYMIVNXVI_d830d200_d6f7_4190_a84d_9f
+database_type: STRING
+base_type: type/Text
+effective_type: type/Text
+semantic_type: type/Name
+dimensions: []
+position: 1
+custom_position: 0
+database_position: 1
+has_field_values: auto-list
+serdes/meta:
+- id: BigQuery
+  model: Database
+- id: mb__isolation_14483_7
+  model: Schema
+- id: sha_c1baee7db240aa419104c2d925a07a4d4faeeb24_test_data__test_table_1_NGOQMRWWFXBLYMIVNXVI_d830d200_d6f7_4190_a84d_9f
+  model: Table
+- id: name
+  model: Field
+database_partitioned: false

@@ -1,0 +1,11 @@
+name: More specific data
+entity_id: t8W1EfjOE423M1kyTRRmr
+slug: more_specific_data
+created_at: '2026-05-01T22:30:40.031904Z'
+type: library-data
+parent_id: librarylibrarydatadat
+serdes/meta:
+- id: t8W1EfjOE423M1kyTRRmr
+  label: more_specific_data
+  model: Collection
+is_remote_synced: true

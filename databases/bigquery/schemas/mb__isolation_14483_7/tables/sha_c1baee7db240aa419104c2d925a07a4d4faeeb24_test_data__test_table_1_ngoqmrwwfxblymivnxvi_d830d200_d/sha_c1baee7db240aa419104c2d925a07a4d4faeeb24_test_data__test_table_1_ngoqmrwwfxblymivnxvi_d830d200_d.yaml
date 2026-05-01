@@ -1,0 +1,21 @@
+name: sha_c1baee7db240aa419104c2d925a07a4d4faeeb24_test_data__test_table_1_NGOQMRWWFXBLYMIVNXVI_d830d200_d6f7_4190_a84d_9f
+display_name: Sha C1baee7db240aa419104c2d925a07a4d4faeeb24 Test Data Test Table 1 Ngoqmrwwfxblymivnxvi D830d200 D6f7 4190 A84d 9f
+created_at: '2026-04-29T16:11:29.710589Z'
+db_id: BigQuery
+schema: mb__isolation_14483_7
+entity_type: entity/GenericTable
+active: true
+field_order: database
+initial_sync_status: complete
+serdes/meta:
+- id: BigQuery
+  model: Database
+- id: mb__isolation_14483_7
+  model: Schema
+- id: sha_c1baee7db240aa419104c2d925a07a4d4faeeb24_test_data__test_table_1_NGOQMRWWFXBLYMIVNXVI_d830d200_d6f7_4190_a84d_9f
+  model: Table
+collection_id: librarylibrarydatadat
+data_authority: unconfigured
+data_layer: internal
+database_require_filter: false
+is_published: true
