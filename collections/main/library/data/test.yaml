@@ -1,0 +1,11 @@
+name: Test
+entity_id: y6n8DmOMSx0QuvScL4Qcr
+slug: test
+created_at: '2026-05-05T15:19:59.60174Z'
+type: library-data
+parent_id: librarylibrarydatadat
+serdes/meta:
+- id: y6n8DmOMSx0QuvScL4Qcr
+  label: test
+  model: Collection
+is_remote_synced: true
