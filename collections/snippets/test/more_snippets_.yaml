@@ -1,0 +1,10 @@
+name: More snippets!
+entity_id: PkO6MpoDRSt898zmMq4sd
+slug: more_snippets_
+created_at: '2026-05-07T21:59:54.195995Z'
+parent_id: RIumrxITJwPUxH7geTecZ
+namespace: snippets
+serdes/meta:
+- id: PkO6MpoDRSt898zmMq4sd
+  label: more_snippets_
+  model: Collection

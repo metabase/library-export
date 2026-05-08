@@ -1,0 +1,11 @@
+name: AAA
+entity_id: 85iKDlG4mp2c-en1mQNXe
+slug: aaa
+created_at: '2026-05-05T15:20:29.987455Z'
+type: library-data
+parent_id: librarylibrarydatadat
+serdes/meta:
+- id: 85iKDlG4mp2c-en1mQNXe
+  label: aaa
+  model: Collection
+is_remote_synced: true

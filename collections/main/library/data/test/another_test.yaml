@@ -1,0 +1,11 @@
+name: Another test
+entity_id: d1RDK_G7PKFihYEnL1vcX
+slug: another_test
+created_at: '2026-05-08T20:41:48.01933Z'
+type: library-data
+parent_id: y6n8DmOMSx0QuvScL4Qcr
+serdes/meta:
+- id: d1RDK_G7PKFihYEnL1vcX
+  label: another_test
+  model: Collection
+is_remote_synced: true

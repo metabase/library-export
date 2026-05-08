@@ -1,0 +1,29 @@
+name: TITLE
+display_name: Title
+description: The name of the product as it should be displayed to customers.
+created_at: '2026-04-29T16:08:09.402085Z'
+visibility_type: normal
+table_id:
+- Sample Database
+- PUBLIC
+- PRODUCTS
+database_type: CHARACTER VARYING
+base_type: type/Text
+effective_type: type/Text
+semantic_type: type/Title
+dimensions: []
+position: 2
+custom_position: 0
+database_position: 2
+has_field_values: auto-list
+serdes/meta:
+- id: Sample Database
+  model: Database
+- id: PUBLIC
+  model: Schema
+- id: PRODUCTS
+  model: Table
+- id: TITLE
+  model: Field
+database_is_generated: false
+database_is_nullable: true

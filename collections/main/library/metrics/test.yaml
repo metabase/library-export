@@ -1,0 +1,11 @@
+name: Test
+entity_id: v8eZvXqBJ3wbfv8npsrfF
+slug: test
+created_at: '2026-04-30T14:40:36.799088Z'
+type: library-metrics
+parent_id: librarylibrarymetrics
+serdes/meta:
+- id: v8eZvXqBJ3wbfv8npsrfF
+  label: test
+  model: Collection
+is_remote_synced: true

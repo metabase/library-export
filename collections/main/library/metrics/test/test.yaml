@@ -1,0 +1,12 @@
+name: Test
+description: ok
+entity_id: K4txRkI2D9X9sJr4CcHgy
+slug: test
+created_at: '2026-04-29T20:25:13.583405Z'
+type: library-metrics
+parent_id: v8eZvXqBJ3wbfv8npsrfF
+serdes/meta:
+- id: K4txRkI2D9X9sJr4CcHgy
+  label: test
+  model: Collection
+is_remote_synced: true

@@ -1,0 +1,24 @@
+name: ORDERS
+display_name: Orders
+description: Confirmed Sample Company orders for a product, from a user.
+created_at: '2026-04-29T16:08:09.402085Z'
+db_id: Sample Database
+schema: PUBLIC
+entity_type: entity/TransactionTable
+active: true
+field_order: database
+initial_sync_status: complete
+points_of_interest: Is it? You tell us!
+caveats: You can join this on the Products and Orders table using the ID fields. Discount is left null if not applicable.
+serdes/meta:
+- id: Sample Database
+  model: Database
+- id: PUBLIC
+  model: Schema
+- id: ORDERS
+  model: Table
+collection_id: t8W1EfjOE423M1kyTRRmr
+data_authority: unconfigured
+data_layer: final
+is_published: true
+is_writable: true

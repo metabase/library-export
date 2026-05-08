@@ -1,0 +1,9 @@
+name: Test
+entity_id: RIumrxITJwPUxH7geTecZ
+slug: test
+created_at: '2026-04-30T14:47:54.703614Z'
+namespace: snippets
+serdes/meta:
+- id: RIumrxITJwPUxH7geTecZ
+  label: test
+  model: Collection

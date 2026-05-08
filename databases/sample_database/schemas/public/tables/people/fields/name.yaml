@@ -1,0 +1,28 @@
+name: NAME
+display_name: Name
+description: The name of the user who owns an account
+created_at: '2026-04-29T16:08:09.402085Z'
+visibility_type: normal
+table_id:
+- Sample Database
+- PUBLIC
+- PEOPLE
+database_type: CHARACTER VARYING
+base_type: type/Text
+effective_type: type/Text
+semantic_type: type/Name
+dimensions: []
+position: 4
+custom_position: 0
+database_position: 4
+serdes/meta:
+- id: Sample Database
+  model: Database
+- id: PUBLIC
+  model: Schema
+- id: PEOPLE
+  model: Table
+- id: NAME
+  model: Field
+database_is_generated: false
+database_is_nullable: true

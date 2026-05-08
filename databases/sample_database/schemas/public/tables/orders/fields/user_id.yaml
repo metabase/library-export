@@ -1,0 +1,46 @@
+name: USER_ID
+display_name: User ID
+description: The id of the user who made this order. Note that in some cases where an order was created on behalf of a customer who phoned the order in, this might be the employee who handled the request.
+created_at: '2026-04-29T16:08:09.402085Z'
+visibility_type: normal
+table_id:
+- Sample Database
+- PUBLIC
+- ORDERS
+database_type: INTEGER
+base_type: type/Integer
+effective_type: type/Integer
+semantic_type: type/FK
+fk_target_field_id:
+- Sample Database
+- PUBLIC
+- PEOPLE
+- ID
+dimensions:
+- created_at: '2026-04-29T16:08:09.402085Z'
+  entity_id: iKRAu625kqCMgV-JyIcvs
+  human_readable_field_id:
+  - Sample Database
+  - PUBLIC
+  - PEOPLE
+  - NAME
+  name: User ID
+  type: external
+  serdes/meta:
+  - id: iKRAu625kqCMgV-JyIcvs
+    label: user_id
+    model: Dimension
+position: 1
+custom_position: 0
+database_position: 1
+serdes/meta:
+- id: Sample Database
+  model: Database
+- id: PUBLIC
+  model: Schema
+- id: ORDERS
+  model: Table
+- id: USER_ID
+  model: Field
+database_is_generated: false
+database_is_nullable: true
