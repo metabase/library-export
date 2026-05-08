@@ -1,0 +1,11 @@
+name: BBB
+entity_id: fr48hhavQMCGna_IwqdLt
+slug: bbb
+created_at: '2026-05-07T22:00:12.059203Z'
+type: library-data
+parent_id: 85iKDlG4mp2c-en1mQNXe
+serdes/meta:
+- id: fr48hhavQMCGna_IwqdLt
+  label: bbb
+  model: Collection
+is_remote_synced: true

@@ -1,0 +1,9 @@
+name: Test
+entity_id: BF84iQAO1O4ercbD48KJi
+slug: test
+created_at: '2026-05-05T20:57:41.465976Z'
+namespace: transforms
+serdes/meta:
+- id: BF84iQAO1O4ercbD48KJi
+  label: test
+  model: Collection
