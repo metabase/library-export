@@ -14,7 +14,7 @@ serdes/meta:
   model: Schema
 - id: sha_c1baee7db240aa419104c2d925a07a4d4faeeb24_test_data__test_table_1_NGOQMRWWFXBLYMIVNXVI_d830d200_d6f7_4190_a84d_9f
   model: Table
-collection_id: librarylibrarydatadat
+collection_id: d1RDK_G7PKFihYEnL1vcX
 data_authority: unconfigured
 data_layer: internal
 database_require_filter: false
